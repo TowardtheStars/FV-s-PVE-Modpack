@@ -15,7 +15,7 @@ update_readme: init
 
 packup: init core_mode
 	@if [ -f "${zipfile_name}" ]; then rm "${zipfile_name}" ; fi
-	@echo "Packing whitelist directories and files..."
+	@echo "Packing directories and files..."
 	@xargs -r -a zip.whitelist zip -r -q "${zipfile_name}"
 	@xargs -r -a zip.nodir     zip -j -q "${zipfile_name}"
 	@echo "Deleting blacklisted files from zipfile"
