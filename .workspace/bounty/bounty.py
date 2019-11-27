@@ -5,11 +5,11 @@ print("Exporting config file for bountiful...")
 
 config_json_path = os.path.join(".", "config", "bountiful", "bounties.json")
 config_file_path = os.path.join(".", "config", "bountiful", "bountiful.cfg")
-workbook_path = os.path.join(".", ".workspace", "12th物价表.xlsx")
+workbook_path = os.path.join(".", ".workspace", "bounty", "bounty.xlsx")
 
 file = open(config_json_path, "w")
 workbook = xlrd.open_workbook(workbook_path)
-bounties = workbook.sheet_by_name("bounties")
+bounties = workbook.sheet_by_index(0)
 data = bounties.get_rows()
 data = [[cell.value for cell in entry] for entry in data if (not str(entry[0].value).startswith("#")) and (not entry[0].value == "")]
 
