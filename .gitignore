@@ -28,3 +28,4 @@ usercache.json
 usernamecache.json
 *.lnk
 zs_export.json
+.workspace/icons
