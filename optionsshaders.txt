@@ -1,0 +1,19 @@
+#Wed Oct 23 19:58:31 CST 2019
+shaderPack=OFF
+antialiasingLevel=0
+normalMapEnabled=true
+specularMapEnabled=false
+renderResMul=1.0
+shadowResMul=1.0
+handDepthMul=0.125
+cloudShadow=false
+oldHandLight=true
+oldLighting=default
+tweakBlockDamage=false
+shadowClipFrustrum=true
+TexMinFilB=0
+TexMinFilN=0
+TexMinFilS=0
+TexMagFilB=0
+TexMagFilN=0
+TexMagFilS=0

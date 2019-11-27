@@ -1,0 +1,257 @@
+[
+  {
+    "content": "harvestcraft:southernstylebreakfastitem",
+    "amount": {
+      "min": 16,
+      "max": 32
+    },
+    "unitWorth": 30,
+    "weight": 138
+  },
+  {
+    "content": "harvestcraft:meatfeastpizzaitem",
+    "amount": {
+      "min": 16,
+      "max": 32
+    },
+    "unitWorth": 40,
+    "weight": 104
+  },
+  {
+    "content": "harvestcraft:thankfuldinneritem",
+    "amount": {
+      "min": 16,
+      "max": 32
+    },
+    "unitWorth": 50,
+    "weight": 83
+  },
+  {
+    "content": "harvestcraft:koreandinneritem",
+    "amount": {
+      "min": 16,
+      "max": 32
+    },
+    "unitWorth": 30,
+    "weight": 138
+  },
+  {
+    "content": "harvestcraft:gourmetvenisonburgeritem",
+    "amount": {
+      "min": 16,
+      "max": 32
+    },
+    "unitWorth": 50,
+    "weight": 83
+  },
+  {
+    "content": "harvestcraft:minerstewitem",
+    "amount": {
+      "min": 16,
+      "max": 32
+    },
+    "unitWorth": 100,
+    "weight": 41
+  },
+  {
+    "content": "harvestcraft:cornedbeefbreakfastitem",
+    "amount": {
+      "min": 16,
+      "max": 32
+    },
+    "unitWorth": 25,
+    "weight": 166
+  },
+  {
+    "content": "entity:abyssalcraft:lessershoggoth",
+    "amount": {
+      "min": 5,
+      "max": 10
+    },
+    "unitWorth": 70,
+    "weight": 190
+  },
+  {
+    "content": "entity:abyssalcraft:shadowbeast",
+    "amount": {
+      "min": 5,
+      "max": 10
+    },
+    "unitWorth": 100,
+    "weight": 133,
+    "stages": [
+      "ac_dark_dim"
+    ]
+  },
+  {
+    "content": "entity:abyssalcraft:shadowmonster",
+    "amount": {
+      "min": 5,
+      "max": 10
+    },
+    "unitWorth": 50,
+    "weight": 266,
+    "stages": [
+      "ac_dark_dim"
+    ]
+  },
+  {
+    "content": "entity:abyssalcraft:shadowcreature",
+    "amount": {
+      "min": 5,
+      "max": 10
+    },
+    "unitWorth": 30,
+    "weight": 300,
+    "stages": [
+      "ac_dark_dim"
+    ]
+  },
+  {
+    "content": "entity:abyssalcraft:jzahar",
+    "amount": {
+      "min": 1,
+      "max": 1
+    },
+    "unitWorth": 10000,
+    "weight": 10,
+    "stages": [
+      "ac_conquered"
+    ]
+  },
+  {
+    "content": "entity:abyssalcraft:chagaroth",
+    "amount": {
+      "min": 1,
+      "max": 1
+    },
+    "unitWorth": 5000,
+    "weight": 20,
+    "stages": [
+      "ac_dreadland"
+    ]
+  },
+  {
+    "content": "entity:abyssalcraft:dragonboss",
+    "amount": {
+      "min": 1,
+      "max": 1
+    },
+    "unitWorth": 2000,
+    "weight": 50,
+    "stages": [
+      "ac_coral_dim"
+    ]
+  },
+  {
+    "content": "abyssalcraft:eldritchscale",
+    "amount": {
+      "min": 1,
+      "max": 8
+    },
+    "unitWorth": 150,
+    "weight": 148,
+    "stages": [
+      "ac_omothol"
+    ]
+  },
+  {
+    "content": "entity:abyssalcraft:chagarothspawn",
+    "amount": {
+      "min": 5,
+      "max": 10
+    },
+    "unitWorth": 60,
+    "weight": 222,
+    "stages": [
+      "ac_dreadland"
+    ]
+  },
+  {
+    "content": "entity:abyssalcraft:omotholghoul",
+    "amount": {
+      "min": 10,
+      "max": 20
+    },
+    "unitWorth": 70,
+    "weight": 95,
+    "stages": [
+      "ac_omothol"
+    ]
+  },
+  {
+    "content": "entity:minecraft:wither",
+    "amount": {
+      "min": 1,
+      "max": 1
+    },
+    "unitWorth": 3000,
+    "weight": 33
+  },
+  {
+    "content": "entity:minecraft:creeper",
+    "amount": {
+      "min": 5,
+      "max": 10
+    },
+    "unitWorth": 50,
+    "weight": 266
+  },
+  {
+    "content": "entity:minecraft:skeleton",
+    "amount": {
+      "min": 5,
+      "max": 10
+    },
+    "unitWorth": 40,
+    "weight": 300
+  },
+  {
+    "content": "entity:minecraft:zombie",
+    "amount": {
+      "min": 5,
+      "max": 10
+    },
+    "unitWorth": 30,
+    "weight": 300
+  },
+  {
+    "content": "entity:minecraft:ender_dragon",
+    "amount": {
+      "min": 1,
+      "max": 1
+    },
+    "unitWorth": 2500,
+    "weight": 40,
+    "stages": [
+      "mc_end_dim"
+    ]
+  },
+  {
+    "content": "entity:minecraft:zombie_pigman",
+    "amount": {
+      "min": 10,
+      "max": 20
+    },
+    "unitWorth": 40,
+    "weight": 166
+  },
+  {
+    "content": "entity:iceandfire:firedragon",
+    "amount": {
+      "min": 1,
+      "max": 1
+    },
+    "unitWorth": 5000,
+    "weight": 20
+  },
+  {
+    "content": "entity:iceandfire:icedragon",
+    "amount": {
+      "min": 1,
+      "max": 1
+    },
+    "unitWorth": 7500,
+    "weight": 13
+  }
+]

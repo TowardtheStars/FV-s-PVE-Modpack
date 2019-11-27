@@ -1,0 +1,574 @@
+0,dragonsteel_fire_ingot,dragonsteel_fire_ingot,retrieval::iceandfire:dragonsteel_fire_ingot x3
+1,dragonforge_ice,dragonforge_ice,retrieval::iceandfire:dragonforge_ice_core_disabled x1
+2,tconstruct_hammer,tconstruct_hammer,retrieval::tconstruct:hammer x1
+3,tconstruct_starter,匠人之始,retrieval::tconstruct:tooltables x1
+4,tconstruct_bricks,渣渣灰!,retrieval::tconstruct:materials x8
+5,tconstruct_tinker_tank,5b95075d,retrieval::tconstruct:tinker_tank_controller x1
+6,tconstruct_dragonsteel_ice_ingot,63fc1c6b,retrieval::iceandfire:dragonsteel_ice_ingot x3
+7,tconstruct_armorforge,防具匠,retrieval::conarm:armorforge x1
+9,tconstruct_smeltery,7fe360a5,retrieval::tconstruct:smeltery_controller x1
+10,tconstruct_dragonsteel_tools,a4b38c6b,checkbox::
+12,dragonforge_fire,龙炎煅炉!,retrieval::iceandfire:dragonforge_fire_core_disabled x1
+13,tconstruct_chestplate,量身定制,retrieval::conarm:chestplate x1
+14,tconstruct_seared_furnace,d8791fae,retrieval::tconstruct:seared_furnace_controller x1
+15,tconstruct_soil,渣渣!,retrieval::tconstruct:soil x1
+16,tconstruct_toolforge,工具匠,retrieval::tconstruct:toolforge x1
+17,tconstruct_cast,铸模!,retrieval::tconstruct:cast x1
+18,cfb_kitchen,厨房!,retrieval::cookingforblockheads:cooking_table x1
+19,oc_os,这是...操作系统!,retrieval::opencomputers:storage x1
+20,ie_hammer,咱们工人有力量!,retrieval::immersiveengineering:tool x1
+21,ie_farmer,工业化农场!,retrieval::immersiveengineering:metal_device1 x1
+22,ie_electricity,电气时代,retrieval::immersiveengineering:metal_device1 x1
+23,ie_electricity2,cc0ec39f,retrieval::immersiveengineering:metal_device0 x1
+24,minecraft_redstone,ceacc2bc,retrieval::minecraft:redstone x1
+25,dragon_egg_ice_exchange,冰龙蛋兑换,retrieval::iceandfire:dragonegg_silver x1
+26,dragon_egg_fire_exchange,火龙蛋兑换,retrieval::iceandfire:dragonegg_gray x1
+27,hippogryph_egg_exchange,骏鹰蛋兑换,retrieval::iceandfire:hippogryph_egg x1
+29,challenge_vanilla_conquerer,香草味的支配者,None
+30,challenge_vanilla_trader,和村民交易3000次,scoreboard::stat.tradedWithVillager: stat.tradedWithVillager = 3000
+31,challenge_take_damage,aca3a5ba,scoreboard::stat.damageTaken: stat.damageTaken = 1000000
+32,challenge_living_time,§d§5§dI swear I lived,scoreboard::stat.timeSinceDeath: stat.timeSinceDeath = 10000000
+34,ac_nuclearbomb,核弹!,retrieval::abyssalcraft:odb x1
+35,ac_crystal,1326f7d2,retrieval::abyssalcraft:crystalcluster2 x1
+36,ac_coral_fluid,一桶珊瑚!,fluid::{}
+37,ac_deep_dark,你还是掉下来了,location::
+38,ac_win,美丽新世界,retrieval::abyssalcraft:gatekeeperessence x1
+39,ac_dreadaltar,查加洛特的宫殿,retrieval::abyssalcraft:dreadaltarbottom x1
+40,ac_kill_lessershoggoth,这是什么怪物!?,hunt::abyssalcraft:lessershoggoth x1
+41,ac_dirty_plate,29da5231,retrieval::abyssalcraft:dirtyplate x1
+42,ac_gateway_key,钥匙,retrieval::abyssalcraft:gatewaykey x1
+43,ac_dreadkatana,322caa5a,retrieval::abyssalcraft:dreadkatana x1
+44,ac_kill_dragonboss,解放深渊!,hunt::abyssalcraft:dragonboss x1
+45,ac_into_abyss,苔藓与珊瑚,location::
+46,ac_staff,5b40971d,retrieval::abyssalcraft:staff x1
+47,ac_necronomicon_omt,越来越黑...,retrieval::abyssalcraft:necronomicon_omt x1
+48,ac_drainstaff,72bdefc6,retrieval::abyssalcraft:drainstaff x1
+49,ac_kill_chagaroth,珍贵的宝藏,hunt::abyssalcraft:chagaroth x1
+50,ac_energy_pedestal,7e57c9ff,retrieval::abyssalcraft:tieredenergypedestal x1
+51,ac_necronomicon_dre,内心的恐惧,retrieval::abyssalcraft:necronomicon_dre x1
+52,ac_necronomicon,开始...考古?,retrieval::abyssalcraft:necronomicon x1
+53,ac_gateway_key_dreadland,又一把!,retrieval::abyssalcraft:gatewaykeydl x1
+54,ac_necronomicon_cor,深渊的知识...,retrieval::abyssalcraft:necronomicon_cor x1
+55,ac_statue,怪物信奉的神明们,retrieval::abyssalcraft:statue x1
+56,ac_chagaroths_treasure,查加罗特的宝藏,retrieval::abyssalcraft:gatewaykeyjzh x1
+57,ac_sacrificial_alter,这是个...祭坛?,retrieval::abyssalcraft:sacrificialaltar x1
+58,ac_abyssalnomicon,旧日的知识...,retrieval::abyssalcraft:abyssalnomicon x1
+59,ac_inter_dimentional_cage,bbc67a26,retrieval::abyssalcraft:interdimensionalcage x1
+60,ac_dreadium_ingot,我好害怕呀!,retrieval::abyssalcraft:dreadiumingot x20
+61,ac_basic_material,一些奇怪的物质,retrieval::abyssalcraft:shadowgem x1
+62,ac_psdl,恐惧蕴能石,retrieval::abyssalcraft:psdl x1
+63,ac_dont_fall_down,别掉下去,location::
+64,challenge_kill_endermite,4.8E+276,hunt::minecraft:endermite x100
+65,challenge_kill_goblin_knight_lower,017214f8,hunt::twilightforest:goblin_knight_lower x100
+66,challenge_kill_naga,0646c4ae,hunt::twilightforest:naga x10
+67,challenge_kill_tower_golem,0a9c7958,hunt::twilightforest:tower_golem x100
+68,challenge_kill_wraith,0ad5ee9c,hunt::twilightforest:wraith x100
+69,challenge_kill_unstable_ice_core,120e3269,hunt::twilightforest:unstable_ice_core x100
+70,challenge_kill_husk,13b4c6b9,hunt::minecraft:husk x100
+71,challenge_kill_if_cockatrice ,150d4a70,hunt::iceandfire:if_cockatrice x30
+72,challenge_kill_firedragon ,18b5c6ec,hunt::iceandfire:firedragon x30
+73,challenge_kill_goblin_knight_upper ,1ab0d658,hunt::twilightforest:goblin_knight_upper x100
+74,challenge_kill_kobold ,1f453e22,hunt::twilightforest:kobold x100
+75,challenge_kill_if_troll ,25acf423,hunt::iceandfire:if_troll x50
+76,challenge_kill_ice_wraith ,2d72e8aa,hunt::ebwizardry:ice_wraith x100
+77,challenge_kill_maze_slime ,3099e677,hunt::twilightforest:maze_slime x100
+78,challenge_kill_tower_termite ,32278b1b,hunt::twilightforest:tower_termite x100
+79,challenge_kill_lich_minion ,327d98c9,hunt::twilightforest:lich_minion x100
+80,challenge_kill_elder_guardian ,37b64ece,hunt::minecraft:elder_guardian x30
+81,challenge_kill_zombie_pigman ,3c154534,hunt::minecraft:zombie_pigman x100
+82,challenge_kill_hydra ,3c189584,hunt::twilightforest:hydra x10
+83,challenge_kill_enderman ,3d324fe7,hunt::minecraft:enderman x100
+84,challenge_kill_evocation_illager ,3d7c8957,hunt::minecraft:evocation_illager x30
+85,challenge_kill_gorgon ,3e6c2d26,hunt::iceandfire:gorgon x10
+86,challenge_kill_yeti_alpha ,4567d174,hunt::twilightforest:yeti_alpha x100
+87,challenge_kill_armored_giant ,46f0af59,hunt::twilightforest:armored_giant x30
+88,challenge_kill_swarm_spider ,49756bdd,hunt::twilightforest:swarm_spider x100
+89,challenge_kill_blockchain_goblin ,49d025f5,hunt::twilightforest:blockchain_goblin x100
+90,challenge_kill_knight_phantom ,4d2ed929,hunt::twilightforest:knight_phantom x10
+91,challenge_kill_fire_beetle ,4d887715,hunt::twilightforest:fire_beetle x100
+92,challenge_kill_wither_skeleton ,513acb29,hunt::minecraft:wither_skeleton x100
+93,challenge_kill_yeti ,538d576a,hunt::twilightforest:yeti x100
+94,challenge_kill_silverfish ,566496ec,hunt::minecraft:silverfish x100
+95,challenge_kill_hostile_wolf ,57e65d3f,hunt::twilightforest:hostile_wolf x100
+96,challenge_kill_redcap_sapper ,655d8e2e,hunt::twilightforest:redcap_sapper x100
+97,challenge_kill_cyclops ,66ae0725,hunt::iceandfire:cyclops x10
+98,challenge_kill_pinch_beetle ,66b075f9,hunt::twilightforest:pinch_beetle x100
+99,challenge_kill_ender_dragon ,击杀30末影龙,hunt::minecraft:ender_dragon x30
+100,challenge_kill_mist_wolf ,6a2b7118,hunt::twilightforest:mist_wolf x100
+101,challenge_kill_cave_spider ,6e17393d,hunt::minecraft:cave_spider x100
+102,challenge_kill_troll ,78496795,hunt::twilightforest:troll x100
+103,challenge_kill_king_spider ,7ae5eb2b,hunt::twilightforest:king_spider x100
+104,challenge_kill_amphithere ,7c494afc,hunt::iceandfire:amphithere x30
+105,challenge_kill_mosquito_swarm ,7d478f92,hunt::twilightforest:mosquito_swarm x100
+106,challenge_kill_shulker ,7d5a5d72,hunt::minecraft:shulker x30
+107,challenge_kill_snow_guardian ,82aab38c,hunt::twilightforest:snow_guardian x100
+108,challenge_kill_minotaur ,91526f71,hunt::twilightforest:minotaur x100
+109,challenge_kill_cyberzombie ,9284a791,hunt::cyberware:cyberzombie x100
+110,challenge_kill_snow_queen ,95bd2a64,hunt::twilightforest:snow_queen x10
+111,challenge_kill_witch ,964b258d,hunt::minecraft:witch x100
+112,challenge_kill_helmet_crab ,9708ba75,hunt::twilightforest:helmet_crab x100
+113,challenge_kill_icedragon ,99e1310c,hunt::iceandfire:icedragon x30
+114,challenge_kill_zombie ,9e8b78e3,hunt::minecraft:zombie x100
+115,challenge_kill_siren ,a4ad874e,hunt::iceandfire:siren x20
+116,challenge_kill_redcap ,a68b6652,hunt::twilightforest:redcap x100
+117,challenge_kill_giant_miner ,a8fecbd8,hunt::twilightforest:giant_miner x30
+118,challenge_kill_spider ,af364c0f,hunt::minecraft:spider x100
+119,challenge_kill_seaserpent ,b0ad533c,hunt::iceandfire:seaserpent x30
+120,challenge_kill_wither ,b857faef,hunt::minecraft:wither x30
+121,challenge_kill_zombie_villager ,b887a197,hunt::minecraft:zombie_villager x100
+122,challenge_kill_stymphalianbird ,bd55a093,hunt::iceandfire:stymphalianbird x30
+123,challenge_kill_deathworm ,bdcab151,hunt::iceandfire:deathworm x30
+124,challenge_kill_vindication_illager ,c2243c8c,hunt::minecraft:vindication_illager x30
+125,challenge_kill_hedge_spider ,c380d49d,hunt::twilightforest:hedge_spider x100
+126,challenge_kill_slime_beetle ,c6ae790c,hunt::twilightforest:slime_beetle x100
+127,challenge_kill_stray ,c95b4db6,hunt::minecraft:stray x100
+128,challenge_kill_creeper ,cc7991cc,hunt::minecraft:creeper x100
+129,challenge_kill_skeleton_druid ,cd3c6227,hunt::twilightforest:skeleton_druid x100
+130,challenge_kill_tower_ghast ,cdc6a51f,hunt::twilightforest:tower_ghast x100
+131,challenge_kill_slime ,d5374ea0,hunt::minecraft:slime x100
+132,challenge_kill_blaze ,d728a880,hunt::minecraft:blaze x100
+133,challenge_kill_guardian ,d86ea129,hunt::minecraft:guardian x100
+134,challenge_kill_blueslime ,db1ed048,hunt::tconstruct:blueslime x100
+135,challenge_kill_lich ,dbc53abf,hunt::twilightforest:lich x10
+136,challenge_kill_tower_broodling ,de1762c5,hunt::twilightforest:tower_broodling x100
+137,challenge_kill_stable_ice_core ,e35a1dcd,hunt::twilightforest:stable_ice_core x100
+138,challenge_kill_mini_ghast ,e56483ee,hunt::twilightforest:mini_ghast x100
+139,challenge_kill_ur_ghast ,e5865d56,hunt::twilightforest:ur_ghast x10
+140,challenge_kill_magma_cube ,e88e1bad,hunt::minecraft:magma_cube x100
+141,challenge_kill_wasp ,e951e989,hunt::biomesoplenty:wasp x100
+142,challenge_kill_minoshroom ,f6acba64,hunt::twilightforest:minoshroom x10
+143,challenge_kill_ghast ,击杀100恶魂,hunt::minecraft:ghast x100
+144,challenge_kill_skeleton ,fd5b11aa,hunt::minecraft:skeleton x100
+145,soul_of_tinker,匠人之魂,retrieval::minecraft:anvil x1
+146,treasure_place,知识宝库,retrieval::minecraft:bookshelf x1
+147,enchanting_table,附魔台,retrieval::minecraft:enchanting_table x1
+148,challenge_kill_demonchicken ,030c1359,hunt::abyssalcraft:demonchicken x100
+149,challenge_kill_chagarothfist ,11b1bfca,hunt::abyssalcraft:chagarothfist x100
+150,challenge_kill_chagaroth ,131cc387,hunt::abyssalcraft:chagaroth x30
+151,challenge_kill_dreadling ,1cb15b14,hunt::abyssalcraft:dreadling x100
+152,challenge_kill_dreadgolem ,2.985E+31,hunt::abyssalcraft:dreadgolem x100
+153,challenge_kill_shadowboss ,31872b5a,hunt::abyssalcraft:shadowboss x30
+154,challenge_kill_lessershoggoth ,3ab625a0,hunt::abyssalcraft:lessershoggoth x100
+155,challenge_kill_demoncow ,3f9d3a00,hunt::abyssalcraft:demoncow x100
+156,challenge_kill_chagarothspawn ,4e32a3df,hunt::abyssalcraft:chagarothspawn x100
+157,challenge_kill_greaterdreadspawn ,521f8755,hunt::abyssalcraft:greaterdreadspawn x100
+158,challenge_kill_shadowbeast ,537fe4ff,hunt::abyssalcraft:shadowbeast x100
+159,challenge_kill_jzaharminion ,5b6555a2,hunt::abyssalcraft:jzaharminion x100
+160,challenge_kill_dreadspawn ,64f09dd3,hunt::abyssalcraft:dreadspawn x100
+161,challenge_kill_shadowcreature ,726a4188,hunt::abyssalcraft:shadowcreature x100
+162,challenge_kill_lesserdreadbeast ,78e5034d,hunt::abyssalcraft:lesserdreadbeast x100
+163,challenge_kill_shadowmonster ,7f8d48c3,hunt::abyssalcraft:shadowmonster x100
+164,challenge_kill_dragonboss ,7fb00160,hunt::abyssalcraft:dragonboss x30
+165,challenge_kill_demonpig ,91db1fc8,hunt::abyssalcraft:demonpig x100
+166,challenge_kill_gskeleton ,a0b02ba2,hunt::abyssalcraft:gskeleton x100
+167,challenge_kill_dreadguard ,a6d77e55,hunt::abyssalcraft:dreadguard x100
+168,challenge_kill_abygolem ,bbf73ea6,hunt::abyssalcraft:abygolem x100
+169,challenge_kill_demonsheep ,c3d9ddfa,hunt::abyssalcraft:demonsheep x100
+170,challenge_kill_depthsghoul ,c75b77fd,hunt::abyssalcraft:depthsghoul x100
+171,challenge_kill_omotholghoul ,d58b7def,hunt::abyssalcraft:omotholghoul x100
+172,challenge_kill_dragonminion ,d821fc18,hunt::abyssalcraft:dragonminion x100
+173,challenge_kill_remnant ,e047c425,hunt::abyssalcraft:remnant x100
+174,challenge_kill_jzahar ,e16ac097,hunt::abyssalcraft:jzahar x30
+175,challenge_kill_shuboffspring ,ed3bfd8b,hunt::abyssalcraft:shuboffspring x100
+176,challenge_kill_abyssalzombie ,ede5b42e,hunt::abyssalcraft:abyssalzombie x100
+178,lapis_lazuli,青金石!,retrieval::minecraft:dye x32
+180,advancement_immersiveengineering_main_multiblock_dieselgenerator,污染环境§r,advancement::immersiveengineering:main/multiblock_dieselgenerator
+181,advancement_twilightforest_fiery_set,血泪成河§r,advancement::twilightforest:fiery_set
+182,advancement_immersiveengineering_main_secret_birthdayparty,Grunt生日派对§r,advancement::immersiveengineering:main/secret_birthdayparty
+183,advancement_iceandfire_iceandfire_root,冰火传说§r,advancement::iceandfire:iceandfire/root
+184,advancement_iceandfire_iceandfire_jar_pixie,真是道德沦丧§r,advancement::iceandfire:iceandfire/jar_pixie
+185,advancement_immersiveengineering_main_upgrade_drill,Big Daddy§r,advancement::immersiveengineering:main/upgrade_drill
+186,advancement_iceandfire_iceandfire_tame_cockatrice,远离我的地盘！§r,advancement::iceandfire:iceandfire/tame_cockatrice
+187,advancement_twilightforest_ore_map,这玩意值这么多？§r,advancement::twilightforest:ore_map
+188,advancement_abyssalcraft_shadow_gems,纯粹黑暗的宝石§r,advancement::abyssalcraft:shadow_gems
+189,advancement_ebwizardry_discover_master_spell,切割与危险§r,advancement::ebwizardry:discover_master_spell
+190,advancement_biomesoplenty_biomesoplenty_yin_and_yang,穿梭阴阳§r,advancement::biomesoplenty:biomesoplenty/yin_and_yang
+191,advancement_twilightforest_quest_ram,博学的羊§r,advancement::twilightforest:quest_ram
+192,advancement_biomesoplenty_biomesoplenty_honey_hell,甜美与恐惧§r,advancement::biomesoplenty:biomesoplenty/honey_hell
+193,advancement_minecraft_story_obtain_armor,整装上阵§r,advancement::minecraft:story/obtain_armor
+194,advancement_iceandfire_iceandfire_pixie_wand,你肯定没见过驴子飞！§r,advancement::iceandfire:iceandfire/pixie_wand
+195,advancement_twilightforest_progress_trophy_pedestal,受奖冠军§r,advancement::twilightforest:progress_trophy_pedestal
+196,advancement_minecraft_story_lava_bucket,热腾腾的§r,advancement::minecraft:story/lava_bucket
+197,advancement_immersiveengineering_main_upgrade_revolver,Shalashaska§r,advancement::immersiveengineering:main/upgrade_revolver
+198,advancement_minecraft_end_kill_dragon,解放末地§r,advancement::minecraft:end/kill_dragon
+199,advancement_minecraft_nether_all_potions,狂乱的鸡尾酒§r,advancement::minecraft:nether/all_potions
+200,advancement_iceandfire_iceandfire_kill_myrmex,只有死掉的虫子才……§r,advancement::iceandfire:iceandfire/kill_myrmex
+201,advancement_iceandfire_iceandfire_kill_troll,他们带了个食人妖过来！§r,advancement::iceandfire:iceandfire/kill_troll
+202,advancement_biomesoplenty_biomesoplenty_sacred_oak_sapling,世界树§r,advancement::biomesoplenty:biomesoplenty/sacred_oak_sapling
+203,advancement_twilightforest_twilight_hunter,森林之静§r,advancement::twilightforest:twilight_hunter
+204,advancement_minecraft_husbandry_tame_an_animal,永恒的伙伴§r,advancement::minecraft:husbandry/tame_an_animal
+205,advancement_immersiveengineering_main_multiblock_blastfurnace,真正的热门话题§r,advancement::immersiveengineering:main/multiblock_blastfurnace
+206,advancement_ebwizardry_crystal,奇异水晶§r,advancement::ebwizardry:crystal
+207,advancement_minecraft_nether_create_beacon,带信标回家§r,advancement::minecraft:nether/create_beacon
+208,advancement_twilightforest_progress_troll,让烈焰燃烧得更猛烈些吧！§r,advancement::twilightforest:progress_troll
+209,advancement_minecraft_story_deflect_arrow,抱歉，今天不行§r,advancement::minecraft:story/deflect_arrow
+210,advancement_ebwizardry_defeat_evil_wizard,正义降临§r,advancement::ebwizardry:defeat_evil_wizard
+211,advancement_twilightforest_magic_map,我有千里眼§r,advancement::twilightforest:magic_map
+212,advancement_twilightforest_experiment_115_self_replenishing,做个记录：大胜利！§r,advancement::twilightforest:experiment_115_self_replenishing
+213,advancement_minecraft_story_iron_tools,这不是铁镐么§r,advancement::minecraft:story/iron_tools
+214,advancement_twilightforest_progress_merge,最终对决§r,advancement::twilightforest:progress_merge
+215,advancement_iceandfire_iceandfire_kill_sea_serpent,魔兽之海§r,advancement::iceandfire:iceandfire/kill_sea_serpent
+216,advancement_biomesoplenty_biomesoplenty_miners_delight,生存法则§r,advancement::biomesoplenty:biomesoplenty/miners_delight
+217,advancement_ebwizardry_max_out_wand,准备齐全§r,advancement::ebwizardry:max_out_wand
+218,advancement_twilightforest_progress_knights,号令砷铅铁机关§r,advancement::twilightforest:progress_knights
+219,advancement_iceandfire_iceandfire_kill_stymphalian_bird,赫克万事顺利！§r,advancement::iceandfire:iceandfire/kill_stymphalian_bird
+220,advancement_twilightforest_progress_labyrinth,强力的牛头人沙拉酱肉§r,advancement::twilightforest:progress_labyrinth
+221,advancement_minecraft_nether_brew_potion,本地的酿造厂§r,advancement::minecraft:nether/brew_potion
+222,advancement_immersiveengineering_main_secret_drillbreak,GIGA...DRILL...BREAKER!!!§r,advancement::immersiveengineering:main/secret_drillbreak
+223,advancement_immersiveengineering_main_secret_luckofthedraw,抽奖的运气§r,advancement::immersiveengineering:main/secret_luckofthedraw
+224,advancement_immersiveengineering_main_multiblock_excavator,深入地心§r,advancement::immersiveengineering:main/multiblock_excavator
+225,advancement_minecraft_end_dragon_egg,下一世代§r,advancement::minecraft:end/dragon_egg
+226,advancement_immersiveengineering_main_connect_wire,电杆上的鸟儿§r,advancement::immersiveengineering:main/connect_wire
+227,advancement_ebwizardry_arcane_initiate,初识奥术§r,advancement::ebwizardry:arcane_initiate
+228,advancement_minecraft_adventure_sniper_duel,狙击手间的对决§r,advancement::minecraft:adventure/sniper_duel
+229,advancement_minecraft_nether_root,下界§r,advancement::minecraft:nether/root
+230,advancement_iceandfire_iceandfire_bestiary,记载怪兽的书籍§r,advancement::iceandfire:iceandfire/bestiary
+231,advancement_minecraft_end_levitate,这上面的风景不错§r,advancement::minecraft:end/levitate
+232,advancement_ebwizardry_armour_set,现在你是一个真正的巫师了§r,advancement::ebwizardry:armour_set
+233,advancement_minecraft_nether_all_effects,为什么会变成这样呢？§r,advancement::minecraft:nether/all_effects
+234,advancement_twilightforest_experiment_115,神秘的肉？§r,advancement::twilightforest:experiment_115
+235,advancement_iceandfire_iceandfire_dragonsteel,烈火镕锻§r,advancement::iceandfire:iceandfire/dragonsteel
+236,advancement_twilightforest_arborist,疯狂树木学家§r,advancement::twilightforest:arborist
+237,advancement_twilightforest_progress_hydra,九头蛇猎人§r,advancement::twilightforest:progress_hydra
+238,advancement_minecraft_nether_get_wither_skull,诡异又可怕的骷髅§r,advancement::minecraft:nether/get_wither_skull
+239,advancement_minecraft_husbandry_bred_all_animals,成双成对§r,advancement::minecraft:husbandry/bred_all_animals
+240,advancement_iceandfire_iceandfire_dragonarmor,全副武装§r,advancement::iceandfire:iceandfire/dragonarmor
+241,advancement_minecraft_story_mine_stone,石器时代§r,advancement::minecraft:story/mine_stone
+242,advancement_immersiveengineering_main_multiblock_silo,金属板掩盖的秘密仓库§r,advancement::immersiveengineering:main/multiblock_silo
+243,advancement_ebwizardry_all_artefacts,一个真正的博物馆§r,advancement::ebwizardry:all_artefacts
+244,advancement_twilightforest_progress_thorns,穿越荆棘【未实现】§r,advancement::twilightforest:progress_thorns
+245,advancement_minecraft_story_enter_the_nether,我们需要再深入些§r,advancement::minecraft:story/enter_the_nether
+246,advancement_immersiveengineering_main_craft_pump,压力作用§r,advancement::immersiveengineering:main/craft_pump
+247,advancement_immersiveengineering_main_craft_chemthrower,喷溅与祈祷§r,advancement::immersiveengineering:main/craft_chemthrower
+248,advancement_twilightforest_arctic_armor_dyed,追赶潮流§r,advancement::twilightforest:arctic_armor_dyed
+249,advancement_minecraft_story_upgrade_tools,获得升级§r,advancement::minecraft:story/upgrade_tools
+250,advancement_immersiveengineering_main_place_floodlight,Aziz! Light!§r,advancement::immersiveengineering:main/place_floodlight
+251,advancement_ebwizardry_all_spells,巫师的自我修养§r,advancement::ebwizardry:all_spells
+252,advancement_minecraft_story_cure_zombie_villager,僵尸科医生§r,advancement::minecraft:story/cure_zombie_villager
+253,advancement_ebwizardry_visit_shrine,祭坛§r,advancement::ebwizardry:visit_shrine
+254,advancement_biomesoplenty_biomesoplenty_root,超多生物群系§r,advancement::biomesoplenty:biomesoplenty/root
+255,advancement_iceandfire_iceandfire_tame_hippocampus,人鱼童话§r,advancement::iceandfire:iceandfire/tame_hippocampus
+256,advancement_minecraft_story_form_obsidian,冰桶挑战§r,advancement::minecraft:story/form_obsidian
+257,advancement_minecraft_end_find_end_city,在游戏尽头的城市§r,advancement::minecraft:end/find_end_city
+258,advancement_minecraft_end_enter_end_gateway,远程折跃§r,advancement::minecraft:end/enter_end_gateway
+259,advancement_twilightforest_twilight_dinner,永恒黄昏之宴§r,advancement::twilightforest:twilight_dinner
+260,advancement_abyssalcraft_dreadium,侵染-免费的锭§r,advancement::abyssalcraft:dreadium
+261,advancement_minecraft_nether_obtain_blaze_rod,与火共舞§r,advancement::minecraft:nether/obtain_blaze_rod
+262,advancement_immersiveengineering_main_multiblock_metalpress,挤压物质§r,advancement::immersiveengineering:main/multiblock_metalpress
+263,advancement_immersiveengineering_main_craft_hammer,HAMMAH!§r,advancement::immersiveengineering:main/craft_hammer
+264,advancement_ebwizardry_legendary,传奇§r,advancement::ebwizardry:legendary
+265,advancement_iceandfire_iceandfire_stymphalian_arrow,向前方飞啊飞§r,advancement::iceandfire:iceandfire/stymphalian_arrow
+266,advancement_minecraft_adventure_shoot_arrow,瞄准目标§r,advancement::minecraft:adventure/shoot_arrow
+267,advancement_iceandfire_iceandfire_use_tide_trident,波塞冬，海洋之神§r,advancement::iceandfire:iceandfire/use_tide_trident
+268,advancement_ebwizardry_identify_spell,奥术鉴定§r,advancement::ebwizardry:identify_spell
+269,advancement_iceandfire_iceandfire_kill_cyclops,无名小子§r,advancement::iceandfire:iceandfire/kill_cyclops
+270,advancement_bonsaitrees_grow,盆景养护§r,advancement::bonsaitrees:grow
+271,advancement_twilightforest_magic_map_focus,用火书写§r,advancement::twilightforest:magic_map_focus
+272,advancement_immersiveengineering_main_craft_railgun,财富的赠送§r,advancement::immersiveengineering:main/craft_railgun
+273,advancement_twilightforest_progress_yeti,首领的毛皮§r,advancement::twilightforest:progress_yeti
+274,advancement_immersiveengineering_main_multiblock_improvedblastfurnace,精炼的艺术§r,advancement::immersiveengineering:main/multiblock_improvedblastfurnace
+275,advancement_iceandfire_iceandfire_dragonbone_tool,碎裂II§r,advancement::iceandfire:iceandfire/dragonbone_tool
+276,advancement_immersiveengineering_main_craft_drill,储能镐§r,advancement::immersiveengineering:main/craft_drill
+277,advancement_minecraft_end_respawn_dragon,结束了…再一次…§r,advancement::minecraft:end/respawn_dragon
+278,advancement_minecraft_story_smelt_iron,来硬的§r,advancement::minecraft:story/smelt_iron
+279,advancement_ebwizardry_enchant_scroll,魔法卷轴!§r,advancement::ebwizardry:enchant_scroll
+280,advancement_twilightforest_progress_naga,娜迦猎人§r,advancement::twilightforest:progress_naga
+281,advancement_minecraft_story_shiny_gear,用钻石包裹我§r,advancement::minecraft:story/shiny_gear
+282,advancement_minecraft_end_elytra,天空即为极限§r,advancement::minecraft:end/elytra
+283,advancement_immersiveengineering_main_make_steel,新材料发现§r,advancement::immersiveengineering:main/make_steel
+284,advancement_abyssalcraft_ethaxium,是由谁的灵魂制成的……§r,advancement::abyssalcraft:ethaxium
+285,advancement_iceandfire_iceandfire_dragon_forge_brick,不过是墙上的又一块砖而已§r,advancement::iceandfire:iceandfire/dragon_forge_brick
+286,advancement_ebwizardry_apprentice,巫师学徒§r,advancement::ebwizardry:apprentice
+287,advancement_ebwizardry_buy_master_spell,知识就是力量§r,advancement::ebwizardry:buy_master_spell
+288,advancement_twilightforest_lich_scepters,融合！§r,advancement::twilightforest:lich_scepters
+289,advancement_minecraft_adventure_summon_iron_golem,招募援兵§r,advancement::minecraft:adventure/summon_iron_golem
+290,advancement_iceandfire_iceandfire_dragonbone_flaming_sword,一把燃烧的剑§r,advancement::iceandfire:iceandfire/dragonbone_flaming_sword
+291,advancement_minecraft_husbandry_break_diamond_hoe,终极奉献§r,advancement::minecraft:husbandry/break_diamond_hoe
+292,advancement_iceandfire_iceandfire_kill_siren,把我绑到桅杆上！§r,advancement::iceandfire:iceandfire/kill_siren
+293,advancement_ebwizardry_wizard_trade,魔法交易§r,advancement::ebwizardry:wizard_trade
+294,advancement_biomesoplenty_biomesoplenty_all_biomes,环球旅行§r,advancement::biomesoplenty:biomesoplenty/all_biomes
+295,advancement_iceandfire_iceandfire_dragonsteel_weapon,龙之进化§r,advancement::iceandfire:iceandfire/dragonsteel_weapon
+296,advancement_minecraft_nether_return_to_sender,见鬼去吧§r,advancement::minecraft:nether/return_to_sender
+297,advancement_minecraft_adventure_sleep_in_bed,甜蜜的梦§r,advancement::minecraft:adventure/sleep_in_bed
+298,advancement_minecraft_end_dragon_breath,你需要来点薄荷糖§r,advancement::minecraft:end/dragon_breath
+299,advancement_minecraft_adventure_root,冒险§r,advancement::minecraft:adventure/root
+300,advancement_minecraft_adventure_kill_all_mobs,怪物狩猎完成§r,advancement::minecraft:adventure/kill_all_mobs
+301,advancement_iceandfire_iceandfire_tame_pixie,精灵离乡§r,advancement::iceandfire:iceandfire/tame_pixie
+302,advancement_minecraft_story_enchant_item,附魔师§r,advancement::minecraft:story/enchant_item
+303,advancement_twilightforest_naga_armors,娜迦装备锻造师§r,advancement::twilightforest:naga_armors
+304,advancement_abyssalcraft_mine_abyssal_coralium,绿色的材料§r,advancement::abyssalcraft:mine_abyssal_coralium
+305,advancement_ebwizardry_artefact,被遗忘之物§r,advancement::ebwizardry:artefact
+306,advancement_iceandfire_iceandfire_dragon_forge_core,心与火§r,advancement::iceandfire:iceandfire/dragon_forge_core
+307,advancement_twilightforest_ghast_trap,高塔里的奇怪装置§r,advancement::twilightforest:ghast_trap
+308,advancement_ebwizardry_anger_wizard,你会后悔的§r,advancement::ebwizardry:anger_wizard
+309,advancement_twilightforest_progress_glacier,澄澈之空§r,advancement::twilightforest:progress_glacier
+310,advancement_minecraft_story_follow_ender_eye,隔墙有眼§r,advancement::minecraft:story/follow_ender_eye
+311,advancement_abyssalcraft_root,深渊国度§r,advancement::abyssalcraft:root
+312,advancement_minecraft_end_root,末地§r,advancement::minecraft:end/root
+313,advancement_iceandfire_iceandfire_kill_deathworm,沙海泳者§r,advancement::iceandfire:iceandfire/kill_deathworm
+314,advancement_abyssalcraft_mine_abyssalnite,比钻石好！§r,advancement::abyssalcraft:mine_abyssalnite
+315,advancement_ebwizardry_advanced,迅速前进§r,advancement::ebwizardry:advanced
+316,advancement_biomesoplenty_biomesoplenty_terrestrial_artifact,掌心之力§r,advancement::biomesoplenty:biomesoplenty/terrestrial_artifact
+317,advancement_twilightforest_experiment_115_115,每天都吃 115，坚持 115 年，一刻不要停§r,advancement::twilightforest:experiment_115_115
+318,advancement_ebwizardry_root,巫术旅途§r,advancement::ebwizardry:root
+319,advancement_immersiveengineering_main_place_windmill,风车的土地§r,advancement::immersiveengineering:main/place_windmill
+320,advancement_ebwizardry_spell_failure,适得其反§r,advancement::ebwizardry:spell_failure
+321,advancement_ebwizardry_master,奥术大师§r,advancement::ebwizardry:master
+322,advancement_minecraft_adventure_totem_of_undying,超越生死§r,advancement::minecraft:adventure/totem_of_undying
+323,advancement_minecraft_adventure_kill_a_mob,怪物猎人§r,advancement::minecraft:adventure/kill_a_mob
+324,advancement_minecraft_adventure_adventuring_time,探索的时光§r,advancement::minecraft:adventure/adventuring_time
+325,advancement_minecraft_husbandry_plant_seed,开荒垦地§r,advancement::minecraft:husbandry/plant_seed
+326,advancement_immersiveengineering_main_place_conveyor,到处都是路§r,advancement::immersiveengineering:main/place_conveyor
+327,advancement_iceandfire_iceandfire_tame_amphithere,林间飞行员§r,advancement::iceandfire:iceandfire/tame_amphithere
+328,advancement_abyssalcraft_mine_abyssal_ores,难道我没在主世界见过这些矿石？§r,advancement::abyssalcraft:mine_abyssal_ores
+329,advancement_iceandfire_iceandfire_lectern,想不想知道得再多一点？§r,advancement::iceandfire:iceandfire/lectern
+330,advancement_iceandfire_iceandfire_dragon_meal,龙的生长激素§r,advancement::iceandfire:iceandfire/dragon_meal
+331,advancement_minecraft_nether_create_full_beacon,信标工程师§r,advancement::minecraft:nether/create_full_beacon
+332,advancement_minecraft_nether_summon_wither,凋零山庄§r,advancement::minecraft:nether/summon_wither
+333,advancement_immersiveengineering_main_multiblock_arcfurnace,最热话题§r,advancement::immersiveengineering:main/multiblock_arcfurnace
+334,advancement_iceandfire_iceandfire_dragon_egg,龙母§r,advancement::iceandfire:iceandfire/dragon_egg
+335,advancement_minecraft_husbandry_balanced_diet,均衡饮食§r,advancement::minecraft:husbandry/balanced_diet
+336,advancement_iceandfire_iceandfire_gorgon_head,诸神之战§r,advancement::iceandfire:iceandfire/gorgon_head
+337,advancement_iceandfire_iceandfire_tame_hippogryph,鹰头马身有翼兽§r,advancement::iceandfire:iceandfire/tame_hippogryph
+338,advancement_iceandfire_iceandfire_kill_if_dragon,屠龙勇士§r,advancement::iceandfire:iceandfire/kill_if_dragon
+339,advancement_minecraft_nether_fast_travel,子空间泡泡§r,advancement::minecraft:nether/fast_travel
+340,advancement_iceandfire_iceandfire_rotten_egg,烂透了§r,advancement::iceandfire:iceandfire/rotten_egg
+341,advancement_iceandfire_iceandfire_myrmex_resin,这简直就像是在自己印钱！§r,advancement::iceandfire:iceandfire/myrmex_resin
+342,advancement_twilightforest_progress_castle,这就是，城堡吗……【未实现】§r,advancement::twilightforest:progress_castle
+343,advancement_iceandfire_iceandfire_tame_deathworm,保罗?阿崔迪§r,advancement::iceandfire:iceandfire/tame_deathworm
+344,advancement_minecraft_husbandry_root,农牧业§r,advancement::minecraft:husbandry/root
+345,advancement_immersiveengineering_main_multiblock_crusher,危险机械§r,advancement::immersiveengineering:main/multiblock_crusher
+346,advancement_twilightforest_maze_map,现在，寻找出口§r,advancement::twilightforest:maze_map
+347,advancement_immersiveengineering_main_craft_wolfpack,毁灭之美§r,advancement::immersiveengineering:main/craft_wolfpack
+348,advancement_immersiveengineering_main_craft_workbench,朋克时间§r,advancement::immersiveengineering:main/craft_workbench
+349,advancement_minecraft_adventure_trade,这交易不错！§r,advancement::minecraft:adventure/trade
+350,advancement_minecraft_nether_uneasy_alliance,不稳定的同盟§r,advancement::minecraft:nether/uneasy_alliance
+351,advancement_twilightforest_root,暮色森林§r,advancement::twilightforest:root
+352,advancement_ebwizardry_wizard_tower,谁住在这里？§r,advancement::ebwizardry:wizard_tower
+353,advancement_minecraft_story_mine_diamond,钻石！§r,advancement::minecraft:story/mine_diamond
+354,advancement_abyssalcraft_mine_dreadlands_ores,恐惧之地的矿产§r,advancement::abyssalcraft:mine_dreadlands_ores
+355,advancement_iceandfire_iceandfire_dragon_staff,驯龙者§r,advancement::iceandfire:iceandfire/dragon_staff
+356,advancement_biomesoplenty_biomesoplenty_flesh_and_blood,肮脏的交易§r,advancement::biomesoplenty:biomesoplenty/flesh_and_blood
+357,advancement_minecraft_nether_find_fortress,可怕的要塞§r,advancement::minecraft:nether/find_fortress
+358,advancement_bonsaitrees_root,盆景§r,advancement::bonsaitrees:root
+359,advancement_twilightforest_progress_ur_ghast,火之泪§r,advancement::twilightforest:progress_ur_ghast
+360,advancement_twilightforest_break_glass_sword,会心一击§r,advancement::twilightforest:break_glass_sword
+361,advancement_twilightforest_mazebreaker,破坏迷宫§r,advancement::twilightforest:mazebreaker
+362,advancement_abyssalcraft_mine_coralium,海洋宝石§r,advancement::abyssalcraft:mine_coralium
+363,advancement_immersiveengineering_main_craft_revolver,来让我们高兴一下§r,advancement::immersiveengineering:main/craft_revolver
+364,advancement_minecraft_story_root,Minecraft§r,advancement::minecraft:story/root
+365,advancement_iceandfire_iceandfire_dragon_flute,龙之歌§r,advancement::iceandfire:iceandfire/dragon_flute
+366,advancement_ebwizardry_discover_spell,试验和错误§r,advancement::ebwizardry:discover_spell
+367,advancement_immersiveengineering_main_root,沉浸工程§r,advancement::immersiveengineering:main/root
+368,advancement_ebwizardry_special_upgrade,奥术修补§r,advancement::ebwizardry:special_upgrade
+369,advancement_twilightforest_hydra_chop,快看！九头蛇的肉！§r,advancement::twilightforest:hydra_chop
+370,advancement_immersiveengineering_main_craft_heater,传播温暖§r,advancement::immersiveengineering:main/craft_heater
+371,advancement_minecraft_story_enter_the_end,结束了？§r,advancement::minecraft:story/enter_the_end
+372,advancement_minecraft_husbandry_breed_an_animal,我从哪儿来？§r,advancement::minecraft:husbandry/breed_an_animal
+373,advancement_twilightforest_hill1,靴子都是我的！§r,advancement::twilightforest:hill1
+374,advancement_twilightforest_progress_lich,巫妖猎人§r,advancement::twilightforest:progress_lich
+375,advancement_twilightforest_hill2,什么动静？§r,advancement::twilightforest:hill2
+376,advancement_twilightforest_hill3,我看到你了§r,advancement::twilightforest:hill3
+377,advancement_iceandfire_iceandfire_dragon_horn,震耳欲聋的咆哮声§r,advancement::iceandfire:iceandfire/dragon_horn
+378,advancement_twilightforest_hedge,碾碎爬虫§r,advancement::twilightforest:hedge
+379,advancement_immersiveengineering_main_craft_skyhook,"Booker, catch!§r",advancement::immersiveengineering:main/craft_skyhook
+380,advancement_immersiveengineering_main_multiblock_dieselgenerator,污染环境§r,advancement::immersiveengineering:main/multiblock_dieselgenerator
+381,advancement_twilightforest_fiery_set,血泪成河§r,advancement::twilightforest:fiery_set
+382,advancement_immersiveengineering_main_secret_birthdayparty,Grunt生日派对§r,advancement::immersiveengineering:main/secret_birthdayparty
+383,advancement_iceandfire_iceandfire_root,冰火传说§r,advancement::iceandfire:iceandfire/root
+384,advancement_iceandfire_iceandfire_jar_pixie,真是道德沦丧§r,advancement::iceandfire:iceandfire/jar_pixie
+385,advancement_immersiveengineering_main_upgrade_drill,Big Daddy§r,advancement::immersiveengineering:main/upgrade_drill
+386,advancement_iceandfire_iceandfire_tame_cockatrice,远离我的地盘！§r,advancement::iceandfire:iceandfire/tame_cockatrice
+387,advancement_twilightforest_ore_map,这玩意值这么多？§r,advancement::twilightforest:ore_map
+388,advancement_abyssalcraft_shadow_gems,纯粹黑暗的宝石§r,advancement::abyssalcraft:shadow_gems
+389,advancement_ebwizardry_discover_master_spell,切割与危险§r,advancement::ebwizardry:discover_master_spell
+390,advancement_biomesoplenty_biomesoplenty_yin_and_yang,穿梭阴阳§r,advancement::biomesoplenty:biomesoplenty/yin_and_yang
+391,advancement_twilightforest_quest_ram,博学的羊§r,advancement::twilightforest:quest_ram
+392,advancement_biomesoplenty_biomesoplenty_honey_hell,甜美与恐惧§r,advancement::biomesoplenty:biomesoplenty/honey_hell
+393,advancement_minecraft_story_obtain_armor,整装上阵§r,advancement::minecraft:story/obtain_armor
+394,advancement_iceandfire_iceandfire_pixie_wand,你肯定没见过驴子飞！§r,advancement::iceandfire:iceandfire/pixie_wand
+395,advancement_twilightforest_progress_trophy_pedestal,受奖冠军§r,advancement::twilightforest:progress_trophy_pedestal
+396,advancement_minecraft_story_lava_bucket,热腾腾的§r,advancement::minecraft:story/lava_bucket
+397,advancement_immersiveengineering_main_upgrade_revolver,Shalashaska§r,advancement::immersiveengineering:main/upgrade_revolver
+398,advancement_minecraft_end_kill_dragon,解放末地§r,advancement::minecraft:end/kill_dragon
+399,advancement_minecraft_nether_all_potions,狂乱的鸡尾酒§r,advancement::minecraft:nether/all_potions
+400,advancement_iceandfire_iceandfire_kill_myrmex,只有死掉的虫子才……§r,advancement::iceandfire:iceandfire/kill_myrmex
+401,advancement_iceandfire_iceandfire_kill_troll,他们带了个食人妖过来！§r,advancement::iceandfire:iceandfire/kill_troll
+402,advancement_biomesoplenty_biomesoplenty_sacred_oak_sapling,世界树§r,advancement::biomesoplenty:biomesoplenty/sacred_oak_sapling
+403,advancement_twilightforest_twilight_hunter,森林之静§r,advancement::twilightforest:twilight_hunter
+404,advancement_minecraft_husbandry_tame_an_animal,永恒的伙伴§r,advancement::minecraft:husbandry/tame_an_animal
+405,advancement_immersiveengineering_main_multiblock_blastfurnace,真正的热门话题§r,advancement::immersiveengineering:main/multiblock_blastfurnace
+406,advancement_ebwizardry_crystal,奇异水晶§r,advancement::ebwizardry:crystal
+407,advancement_minecraft_nether_create_beacon,带信标回家§r,advancement::minecraft:nether/create_beacon
+408,advancement_twilightforest_progress_troll,让烈焰燃烧得更猛烈些吧！§r,advancement::twilightforest:progress_troll
+409,advancement_minecraft_story_deflect_arrow,抱歉，今天不行§r,advancement::minecraft:story/deflect_arrow
+410,advancement_ebwizardry_defeat_evil_wizard,正义降临§r,advancement::ebwizardry:defeat_evil_wizard
+411,advancement_twilightforest_magic_map,我有千里眼§r,advancement::twilightforest:magic_map
+412,advancement_twilightforest_experiment_115_self_replenishing,做个记录：大胜利！§r,advancement::twilightforest:experiment_115_self_replenishing
+413,advancement_minecraft_story_iron_tools,这不是铁镐么§r,advancement::minecraft:story/iron_tools
+414,advancement_twilightforest_progress_merge,最终对决§r,advancement::twilightforest:progress_merge
+415,advancement_iceandfire_iceandfire_kill_sea_serpent,魔兽之海§r,advancement::iceandfire:iceandfire/kill_sea_serpent
+416,advancement_biomesoplenty_biomesoplenty_miners_delight,生存法则§r,advancement::biomesoplenty:biomesoplenty/miners_delight
+417,advancement_ebwizardry_max_out_wand,准备齐全§r,advancement::ebwizardry:max_out_wand
+418,advancement_twilightforest_progress_knights,号令砷铅铁机关§r,advancement::twilightforest:progress_knights
+419,advancement_iceandfire_iceandfire_kill_stymphalian_bird,赫克万事顺利！§r,advancement::iceandfire:iceandfire/kill_stymphalian_bird
+420,advancement_twilightforest_progress_labyrinth,强力的牛头人沙拉酱肉§r,advancement::twilightforest:progress_labyrinth
+421,advancement_minecraft_nether_brew_potion,本地的酿造厂§r,advancement::minecraft:nether/brew_potion
+422,advancement_immersiveengineering_main_secret_drillbreak,GIGA...DRILL...BREAKER!!!§r,advancement::immersiveengineering:main/secret_drillbreak
+423,advancement_immersiveengineering_main_secret_luckofthedraw,抽奖的运气§r,advancement::immersiveengineering:main/secret_luckofthedraw
+424,advancement_immersiveengineering_main_multiblock_excavator,深入地心§r,advancement::immersiveengineering:main/multiblock_excavator
+425,advancement_minecraft_end_dragon_egg,下一世代§r,advancement::minecraft:end/dragon_egg
+426,advancement_immersiveengineering_main_connect_wire,电杆上的鸟儿§r,advancement::immersiveengineering:main/connect_wire
+427,advancement_ebwizardry_arcane_initiate,初识奥术§r,advancement::ebwizardry:arcane_initiate
+428,advancement_minecraft_adventure_sniper_duel,狙击手间的对决§r,advancement::minecraft:adventure/sniper_duel
+429,advancement_minecraft_nether_root,下界§r,advancement::minecraft:nether/root
+430,advancement_iceandfire_iceandfire_bestiary,记载怪兽的书籍§r,advancement::iceandfire:iceandfire/bestiary
+431,advancement_minecraft_end_levitate,这上面的风景不错§r,advancement::minecraft:end/levitate
+432,advancement_ebwizardry_armour_set,现在你是一个真正的巫师了§r,advancement::ebwizardry:armour_set
+433,advancement_minecraft_nether_all_effects,为什么会变成这样呢？§r,advancement::minecraft:nether/all_effects
+434,advancement_twilightforest_experiment_115,神秘的肉？§r,advancement::twilightforest:experiment_115
+435,advancement_iceandfire_iceandfire_dragonsteel,烈火镕锻§r,advancement::iceandfire:iceandfire/dragonsteel
+436,advancement_twilightforest_arborist,疯狂树木学家§r,advancement::twilightforest:arborist
+437,advancement_twilightforest_progress_hydra,九头蛇猎人§r,advancement::twilightforest:progress_hydra
+438,advancement_minecraft_nether_get_wither_skull,诡异又可怕的骷髅§r,advancement::minecraft:nether/get_wither_skull
+439,advancement_minecraft_husbandry_bred_all_animals,成双成对§r,advancement::minecraft:husbandry/bred_all_animals
+440,advancement_iceandfire_iceandfire_dragonarmor,全副武装§r,advancement::iceandfire:iceandfire/dragonarmor
+441,advancement_minecraft_story_mine_stone,石器时代§r,advancement::minecraft:story/mine_stone
+442,advancement_immersiveengineering_main_multiblock_silo,金属板掩盖的秘密仓库§r,advancement::immersiveengineering:main/multiblock_silo
+443,advancement_ebwizardry_all_artefacts,一个真正的博物馆§r,advancement::ebwizardry:all_artefacts
+444,advancement_twilightforest_progress_thorns,穿越荆棘【未实现】§r,advancement::twilightforest:progress_thorns
+445,advancement_minecraft_story_enter_the_nether,我们需要再深入些§r,advancement::minecraft:story/enter_the_nether
+446,advancement_immersiveengineering_main_craft_pump,压力作用§r,advancement::immersiveengineering:main/craft_pump
+447,advancement_immersiveengineering_main_craft_chemthrower,喷溅与祈祷§r,advancement::immersiveengineering:main/craft_chemthrower
+448,advancement_twilightforest_arctic_armor_dyed,追赶潮流§r,advancement::twilightforest:arctic_armor_dyed
+449,advancement_minecraft_story_upgrade_tools,获得升级§r,advancement::minecraft:story/upgrade_tools
+450,advancement_immersiveengineering_main_place_floodlight,Aziz! Light!§r,advancement::immersiveengineering:main/place_floodlight
+451,advancement_ebwizardry_all_spells,巫师的自我修养§r,advancement::ebwizardry:all_spells
+452,advancement_minecraft_story_cure_zombie_villager,僵尸科医生§r,advancement::minecraft:story/cure_zombie_villager
+453,advancement_ebwizardry_visit_shrine,祭坛§r,advancement::ebwizardry:visit_shrine
+454,advancement_biomesoplenty_biomesoplenty_root,超多生物群系§r,advancement::biomesoplenty:biomesoplenty/root
+455,advancement_iceandfire_iceandfire_tame_hippocampus,人鱼童话§r,advancement::iceandfire:iceandfire/tame_hippocampus
+456,advancement_minecraft_story_form_obsidian,冰桶挑战§r,advancement::minecraft:story/form_obsidian
+457,advancement_minecraft_end_find_end_city,在游戏尽头的城市§r,advancement::minecraft:end/find_end_city
+458,advancement_minecraft_end_enter_end_gateway,远程折跃§r,advancement::minecraft:end/enter_end_gateway
+459,advancement_twilightforest_twilight_dinner,永恒黄昏之宴§r,advancement::twilightforest:twilight_dinner
+460,advancement_abyssalcraft_dreadium,侵染-免费的锭§r,advancement::abyssalcraft:dreadium
+461,advancement_minecraft_nether_obtain_blaze_rod,与火共舞§r,advancement::minecraft:nether/obtain_blaze_rod
+462,advancement_immersiveengineering_main_multiblock_metalpress,挤压物质§r,advancement::immersiveengineering:main/multiblock_metalpress
+463,advancement_immersiveengineering_main_craft_hammer,HAMMAH!§r,advancement::immersiveengineering:main/craft_hammer
+464,advancement_ebwizardry_legendary,传奇§r,advancement::ebwizardry:legendary
+465,advancement_iceandfire_iceandfire_stymphalian_arrow,向前方飞啊飞§r,advancement::iceandfire:iceandfire/stymphalian_arrow
+466,advancement_minecraft_adventure_shoot_arrow,瞄准目标§r,advancement::minecraft:adventure/shoot_arrow
+467,advancement_iceandfire_iceandfire_use_tide_trident,波塞冬，海洋之神§r,advancement::iceandfire:iceandfire/use_tide_trident
+468,advancement_ebwizardry_identify_spell,奥术鉴定§r,advancement::ebwizardry:identify_spell
+469,advancement_iceandfire_iceandfire_kill_cyclops,无名小子§r,advancement::iceandfire:iceandfire/kill_cyclops
+470,advancement_bonsaitrees_grow,盆景养护§r,advancement::bonsaitrees:grow
+471,advancement_twilightforest_magic_map_focus,用火书写§r,advancement::twilightforest:magic_map_focus
+472,advancement_immersiveengineering_main_craft_railgun,财富的赠送§r,advancement::immersiveengineering:main/craft_railgun
+473,advancement_twilightforest_progress_yeti,首领的毛皮§r,advancement::twilightforest:progress_yeti
+474,advancement_immersiveengineering_main_multiblock_improvedblastfurnace,精炼的艺术§r,advancement::immersiveengineering:main/multiblock_improvedblastfurnace
+475,advancement_iceandfire_iceandfire_dragonbone_tool,碎裂II§r,advancement::iceandfire:iceandfire/dragonbone_tool
+476,advancement_immersiveengineering_main_craft_drill,储能镐§r,advancement::immersiveengineering:main/craft_drill
+477,advancement_minecraft_end_respawn_dragon,结束了…再一次…§r,advancement::minecraft:end/respawn_dragon
+478,advancement_minecraft_story_smelt_iron,来硬的§r,advancement::minecraft:story/smelt_iron
+479,advancement_ebwizardry_enchant_scroll,魔法卷轴!§r,advancement::ebwizardry:enchant_scroll
+480,advancement_twilightforest_progress_naga,娜迦猎人§r,advancement::twilightforest:progress_naga
+481,advancement_minecraft_story_shiny_gear,用钻石包裹我§r,advancement::minecraft:story/shiny_gear
+482,advancement_minecraft_end_elytra,天空即为极限§r,advancement::minecraft:end/elytra
+483,advancement_immersiveengineering_main_make_steel,新材料发现§r,advancement::immersiveengineering:main/make_steel
+484,advancement_abyssalcraft_ethaxium,是由谁的灵魂制成的……§r,advancement::abyssalcraft:ethaxium
+485,advancement_iceandfire_iceandfire_dragon_forge_brick,不过是墙上的又一块砖而已§r,advancement::iceandfire:iceandfire/dragon_forge_brick
+486,advancement_ebwizardry_apprentice,巫师学徒§r,advancement::ebwizardry:apprentice
+487,advancement_ebwizardry_buy_master_spell,知识就是力量§r,advancement::ebwizardry:buy_master_spell
+488,advancement_twilightforest_lich_scepters,融合！§r,advancement::twilightforest:lich_scepters
+489,advancement_minecraft_adventure_summon_iron_golem,招募援兵§r,advancement::minecraft:adventure/summon_iron_golem
+490,advancement_iceandfire_iceandfire_dragonbone_flaming_sword,一把燃烧的剑§r,advancement::iceandfire:iceandfire/dragonbone_flaming_sword
+491,advancement_minecraft_husbandry_break_diamond_hoe,终极奉献§r,advancement::minecraft:husbandry/break_diamond_hoe
+492,advancement_iceandfire_iceandfire_kill_siren,把我绑到桅杆上！§r,advancement::iceandfire:iceandfire/kill_siren
+493,advancement_ebwizardry_wizard_trade,魔法交易§r,advancement::ebwizardry:wizard_trade
+494,advancement_biomesoplenty_biomesoplenty_all_biomes,环球旅行§r,advancement::biomesoplenty:biomesoplenty/all_biomes
+495,advancement_iceandfire_iceandfire_dragonsteel_weapon,龙之进化§r,advancement::iceandfire:iceandfire/dragonsteel_weapon
+496,advancement_minecraft_nether_return_to_sender,见鬼去吧§r,advancement::minecraft:nether/return_to_sender
+497,advancement_minecraft_adventure_sleep_in_bed,甜蜜的梦§r,advancement::minecraft:adventure/sleep_in_bed
+498,advancement_minecraft_end_dragon_breath,你需要来点薄荷糖§r,advancement::minecraft:end/dragon_breath
+499,advancement_minecraft_adventure_root,冒险§r,advancement::minecraft:adventure/root
+500,advancement_minecraft_adventure_kill_all_mobs,怪物狩猎完成§r,advancement::minecraft:adventure/kill_all_mobs
+501,advancement_iceandfire_iceandfire_tame_pixie,精灵离乡§r,advancement::iceandfire:iceandfire/tame_pixie
+502,advancement_minecraft_story_enchant_item,附魔师§r,advancement::minecraft:story/enchant_item
+503,advancement_twilightforest_naga_armors,娜迦装备锻造师§r,advancement::twilightforest:naga_armors
+504,advancement_abyssalcraft_mine_abyssal_coralium,绿色的材料§r,advancement::abyssalcraft:mine_abyssal_coralium
+505,advancement_ebwizardry_artefact,被遗忘之物§r,advancement::ebwizardry:artefact
+506,advancement_iceandfire_iceandfire_dragon_forge_core,心与火§r,advancement::iceandfire:iceandfire/dragon_forge_core
+507,advancement_twilightforest_ghast_trap,高塔里的奇怪装置§r,advancement::twilightforest:ghast_trap
+508,advancement_ebwizardry_anger_wizard,你会后悔的§r,advancement::ebwizardry:anger_wizard
+509,advancement_twilightforest_progress_glacier,澄澈之空§r,advancement::twilightforest:progress_glacier
+510,advancement_minecraft_story_follow_ender_eye,隔墙有眼§r,advancement::minecraft:story/follow_ender_eye
+511,advancement_abyssalcraft_root,深渊国度§r,advancement::abyssalcraft:root
+512,advancement_minecraft_end_root,末地§r,advancement::minecraft:end/root
+513,advancement_iceandfire_iceandfire_kill_deathworm,沙海泳者§r,advancement::iceandfire:iceandfire/kill_deathworm
+514,advancement_abyssalcraft_mine_abyssalnite,比钻石好！§r,advancement::abyssalcraft:mine_abyssalnite
+515,advancement_ebwizardry_advanced,迅速前进§r,advancement::ebwizardry:advanced
+516,advancement_biomesoplenty_biomesoplenty_terrestrial_artifact,掌心之力§r,advancement::biomesoplenty:biomesoplenty/terrestrial_artifact
+517,advancement_twilightforest_experiment_115_115,每天都吃 115，坚持 115 年，一刻不要停§r,advancement::twilightforest:experiment_115_115
+518,advancement_ebwizardry_root,巫术旅途§r,advancement::ebwizardry:root
+519,advancement_immersiveengineering_main_place_windmill,风车的土地§r,advancement::immersiveengineering:main/place_windmill
+520,advancement_ebwizardry_spell_failure,适得其反§r,advancement::ebwizardry:spell_failure
+521,advancement_ebwizardry_master,奥术大师§r,advancement::ebwizardry:master
+522,advancement_minecraft_adventure_totem_of_undying,超越生死§r,advancement::minecraft:adventure/totem_of_undying
+523,advancement_minecraft_adventure_kill_a_mob,怪物猎人§r,advancement::minecraft:adventure/kill_a_mob
+524,advancement_minecraft_adventure_adventuring_time,探索的时光§r,advancement::minecraft:adventure/adventuring_time
+525,advancement_minecraft_husbandry_plant_seed,开荒垦地§r,advancement::minecraft:husbandry/plant_seed
+526,advancement_immersiveengineering_main_place_conveyor,到处都是路§r,advancement::immersiveengineering:main/place_conveyor
+527,advancement_iceandfire_iceandfire_tame_amphithere,林间飞行员§r,advancement::iceandfire:iceandfire/tame_amphithere
+528,advancement_abyssalcraft_mine_abyssal_ores,难道我没在主世界见过这些矿石？§r,advancement::abyssalcraft:mine_abyssal_ores
+529,advancement_iceandfire_iceandfire_lectern,想不想知道得再多一点？§r,advancement::iceandfire:iceandfire/lectern
+530,advancement_iceandfire_iceandfire_dragon_meal,龙的生长激素§r,advancement::iceandfire:iceandfire/dragon_meal
+531,advancement_minecraft_nether_create_full_beacon,信标工程师§r,advancement::minecraft:nether/create_full_beacon
+532,advancement_minecraft_nether_summon_wither,凋零山庄§r,advancement::minecraft:nether/summon_wither
+533,advancement_immersiveengineering_main_multiblock_arcfurnace,最热话题§r,advancement::immersiveengineering:main/multiblock_arcfurnace
+534,advancement_iceandfire_iceandfire_dragon_egg,龙母§r,advancement::iceandfire:iceandfire/dragon_egg
+535,advancement_minecraft_husbandry_balanced_diet,均衡饮食§r,advancement::minecraft:husbandry/balanced_diet
+536,advancement_iceandfire_iceandfire_gorgon_head,诸神之战§r,advancement::iceandfire:iceandfire/gorgon_head
+537,advancement_iceandfire_iceandfire_tame_hippogryph,鹰头马身有翼兽§r,advancement::iceandfire:iceandfire/tame_hippogryph
+538,advancement_iceandfire_iceandfire_kill_if_dragon,屠龙勇士§r,advancement::iceandfire:iceandfire/kill_if_dragon
+539,advancement_minecraft_nether_fast_travel,子空间泡泡§r,advancement::minecraft:nether/fast_travel
+540,advancement_iceandfire_iceandfire_rotten_egg,烂透了§r,advancement::iceandfire:iceandfire/rotten_egg
+541,advancement_iceandfire_iceandfire_myrmex_resin,这简直就像是在自己印钱！§r,advancement::iceandfire:iceandfire/myrmex_resin
+542,advancement_twilightforest_progress_castle,这就是，城堡吗……【未实现】§r,advancement::twilightforest:progress_castle
+543,advancement_iceandfire_iceandfire_tame_deathworm,保罗?阿崔迪§r,advancement::iceandfire:iceandfire/tame_deathworm
+544,advancement_minecraft_husbandry_root,农牧业§r,advancement::minecraft:husbandry/root
+545,advancement_immersiveengineering_main_multiblock_crusher,危险机械§r,advancement::immersiveengineering:main/multiblock_crusher
+546,advancement_twilightforest_maze_map,现在，寻找出口§r,advancement::twilightforest:maze_map
+547,advancement_immersiveengineering_main_craft_wolfpack,毁灭之美§r,advancement::immersiveengineering:main/craft_wolfpack
+548,advancement_immersiveengineering_main_craft_workbench,朋克时间§r,advancement::immersiveengineering:main/craft_workbench
+549,advancement_minecraft_adventure_trade,这交易不错！§r,advancement::minecraft:adventure/trade
+550,advancement_minecraft_nether_uneasy_alliance,不稳定的同盟§r,advancement::minecraft:nether/uneasy_alliance
+551,advancement_twilightforest_root,暮色森林§r,advancement::twilightforest:root
+552,advancement_ebwizardry_wizard_tower,谁住在这里？§r,advancement::ebwizardry:wizard_tower
+553,advancement_minecraft_story_mine_diamond,钻石！§r,advancement::minecraft:story/mine_diamond
+554,advancement_abyssalcraft_mine_dreadlands_ores,恐惧之地的矿产§r,advancement::abyssalcraft:mine_dreadlands_ores
+555,advancement_iceandfire_iceandfire_dragon_staff,驯龙者§r,advancement::iceandfire:iceandfire/dragon_staff
+556,advancement_biomesoplenty_biomesoplenty_flesh_and_blood,肮脏的交易§r,advancement::biomesoplenty:biomesoplenty/flesh_and_blood
+557,advancement_minecraft_nether_find_fortress,可怕的要塞§r,advancement::minecraft:nether/find_fortress
+558,advancement_bonsaitrees_root,盆景§r,advancement::bonsaitrees:root
+559,advancement_twilightforest_progress_ur_ghast,火之泪§r,advancement::twilightforest:progress_ur_ghast
+560,advancement_twilightforest_break_glass_sword,会心一击§r,advancement::twilightforest:break_glass_sword
+561,advancement_twilightforest_mazebreaker,破坏迷宫§r,advancement::twilightforest:mazebreaker
+562,advancement_abyssalcraft_mine_coralium,海洋宝石§r,advancement::abyssalcraft:mine_coralium
+563,advancement_immersiveengineering_main_craft_revolver,来让我们高兴一下§r,advancement::immersiveengineering:main/craft_revolver
+564,advancement_minecraft_story_root,Minecraft§r,advancement::minecraft:story/root
+565,advancement_iceandfire_iceandfire_dragon_flute,龙之歌§r,advancement::iceandfire:iceandfire/dragon_flute
+566,advancement_ebwizardry_discover_spell,试验和错误§r,advancement::ebwizardry:discover_spell
+567,advancement_immersiveengineering_main_root,沉浸工程§r,advancement::immersiveengineering:main/root
+568,advancement_ebwizardry_special_upgrade,奥术修补§r,advancement::ebwizardry:special_upgrade
+569,advancement_twilightforest_hydra_chop,快看！九头蛇的肉！§r,advancement::twilightforest:hydra_chop
+570,advancement_immersiveengineering_main_craft_heater,传播温暖§r,advancement::immersiveengineering:main/craft_heater
+571,advancement_minecraft_story_enter_the_end,结束了？§r,advancement::minecraft:story/enter_the_end
+572,advancement_minecraft_husbandry_breed_an_animal,我从哪儿来？§r,advancement::minecraft:husbandry/breed_an_animal
+573,advancement_twilightforest_hill1,靴子都是我的！§r,advancement::twilightforest:hill1
+574,advancement_twilightforest_progress_lich,巫妖猎人§r,advancement::twilightforest:progress_lich
+575,advancement_twilightforest_hill2,什么动静？§r,advancement::twilightforest:hill2
+576,advancement_twilightforest_hill3,我看到你了§r,advancement::twilightforest:hill3
+577,advancement_iceandfire_iceandfire_dragon_horn,震耳欲聋的咆哮声§r,advancement::iceandfire:iceandfire/dragon_horn
+578,advancement_twilightforest_hedge,碾碎爬虫§r,advancement::twilightforest:hedge
+579,advancement_immersiveengineering_main_craft_skyhook,"Booker, catch!§r",advancement::immersiveengineering:main/craft_skyhook

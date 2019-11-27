@@ -1,0 +1,22 @@
+[
+  {
+    "content": "oridinarycoins:coinbronze",
+    "unitWorth": 1,
+    "weight": 100
+  },
+  {
+    "content": "oridinarycoins:coinsilver",
+    "unitWorth": 100,
+    "weight": 100
+  },
+  {
+    "content": "oridinarycoins:coingold",
+    "unitWorth": 10000,
+    "weight": 10
+  },
+  {
+    "content": "oridinarycoins:coinplatinum",
+    "unitWorth": 1000000,
+    "weight": 10
+  }
+]

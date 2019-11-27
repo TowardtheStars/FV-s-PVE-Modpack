@@ -1,0 +1,12 @@
+{
+    "modid": "colossalchests",
+    "tiles":
+    {
+        "kitchenItemProviders":
+        [
+            "org.cyclops.colossalchests.tileentity.TileInterface",
+            "org.cyclops.colossalchests.tileentity.TileColossalChest",
+            "org.cyclops.colossalchests.tileentity.TileUncolossalChest"
+        ]
+    }
+}
