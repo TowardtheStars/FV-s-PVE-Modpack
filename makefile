@@ -4,7 +4,7 @@ build_dir:=./build
 pack_name:=FVs-PVE
 zipfile_name:=${build_dir}/${pack_name}-v${version}.zip
 
-all: init mod_list shop_list bounty_list packup
+all: init mod_list shop_list bounty_list packup dev_mode
 
 init:
 	@if [ ! -d "${build_dir}" ]; then mkdir ${build_dir}; fi
@@ -13,7 +13,7 @@ update_readme: init
 	@cp ./readme.md ./build/readme.md
 	@sed -i 's/%{version}/$(version)/g' ./build/readme.md
 
-packup: init
+packup: init core_mode
 	@if [ -f "${zipfile_name}" ]; then rm "${zipfile_name}" ; fi
 	@echo "Packing whitelist directories and files..."
 	@xargs -r -a zip.whitelist zip -r -q "${zipfile_name}"
@@ -25,7 +25,7 @@ packup: init
 
 mod_list:
 	@echo "Recording mod list..."
-	@if [ ! -f mod_list.txt ]; then rm mod_list.txt; fi
+	@if [ -f mod_list.txt ]; then rm mod_list.txt; fi
 	@find ./mods -maxdepth 1 -type f >> mod_list.txt
 	@sed -i 's/.\/mods\///g' mod_list.txt
 	@sed -i 's/.jar//g' mod_list.txt
@@ -39,6 +39,14 @@ shop_list:
 
 bounty_list:
 	@python3 ".workspace/bounty/bounty.py"
+
+dev_mode:
+	@echo "Into dev mode"
+	@sh ./ModpackModeSelector.sh d
+
+core_mode:
+	@echo "Into core mode"
+	@sh ./ModpackModeSelector.sh o
 
 clean:
 	@if [ -d $(build_dir) ]; then rm -r $(build_dir); fi
