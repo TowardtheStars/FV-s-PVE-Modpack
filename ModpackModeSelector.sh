@@ -1,5 +1,5 @@
 # /bin/bash
-if [ $# -ne 1 ]
+if [ $# -eq 0 ]
 then
 echo ==========================
 echo 请选择modpack模式
@@ -22,7 +22,7 @@ while [ $loop -ne 0 ]
 do
     loop=0
     client=0
-    if [ $# -ne 1 ]
+    if [ $# -eq 0 ]
     then 
         read -p '请输入模式代码: ' mode
         echo
@@ -31,13 +31,13 @@ do
     fi
     case $mode in
     'c')
-        if [ $# -ne 1 ]
+        if [ $# -eq 0 ]
         then echo "您已选择: 客户端"
         fi
         cp ./mods/client/* ./mods/ 
         ;;
     'd')    
-        if [ $# -ne 1 ]
+        if [ $# -eq 0 ]
         then echo "您已选择: 开发端"
         fi
         cp ./mods/dev/* ./mods/
@@ -46,7 +46,7 @@ do
         cp ./mods/server/* ./mods/
         ;;
     's')
-        if [ $# -ne 1 ]
+        if [ $# -eq 0 ]
         then echo "您已选择: 服务端"
         fi
         cp ./mods/server/* ./mods/ 
@@ -60,12 +60,12 @@ do
         loop=1
         ;;
     'o')
-        if [ $# -ne 1 ]
+        if [ $# -eq 0 ]
         then echo "您已选择: 核心"
         fi
         ;;
     *)
-        if [ $# -ne 1 ]
+        if [ $# -eq 0 ]
         then echo "您已选择: 单机端"
         fi
         cp ./mods/sp_lan/* ./mods/ 
@@ -75,7 +75,7 @@ do
     esac
 done
 
-if [ $# -ne 1 ]
+if [ $# -eq 0 ]
 then echo "配置完毕"
 fi
 
@@ -90,7 +90,7 @@ get_char()
   stty $SAVEDSTTY
 }
  
-if [ -z "$1" ]; then
+if [ $# -eq 0 ]; then
 	echo '请按任意键继续...'
     get_char
 fi
