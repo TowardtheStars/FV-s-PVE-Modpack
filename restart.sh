@@ -1,7 +1,7 @@
 #/bin/bash
 
-echo "Çë½«Æô¶¯½Å±¾·ÅÖÃÓÚ./run.shÖĞ"
-read -p "ÇëÊäÈë×îĞ¡ÎÈ¶¨ÔËĞĞÊ±¼ä(µ¥Î»: Ãë): " min_time
+echo "è¯·å°†å¯åŠ¨è„šæœ¬æ”¾ç½®äº./run.shä¸­"
+read -p "è¯·è¾“å…¥æœ€å°ç¨³å®šè¿è¡Œæ—¶é—´(å•ä½: ç§’): " min_time
 
 start_time=0
 end_time=${start_time}+${time}
@@ -12,6 +12,6 @@ do
     sh ./run.sh
     end_time=`date +%s`  
 done
-echo "! ³ÌĞòÓÚ×î¶ÌÎÈ¶¨ÔËĞĞÊ±¼äÄÚÖÕÖ¹"
-echo "! Í£Ö¹×Ô¶¯ÖØÆô"
-echo "! Çë²é¿´log/crash report"
+echo "! ç¨‹åºäºæœ€çŸ­ç¨³å®šè¿è¡Œæ—¶é—´å†…ç»ˆæ­¢"
+echo "! åœæ­¢è‡ªåŠ¨é‡å¯"
+echo "! è¯·æŸ¥çœ‹log/crash report"
