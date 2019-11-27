@@ -5,7 +5,7 @@ import pysnooper
 import numpy as np
 
 print("Reading shop list")
-workbook = xlrd.open_workbook("./.workspace/shop/" + "12th物价表.xlsx")
+workbook = xlrd.open_workbook("./.workspace/shop/" + "shoplist.xlsx")
 header = workbook.sheet_by_name("shop head")
 buy_list_sheet = workbook.sheet_by_name("shop buy")
 sell_list_sheet = workbook.sheet_by_name("shop sell")
@@ -132,51 +132,52 @@ for row in sell_list_sheet.get_rows():
 
 print("Parse complete.")
 
-print("Generating LaTeX")
-header_str = \
-"""
-\\documentclass[UTF8]{ctexart}
-\\usepackage{graphicx}
-\\usepackage{longtable}
-\\usepackage{multirow}
-\\usepackage{booktabs}
-\\usepackage{makecell}
-\\title{12周目价目表}
-\\begin{document}{}
-\\maketitle
+def generate_latex():
+    print("Generating LaTeX")
+    header_str = \
+    """
+    \\documentclass[UTF8]{ctexart}
+    \\usepackage{graphicx}
+    \\usepackage{longtable}
+    \\usepackage{multirow}
+    \\usepackage{booktabs}
+    \\usepackage{makecell}
+    \\title{12周目价目表}
+    \\begin{document}{}
+    \\maketitle
 
-"""
-latex_file_path = ".workspace/shop.tex"
+    """
+    latex_file_path = ".workspace/shop.tex"
 
-latex_file = open(latex_file_path, "w", encoding="utf-8")
-latex_file.writelines(header_str)
+    latex_file = open(latex_file_path, "w", encoding="utf-8")
+    latex_file.writelines(header_str)
 
 
-def make_chart(goods_list):
-    for k, v in goods_list.items():
-        latex_file.writelines(
-"""
-\\subsection{%s}
-\\begin{longtable}[]{|p{1cm}|p{8cm}|p{1.5cm}|}
-\\toprule
-图标 & 中文名 & 价格\\\\
-\\midrule
-"""
-            % k
-        )
-        latex_file.writelines(map(str, v))
-        latex_file.writelines(
-"""
-\\end{longtable}
-"""
-        )
+    def make_chart(goods_list):
+        for k, v in goods_list.items():
+            latex_file.writelines(
+    """
+    \\subsection{%s}
+    \\begin{longtable}[]{|p{1cm}|p{8cm}|p{1.5cm}|}
+    \\toprule
+    图标 & 中文名 & 价格\\\\
+    \\midrule
+    """
+                % k
+            )
+            latex_file.writelines(map(str, v))
+            latex_file.writelines(
+    """
+    \\end{longtable}
+    """
+            )
 
-latex_file.writelines("\\section{玩家可买入}\n")
-make_chart(buy_list)
-latex_file.writelines("\\section{玩家可卖出}\n")
-make_chart(sell_list)
+    latex_file.writelines("\\section{玩家可买入}\n")
+    make_chart(buy_list)
+    latex_file.writelines("\\section{玩家可卖出}\n")
+    make_chart(sell_list)
 
-latex_file.writelines("\\end{document}\n")
-latex_file.close()
+    latex_file.writelines("\\end{document}\n")
+    latex_file.close()
 
-print("LaTeX generated.")
+    print("LaTeX generated.")
