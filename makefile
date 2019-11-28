@@ -7,7 +7,9 @@ zipfile_name:=${build_dir}/${pack_name}-v${version}.zip
 all: init mod_list shop_list bounty_list packup dev_mode
 
 init:
-	@if [ ! -d "${build_dir}" ]; then mkdir ${build_dir}; fi
+	@if [ ! -d "${build_dir}" ]			\
+		then mkdir ${build_dir}		\
+	fi					
 
 update_readme: init
 	@cp ./readme.md ./build/readme.md
@@ -16,10 +18,8 @@ update_readme: init
 packup: init core_mode
 	@if [ -f "${zipfile_name}" ]; then rm "${zipfile_name}" ; fi
 	@echo "Packing directories and files..."
-	@xargs -r -a zip.whitelist zip -r -q "${zipfile_name}"
-	@xargs -r -a zip.nodir     zip -j -q "${zipfile_name}"
-	@echo "Deleting blacklisted files from zipfile"
-	@xargs -r -a zip.blacklist zip    -q "${zipfile_name}" -d
+	@xargs -r -a zip.files find | grep -v --file=zip.blacklist | xargs -r -0 zip -q "${zipfile_name}"
+	@xargs -r -a zip.nodir zip -j -q "${zipfile_name}"
 	@echo "Finished"
 	@echo "Zip file: ${zipfile_name}"
 
