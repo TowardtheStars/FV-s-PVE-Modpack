@@ -19,6 +19,7 @@ Forge Version: 14.23.5.2847
 
 - [FV的打怪向模组包 `FV's PVE modpack`](#fv%e7%9a%84%e6%89%93%e6%80%aa%e5%90%91%e6%a8%a1%e7%bb%84%e5%8c%85-fvs-pve-modpack)
   - [安装方法](#%e5%ae%89%e8%a3%85%e6%96%b9%e6%b3%95)
+  - [一些小程序](#%e4%b8%80%e4%ba%9b%e5%b0%8f%e7%a8%8b%e5%ba%8f)
   - [加入服务器](#%e5%8a%a0%e5%85%a5%e6%9c%8d%e5%8a%a1%e5%99%a8)
   - [建议配置](#%e5%bb%ba%e8%ae%ae%e9%85%8d%e7%bd%ae)
   - [模组列表](#%e6%a8%a1%e7%bb%84%e5%88%97%e8%a1%a8)
@@ -34,12 +35,62 @@ Forge Version: 14.23.5.2847
 
 进入游戏目录, 将本Modpack中的文件夹复制到游戏目录中. Modpack中的其他文件是一些相关数据文档~~或者是作者不小心放进去的无关紧要的文件~~, 仅供玩家参考, 不需要复制到游戏目录中.
 
-对于服务器, 请删除Mod列表中Client下的所有mod.
+~~对于服务器, 请删除Mod列表中Client下的所有mod.~~
+请选择 server 模式
+
+一些小程序
+----------
+
+ModpackModeSelector.sh / ModpackModeSelector.bat
+- - - -
+用于选择 Modpack 模式的脚本, bat版本和sh版本功能一致
+
+第一次下载后请务必运行此脚本
+
+对于 Windows 系统, 请双击 ModpackModeSelector.bat 使用
+
+对于 Linux 内核系统, 请直接运行 ModpackModeSelector.sh 脚本, 或使用 sh ./ModpackModeSelector.sh <模式代码>
+
+有以下几个模式选项:(模式代码为冒号后面的字母序列)
+
+- 服务器: s
+  - 开服务器请务必选这个模式
+- 客户端: c
+  - 只玩使用这个包的服务器, 请选这个模式
+  - 只是为了减少游戏启动时间而做的这个模式
+- 单机端(默认选项): sp
+  - 完整体验这个包的所有内容, 请选这个模式
+  - 可以加入使用这个包的服务器
+  - 可以离线模式联机
+- 开发端: d
+  - 如果想查看 KubeJS 文档, 请选择这个模式
+- 核心(初始状态): o
+  - 你下载到这个包时候的模式, 仅仅用于打包
+  - 可用于加入这个包对应的服务器
+  - 当然, 和客户端模式比, 少了许多辅助的 mod, 比如小地图
+
+restart.sh
+- - - -
+
+服务器使用的小程序, 可以在服务器崩溃时自动重启服务器.
+
+使用方法, 将启动脚本命名为`run.sh`并和此脚本置于同一文件夹下, 启动此脚本即可.
+
+```shell
+sh ./restart.sh <min_stable_running_time>
+```
+
+min_stable_running_time: 所启动程序稳定运行的最短时间, 若所启动的程序在最短稳定运行时间内停止运行, 则停止自动重启.
+
+get_whitelist.sh
+- - - -
+
+用于自动从远端 git 同步白名单, 还在开发当中, 需要提前设置 git remote
 
 加入服务器
 -------
 
-加入使用此包的
+加入使用此包的服务器, 请使用客户端模式或单机端模式
 
 建议配置
 ---------
@@ -52,8 +103,7 @@ RAM 6G(4G+) for 单机, 4G(3G+) for 玩服务器, 8G(6G+) for 开服务器
 -------
 
 - 工具装备向
-  - 匠魂系列
-    - 本体
+  - Tinkers' Construct
     - plus TiC
     - Construct Armory
       - Armory Expansion
@@ -71,17 +121,17 @@ RAM 6G(4G+) for 单机, 4G(3G+) for 玩服务器, 8G(6G+) for 开服务器
   - Twilight Forest
   - Bountiful
 - 饮食向
-  - 生活调味料
-  - 潘马斯农场
+  - Spice of Life
+  - Pam's Harvestcraft
     - Pam's Cookables
   - Cooking For Blockheads
-  - 营养学
+  - Nutrition
 - 难度向
   - Epic Siege
   - Inferno Mobs
   - Ice and Fire
-  - 生活调味料
-  - 营养学
+  - Spice of Life
+  - Nutrition
   - Craft Tweaker2
   - Scaling Health
   - Tinkered Hegemony
@@ -92,11 +142,12 @@ RAM 6G(4G+) for 单机, 4G(3G+) for 玩服务器, 8G(6G+) for 开服务器
     - Open Screens
   - Open Modular Turrets
   - Extra Utilities 2
+  - OpenBlocks
 - 魔法
   - Electroblob's Wizardry
 - 装饰
   - Immersive Engineering
-  - 中式工坊
+  - Chinese Workshop
   - Biomes'O Plenty
   - Cosmetic Armor Reworked
   - Armourer's Workshop
@@ -106,8 +157,8 @@ RAM 6G(4G+) for 单机, 4G(3G+) for 玩服务器, 8G(6G+) for 开服务器
   - Chisels & Bits
   - Baubles
 - 存储
-  - 末影存储
-  - 巨型箱子
+  - Ender Storage
+  - Colossal Chest
 - 实用
   - Akashic Tome
   - Better Builder Wands
@@ -119,6 +170,7 @@ RAM 6G(4G+) for 单机, 4G(3G+) for 玩服务器, 8G(6G+) for 开服务器
   - Admin Shop
   - Simple Login
   - Pet Bat
+  - Hunting Dim
 - 辅助
   - JEI
     - JECH
@@ -151,7 +203,7 @@ RAM 6G(4G+) for 单机, 4G(3G+) for 玩服务器, 8G(6G+) for 开服务器
   - Neat
 - LIBs 懒得写了
 
-**高危**: 如果游戏崩溃, 请删除mod或更换mod版本
+**高危**: 如果游戏崩溃, 请删除mod或更换mod版本, 如果删除后问题没有解决, 请联系作者
 
 重要说明
 -------
@@ -179,18 +231,18 @@ RAM 6G(4G+) for 单机, 4G(3G+) for 玩服务器, 8G(6G+) for 开服务器
     - ~~开放式电脑的磁盘 vs 冰与火的铁链~~
     - 使用了 NoMoreRecipeConflict 模组消除合成冲突
   - 盆栽mod中的盆栽现在需要用砖块而不是砖头来合成了
-  
+
 - 游戏性修改
-  - 关闭 Epic Siege 中 Creeper Jockey 的特性
-  - Epic Siege 中怪物索敌半径从64下降到32
+  - 关闭 Epic Siege Mod 中 Creeper Jockey 的特性
+  - Epic Siege Mod 中怪物索敌半径从64下降到32
   - 去除 Inferno Mobs 精英怪战利品表中的原版钻石/皮革装备
   - Cyberware 免疫抗性上限从100上调至125
   - 关闭 Inferno Mobs 的Sticky特性
   - 关闭 Ice and Fire 中小精灵偷东西的特性
-  - 床现在不能用来跳过夜晚了, 只能用来设置重生点
-  - 所有的末影龙都可以生成龙蛋了!
-  - 匠魂工具和装备的最高等级为2
-  - 初始装备
+  - 床现在不能用来跳过夜晚了, 只能用来设置重生点 (Epic Siege Mod)
+  - 所有的末影龙生而平等 (Equal Dragons)
+  - 匠魂工具和装备的最高等级为2 (Tinker's Tool Levelling)
+  - 初始装备 (Custom Starting Gears)
     - 匠魂石剑
     - 匠魂石斧
     - 匠魂石镐
@@ -202,6 +254,9 @@ RAM 6G(4G+) for 单机, 4G(3G+) for 玩服务器, 8G(6G+) for 开服务器
     - 基础耐久为默认的 25%
     - 基础伤害为默认的 80%
   - 将使用珊瑚珍珠而不是钻石来开启暮色森林传送门
+  - Apotheosis
+    - 关闭了Apotheosis对原版刷怪笼的修改
+    - 关闭了Apotheosis对原版怪物的增强
 
 前排提示
 -------
@@ -234,17 +289,18 @@ RAM 6G(4G+) for 单机, 4G(3G+) for 玩服务器, 8G(6G+) for 开服务器
       - 如果玩家处于静止: +0.0010/s(3.6/h)
     - 死亡: +0.0/次
   - 不同维度在计算难度时会有不同的基础难度
-    |维度|ID|基础难度
-    |----|--|---
-    |漆黑世界|-11325| +10
-    |下界|-1| +50
-    |主世界|0|0
-    |末地|1| +75
-    |暮色森林|7| +100
-    |深渊|50| +25
-    |恐惧之地|51| +35
-    |奥穆索|52| +95
-    |深渊黑暗维度|53| +55
+    |维度|ID|基础难度|
+    |----|--|---|
+    |漆黑世界|-11325| +10|
+    |下界|-1| +50|
+    |主世界|0|0|
+    |末地|1| +75|
+    |暮色森林|7| +100|
+    |深渊|50| +25|
+    |恐惧之地|51| +35|
+    |奥穆索|52| +95|
+    |深渊黑暗维度|53| +55|
+    |狩猎维度|28885| +70|
   - 睡觉: +8/次
     - 因为只有利用bug才能睡觉, 而我不想让玩家利用这个bug
     - 只有夜晚被睡觉跳过时才会增加难度
@@ -262,7 +318,7 @@ RAM 6G(4G+) for 单机, 4G(3G+) for 玩服务器, 8G(6G+) for 开服务器
   - 当满月时, 会出现"血月"现象
   - 所有怪物的血量会增加, 生成几率也会提高
 - Ice and Fire
-  - 冰龙、火龙只应该出现于主世界、奥穆索和漆黑世界维度, 请腐竹自查
+  - 冰龙、火龙只应该出现于主世界、奥穆索、漆黑世界维度和狩猎维度, 请腐竹自查
   - 冰龙和火龙任何时候都互相敌对, 请养龙玩家注意不要把它们放在一起养, 以避免不必要的损失
   - 有些敌对生物(主要是 Ice and Fire 的生物)在 Journey Map 小地图上的图标与中立生物一样
 - Admin shop 中可以出售能量换取金钱, 兑换率为 32768 RF/$
