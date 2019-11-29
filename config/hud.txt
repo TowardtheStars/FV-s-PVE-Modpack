@@ -1,6 +1,6 @@
 # Better HUD configuration file
 # Any removed or corrupted properties will be reverted to default.
-# 2019-08-09 14:04:51.357
+# 2019-11-29 20:42:08.705
 
 global:
 	enabled:true
@@ -9,7 +9,7 @@ armorBars:
 	posMode:0
 	position:middleLeft
 	alignment:middleLeft
-	position2:5,5,640,400,114,70
+	position2:5,5,640,334,110,70
 	anchor:1
 	showDurability:true
 	durabilityMode:0
@@ -144,7 +144,7 @@ fullInvIndicator:
 handBar:
 	enabled:true
 	posMode:0
-	position:52,14,640,400,180,18
+	position:50,9,640,334,180,18
 	anchor:0
 	showItem:true
 	showBars:true
@@ -187,7 +187,7 @@ lightLevel:
 	green:255.0
 	blue:255.0
 mobInfo:
-	enabled:true
+	enabled:false
 	players:true
 	mobs:true
 	distance:100.0

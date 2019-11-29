@@ -112,11 +112,13 @@ RAM 6G(4G+) for 单机, 4G(3G+) for 玩服务器, 8G(6G+) for 开服务器
   - Akashic Tome
   - Better Builder Wands
   - FTB Quests
+  - FTB Utilities
   - Waystones
   - Sign Post
   - Equal Dragons
   - Admin Shop
   - Simple Login
+  - Pet Bat
 - 辅助
   - JEI
     - JECH
@@ -136,6 +138,7 @@ RAM 6G(4G+) for 单机, 4G(3G+) for 玩服务器, 8G(6G+) for 开服务器
   - Custom Starting Gear
   - Inventory Tweaks
   - No More Recipe Conflict
+  - Dynmap
 - Client Only
   - Better HUD
   - JourneyMap
@@ -143,9 +146,12 @@ RAM 6G(4G+) for 单机, 4G(3G+) for 玩服务器, 8G(6G+) for 开服务器
   - Smooth Font
   - Foamfix
   - I18n Update Mod
-  - Optifine
+  - Optifine (**高危**)
   - Classic Bars
+  - Neat
 - LIBs 懒得写了
+
+**高危**: 如果游戏崩溃, 请删除mod或更换mod版本
 
 重要说明
 -------
