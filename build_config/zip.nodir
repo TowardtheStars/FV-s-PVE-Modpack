@@ -1,4 +1,2 @@
-ModpackModeSelector.bat
-ModpackModeSelector.sh
+./shell_scripts/*
 ./build/readme.md
-restart.sh
