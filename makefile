@@ -1,5 +1,5 @@
 # Modpack config
-version:=2.0.1-alpha
+version:=2.1.2-alpha
 pack_name:=FVs-PVE
 
 # Build config
@@ -12,7 +12,7 @@ sh_script_dir:=./shell_scripts
 mod_list_file:=${build_dir}/mod_list.txt
 zipfile_name:=${build_dir}/${pack_name}-v${version}.zip
 
-all: init mod_list shop_list bounty_list packup dev_mode
+all: init update_readme mod_list shop_list bounty_list packup dev_mode
 
 init:
 	if [ ! -d "${build_dir}" ];		\
@@ -22,13 +22,14 @@ init:
 update_readme: init
 	cp ./readme.md ${build_dir}/readme.md
 	sed -i 's/%{version}/$(version)/g' ${build_dir}/readme.md
+	cp ${build_dir}/readme.md ${build_dir}/readme.txt
 
 packup: init core_mode
 	if [ -f "${zipfile_name}" ]; then rm "${zipfile_name}" ; fi
 	xargs --arg-file=${build_config}/zip.files find 		\
 		| grep -v --file=${build_config}/zip.blacklist 		\
 		| xargs -d "\n" zip -r ${zipfile_name}
-	xargs -a ${build_config}/zip.nodir zip -j "${zipfile_name}"
+	xargs --arg-file=${build_config}/zip.nodir find | xargs zip -j "${zipfile_name}"
 	@echo "Pack up finished"
 	@echo "Result: ${zipfile_name}"
 
