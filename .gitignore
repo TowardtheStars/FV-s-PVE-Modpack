@@ -12,7 +12,8 @@ dynmap
 export
 journeymap
 llibrary
-local
+local/client
+local/ftbquests
 logs
 mods
 rendered
