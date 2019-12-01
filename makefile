@@ -49,6 +49,10 @@ clear_log:
 shop_list:
 	@python3 ".workspace/shop/shop_list.py"
 
+dump_doc:
+	@python3 ".workspace/Aurora_web/dump_web.py"
+	@python3 ".workspace/Aurora_web/add_links.py"
+
 bounty_list:
 	@python3 ".workspace/bounty/bounty.py"
 
