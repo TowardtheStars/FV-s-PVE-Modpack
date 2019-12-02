@@ -624,8 +624,8 @@
 | of(Object o) Creates text component from any object|Text
 | red(Text text) Red text|Text
 | string(String text) Creates text component from string|Text
-| translate(String key, Object[] objects) Creates text component from language key and extra objects|Text
 | translate(String key) Creates text component from language key|Text
+| translate(String key, Object[] objects) Creates text component from language key and extra objects|Text
 | wait(long arg0, int arg1)|void
 | wait(long l)|void
 | white(Text text) White text|Text
@@ -680,8 +680,8 @@
 | parseInt(Object arg0, int arg1)|int
 | queueIO(Runnable r)|void
 | randomOf(Random arg0, Collection\<Object> arg1)|Object
-| regex(String arg0, int arg1)|Pattern
 | regex(String s)|Pattern
+| regex(String arg0, int arg1)|Pattern
 | wait(long arg0, int arg1)|void
 | wait(long l)|void
 
@@ -859,8 +859,8 @@
 | func_190948_a(ItemStack arg0, World arg1, List\<String> arg2, TooltipFlag arg3)|void
 | func_190949_e(BlockState arg0, BlockAccess arg1, BlockPos arg2)|Vec3d
 | func_193383_a(BlockAccess arg0, BlockState arg1, BlockPos arg2, EnumFacing arg3)|BlockFaceShape
-| getAiPathNodeType(BlockState arg0, BlockAccess arg1, BlockPos arg2)|PathNodeType
 | getAiPathNodeType(BlockState arg0, BlockAccess arg1, BlockPos arg2, EntityLiving arg3)|PathNodeType
+| getAiPathNodeType(BlockState arg0, BlockAccess arg1, BlockPos arg2)|PathNodeType
 | getBeaconColorMultiplier(BlockState arg0, World arg1, BlockPos arg2, BlockPos arg3)|float[]
 | getBedDirection(BlockState arg0, BlockAccess arg1, BlockPos arg2)|EnumFacing
 | getBedSpawnPosition(BlockState arg0, BlockAccess arg1, BlockPos arg2, EntityPlayer arg3)|BlockPos
@@ -916,8 +916,8 @@
 | rotateBlock(World arg0, BlockPos arg1, EnumFacing arg2)|boolean
 | setBedOccupied(BlockAccess arg0, BlockPos arg1, EntityPlayer arg2, boolean arg3)|void
 | setDefaultSlipperiness(float f)|void
-| setHarvestLevel(String arg0, int arg1)|void
 | setHarvestLevel(String arg0, int arg1, BlockState arg2)|void
+| setHarvestLevel(String arg0, int arg1)|void
 | shouldCheckWeakPower(BlockState arg0, BlockAccess arg1, BlockPos arg2, EnumFacing arg3)|boolean
 | wait(long arg0, int arg1)|void
 | wait(long l)|void
@@ -2833,8 +2833,8 @@
 |Methods|Return Type
 |--|--
 | add(String arg0, Object arg1)|void
-| addShaped(Object arg0, String[] arg1, Map\<String, Object> arg2)|void
 | addShaped(String arg0, Object arg1, String[] arg2, Map\<String, Object> arg3)|void
+| addShaped(Object arg0, String[] arg1, Map\<String, Object> arg2)|void
 | addShapeless(String arg0, Object arg1, Object[] arg2)|void
 | addShapeless(Object arg0, Object[] arg1)|void
 | remove(Object o)|void
@@ -3449,8 +3449,8 @@
 | func_190948_a(ItemStack arg0, World arg1, List\<String> arg2, TooltipFlag arg3)|void
 | func_190949_e(BlockState arg0, BlockAccess arg1, BlockPos arg2)|Vec3d
 | func_193383_a(BlockAccess arg0, BlockState arg1, BlockPos arg2, EnumFacing arg3)|BlockFaceShape
-| getAiPathNodeType(BlockState arg0, BlockAccess arg1, BlockPos arg2)|PathNodeType
 | getAiPathNodeType(BlockState arg0, BlockAccess arg1, BlockPos arg2, EntityLiving arg3)|PathNodeType
+| getAiPathNodeType(BlockState arg0, BlockAccess arg1, BlockPos arg2)|PathNodeType
 | getBeaconColorMultiplier(BlockState arg0, World arg1, BlockPos arg2, BlockPos arg3)|float[]
 | getBedDirection(BlockState arg0, BlockAccess arg1, BlockPos arg2)|EnumFacing
 | getBedSpawnPosition(BlockState arg0, BlockAccess arg1, BlockPos arg2, EntityPlayer arg3)|BlockPos
@@ -3506,8 +3506,8 @@
 | rotateBlock(World arg0, BlockPos arg1, EnumFacing arg2)|boolean
 | setBedOccupied(BlockAccess arg0, BlockPos arg1, EntityPlayer arg2, boolean arg3)|void
 | setDefaultSlipperiness(float f)|void
-| setHarvestLevel(String arg0, int arg1)|void
 | setHarvestLevel(String arg0, int arg1, BlockState arg2)|void
+| setHarvestLevel(String arg0, int arg1)|void
 | shouldCheckWeakPower(BlockState arg0, BlockAccess arg1, BlockPos arg2, EnumFacing arg3)|boolean
 | wait(long arg0, int arg1)|void
 | wait(long l)|void
@@ -3878,8 +3878,8 @@
 | closeInventory()|void
 | closeOverlay(String s)|void
 | closeOverlay(Overlay o)|void
-| damageHeldItem(EnumHand hand, int amount)|void
 | damageHeldItem()|void
+| damageHeldItem(EnumHand hand, int amount)|void
 | dismountRidingEntity()|void
 | extinguish()|void
 | getEquipment(EntityEquipmentSlot slot)|ItemStack
@@ -3894,10 +3894,10 @@
 | isPassenger(Entity entity)|boolean
 | kill()|void
 | openOverlay(Overlay o)|void
-| playSound(Object id) Play sound at entity. Must be played from server side|void
 | playSound(Object id, float volume, float pitch) Play sound at entity. Must be played from server side|void
-| rayTrace()|Map\<String, Object>
+| playSound(Object id) Play sound at entity. Must be played from server side|void
 | rayTrace(double distance)|Map\<String, Object>
+| rayTrace()|Map\<String, Object>
 | removePassengers()|void
 | runCommand(String command) Runs command as if the sender was running it, ignoring permissions|int
 | sendData(String channel, Object data)|void
@@ -4187,8 +4187,8 @@
 |--|--
 | bindTexture()|void
 | circularCheck()|QuestShape
-| combineWith(Icon[] i)|Icon
 | combineWith(Icon i)|Icon
+| combineWith(Icon[] i)|Icon
 | copy()|Icon
 | createPixelBuffer()|PixelBuffer
 | draw(int arg0, int arg1, int arg2, int arg3)|void
@@ -4201,8 +4201,8 @@
 | withColor(Color4I c)|Icon
 | withPadding(int i)|Icon
 | withTint(Color4I c)|Icon
-| withUV(double arg0, double arg1, double arg2, double arg3, double arg4, double arg5)|Icon
 | withUV(double arg0, double arg1, double arg2, double arg3)|Icon
+| withUV(double arg0, double arg1, double arg2, double arg3, double arg4, double arg5)|Icon
 
 ---
 
@@ -4427,10 +4427,10 @@
 | boostElytraFlight()|void
 | canEntityBeSeen(Entity entity)|boolean
 | closeInventory()|void
-| closeOverlay(Overlay o)|void
 | closeOverlay(String s)|void
-| damageHeldItem(EnumHand hand, int amount)|void
+| closeOverlay(Overlay o)|void
 | damageHeldItem()|void
+| damageHeldItem(EnumHand hand, int amount)|void
 | dismountRidingEntity()|void
 | extinguish()|void
 | getEquipment(EntityEquipmentSlot slot)|ItemStack
@@ -4445,10 +4445,10 @@
 | isPassenger(Entity entity)|boolean
 | kill()|void
 | openOverlay(Overlay o)|void
-| playSound(Object id) Play sound at entity. Must be played from server side|void
 | playSound(Object id, float volume, float pitch) Play sound at entity. Must be played from server side|void
-| rayTrace()|Map\<String, Object>
+| playSound(Object id) Play sound at entity. Must be played from server side|void
 | rayTrace(double distance)|Map\<String, Object>
+| rayTrace()|Map\<String, Object>
 | removePassengers()|void
 | runCommand(String command) Runs command as if the sender was running it, ignoring permissions|int
 | sendData(String channel, Object data)|void
@@ -4556,8 +4556,8 @@
 | getRelativeProgress(QuestData q)|int
 | getRelativeProgressFromChildren(QuestData q)|int
 | getReward(int i)|Reward
-| getRewardTable(String s)|RewardTable
 | getRewardTable(int i)|RewardTable
+| getRewardTable(String s)|RewardTable
 | getTask(int i)|Task
 | getUnclaimedRewards(UUID arg0, QuestData arg1, boolean arg2)|int
 | getVisibleChapters(QuestData arg0, boolean arg1)|List\<Chapter>
@@ -4687,8 +4687,8 @@
 | getLocalPermission(String s)|String
 | getPermission(String arg0, String arg1, boolean arg2)|String
 | getPermission(String s)|String
-| getPermissionValue(String s)|ConfigValue
 | getPermissionValue(String arg0, String arg1, boolean arg2)|ConfigValue
+| getPermissionValue(String s)|ConfigValue
 | remove()|boolean
 | removeParent(Rank r)|boolean
 | setPermission(String arg0, Object arg1)|Rank$Entry
@@ -5413,8 +5413,8 @@
 | hasSiblings() True if this text component has sibling components|boolean
 | hover(Text text) Set hover text|Text
 | insertion(String s) Set insertion text|Text
-| italic(Boolean b) Set italic|Text
 | italic() Set italic|Text
+| italic(Boolean b) Set italic|Text
 | iterator()|Iterator\<Text>
 | lightPurple() Set color to light purple|Text
 | obfuscated() Set obfuscated|Text
@@ -5422,8 +5422,8 @@
 | red() Set color to red|Text
 | setPropertiesFromJson(JsonObject j)|void
 | spliterator()|Spliterator\<T>
-| strikethrough(Boolean b) Set strikethrough|Text
 | strikethrough() Set strikethrough|Text
+| strikethrough(Boolean b) Set strikethrough|Text
 | underlined(Boolean b) Set underlined|Text
 | underlined() Set underlined|Text
 | wait(long arg0, int arg1)|void
@@ -5557,8 +5557,8 @@
 | getGuiSortColor(PotionEffect p)|int
 | renderHUDEffect(PotionEffect arg0, Gui arg1, int arg2, int arg3, float arg4, float arg5)|void
 | renderHUDEffect(int arg0, int arg1, PotionEffect arg2, Minecraft arg3, float arg4)|void
-| renderInventoryEffect(int arg0, int arg1, PotionEffect arg2, Minecraft arg3)|void
 | renderInventoryEffect(PotionEffect arg0, Gui arg1, int arg2, int arg3, float arg4)|void
+| renderInventoryEffect(int arg0, int arg1, PotionEffect arg2, Minecraft arg3)|void
 | shouldRender(PotionEffect p)|boolean
 | shouldRenderHUD(PotionEffect p)|boolean
 | shouldRenderInvText(PotionEffect p)|boolean
@@ -6131,8 +6131,8 @@
 | func_177951_i(Vec3i v)|double
 | func_177952_p()|int
 | func_177954_c(double arg0, double arg1, double arg2)|double
-| func_177955_d(Vec3i v)|Vec3i
 | func_177955_d(Vec3i v)|BlockPos
+| func_177955_d(Vec3i v)|Vec3i
 | func_177956_o()|int
 | func_177957_d(double arg0, double arg1, double arg2)|double
 | func_177958_n()|int
@@ -7008,8 +7008,8 @@
 | onAddedToWorld()|void
 | onRemovedFromWorld()|void
 | resetEntityId()|void
-| serializeNBT()|NBTTagCompound
 | serializeNBT()|NBTBase
+| serializeNBT()|NBTTagCompound
 | shouldDismountInWater(Entity e)|boolean
 | shouldRenderInPass(int i)|boolean
 | shouldRiderFaceForward(EntityPlayer e)|boolean
@@ -7303,8 +7303,8 @@
 | onAddedToWorld()|void
 | onRemovedFromWorld()|void
 | resetEntityId()|void
-| serializeNBT()|NBTTagCompound
 | serializeNBT()|NBTBase
+| serializeNBT()|NBTTagCompound
 | shouldDismountInWater(Entity e)|boolean
 | shouldRenderInPass(int i)|boolean
 | shouldRiderSit()|boolean
@@ -7887,8 +7887,8 @@
 | openGui(Object arg0, int arg1, World arg2, int arg3, int arg4, int arg5)|void
 | refreshDisplayName()|void
 | resetEntityId()|void
-| serializeNBT()|NBTTagCompound
 | serializeNBT()|NBTBase
+| serializeNBT()|NBTTagCompound
 | setSpawnChunk(BlockPos arg0, boolean arg1, int arg2)|void
 | shouldDismountInWater(Entity e)|boolean
 | shouldRenderInPass(int i)|boolean
@@ -7974,8 +7974,8 @@
 |Methods|Return Type
 |--|--
 | canRenderBreaking()|boolean
-| deserializeNBT(NBTTagCompound n)|void
 | deserializeNBT(NBTBase n)|void
+| deserializeNBT(NBTTagCompound n)|void
 | func_145748_c_()|TextComponent
 | func_145828_a(CrashReportCategory c)|void
 | func_145829_t()|void
@@ -8008,8 +8008,8 @@
 | onDataPacket(NetworkManager arg0, SPacketUpdateTileEntity arg1)|void
 | onLoad()|void
 | restrictNBTCopy()|boolean
-| serializeNBT()|NBTTagCompound
 | serializeNBT()|NBTBase
+| serializeNBT()|NBTTagCompound
 | shouldRefresh(World arg0, BlockPos arg1, BlockState arg2, BlockState arg3)|boolean
 | shouldRenderInPass(int i)|boolean
 | wait(long arg0, int arg1)|void
@@ -8195,8 +8195,8 @@
 |Methods|Return Type
 |--|--
 | areCapsCompatible(ItemStack i)|boolean
-| deserializeNBT(NBTTagCompound n)|void
 | deserializeNBT(NBTBase n)|void
+| deserializeNBT(NBTTagCompound n)|void
 | doesSneakBypassUse(BlockAccess arg0, BlockPos arg1, EntityPlayer arg2)|boolean
 | func_111282_a(EntityPlayer arg0, EntityLivingBase arg1, EnumHand arg2)|boolean
 | func_111283_C(EntityEquipmentSlot e)|Multimap\<String, AttributeModifier>
@@ -8614,38 +8614,6 @@
 |--|--
 | compareTo(Object o)|int
 | compareTo(Enum e)|int
-| name()|String
-| ordinal()|int
-| wait(long arg0, int arg1)|void
-| wait(long l)|void
-
----
-
-## PathNodeType
-
-|Class
-|--
-|net.minecraft.pathfinding.PathNodeType
-
----
-
-|Extends
-|--
-|Enum
-
----
-
-|Fields|Type
-|--|--
-|  declaringClass|Class\<E>
-
----
-
-|Methods|Return Type
-|--|--
-| compareTo(Object o)|int
-| compareTo(Enum e)|int
-| func_186289_a()|float
 | name()|String
 | ordinal()|int
 | wait(long arg0, int arg1)|void
@@ -9096,12 +9064,44 @@
 | onAddedToWorld()|void
 | onRemovedFromWorld()|void
 | resetEntityId()|void
-| serializeNBT()|NBTTagCompound
 | serializeNBT()|NBTBase
+| serializeNBT()|NBTTagCompound
 | shouldDismountInWater(Entity e)|boolean
 | shouldRenderInPass(int i)|boolean
 | shouldRiderFaceForward(EntityPlayer e)|boolean
 | shouldRiderSit()|boolean
+| wait(long arg0, int arg1)|void
+| wait(long l)|void
+
+---
+
+## PathNodeType
+
+|Class
+|--
+|net.minecraft.pathfinding.PathNodeType
+
+---
+
+|Extends
+|--
+|Enum
+
+---
+
+|Fields|Type
+|--|--
+|  declaringClass|Class\<E>
+
+---
+
+|Methods|Return Type
+|--|--
+| compareTo(Object o)|int
+| compareTo(Enum e)|int
+| func_186289_a()|float
+| name()|String
+| ordinal()|int
 | wait(long arg0, int arg1)|void
 | wait(long l)|void
 
@@ -9276,8 +9276,8 @@
 | func_186856_d()|int
 | func_186857_a(String s)|UUID
 | func_74732_a()|byte
-| func_74737_b()|NBTTagCompound
 | func_74737_b()|NBTBase
+| func_74737_b()|NBTTagCompound
 | func_74757_a(String arg0, boolean arg1)|void
 | func_74759_k(String s)|int[]
 | func_74760_g(String s)|float
@@ -9929,8 +9929,8 @@
 | onAddedToWorld()|void
 | onRemovedFromWorld()|void
 | resetEntityId()|void
-| serializeNBT()|NBTTagCompound
 | serializeNBT()|NBTBase
+| serializeNBT()|NBTTagCompound
 | shouldDismountInWater(Entity e)|boolean
 | shouldRenderInPass(int i)|boolean
 | shouldRiderSit()|boolean
@@ -10146,8 +10146,8 @@
 | isOnScoreboardTeam(String teamID) Checks if this entity is on scoreboard team|boolean
 | isPassenger(Entity entity)|boolean
 | kill()|void
-| playSound(Object id) Play sound at entity. Must be played from server side|void
 | playSound(Object id, float volume, float pitch) Play sound at entity. Must be played from server side|void
+| playSound(Object id) Play sound at entity. Must be played from server side|void
 | removePassengers()|void
 | runCommand(String command) Runs command as if the sender was running it, ignoring permissions|int
 | setMotion(double x, double y, double z)|void
@@ -10447,8 +10447,8 @@
 | isOnScoreboardTeam(String teamID) Checks if this entity is on scoreboard team|boolean
 | isPassenger(Entity entity)|boolean
 | kill()|void
-| playSound(Object id) Play sound at entity. Must be played from server side|void
 | playSound(Object id, float volume, float pitch) Play sound at entity. Must be played from server side|void
+| playSound(Object id) Play sound at entity. Must be played from server side|void
 | removePassengers()|void
 | runCommand(String command) Runs command as if the sender was running it, ignoring permissions|int
 | setDefaultPickupDelay()|void
@@ -10547,8 +10547,8 @@
 | listIterator(int i)|ListIterator\<E>
 | listIterator()|ListIterator\<E>
 | parallelStream()|Stream\<E>
-| playSound(Object id, float volume, float pitch)|void
 | playSound(Object id)|void
+| playSound(Object id, float volume, float pitch)|void
 | remove(Object o)|boolean
 | remove(int i)|Object
 | removeAll(Collection\<?> c)|boolean
@@ -10856,8 +10856,8 @@
 | getSlotLimit(int i)|int
 | getStackInSlot(int i)|ItemStack
 | hasCapability(Capability\<?> arg0, EnumFacing arg1)|boolean
-| insertItem(ItemStack arg0, boolean arg1, boolean arg2, EntityPlayer arg3)|ItemStack
 | insertItem(int arg0, ItemStack arg1, boolean arg2)|ItemStack
+| insertItem(ItemStack arg0, boolean arg1, boolean arg2, EntityPlayer arg3)|ItemStack
 | isItemValid(int arg0, ItemStack arg1)|boolean
 | readProgress(long l)|void
 | setProgress(long l)|void
@@ -10915,13 +10915,13 @@
 | compareTo(Object o)|int
 | deserializeNBT(NBTTagCompound n)|void
 | deserializeNBT(NBTBase n)|void
-| equalsPlayer(ForgePlayer f)|boolean
 | equalsPlayer(CommandSender c)|boolean
+| equalsPlayer(ForgePlayer f)|boolean
 | getCommandPlayer(CommandSender c)|EntityPlayerMP
 | getDataFile(String s)|File
 | getRankConfig(String s)|ConfigValue
-| hasPermission(String arg0, Context arg1)|boolean
 | hasPermission(String s)|boolean
+| hasPermission(String arg0, Context arg1)|boolean
 | hasTeam()|boolean
 | hideTeamNotification()|boolean
 | markDirty()|void
@@ -11484,8 +11484,8 @@
 | attack(String source, float hp)|void
 | attack(float hp)|void
 | canEntityBeSeen(Entity entity)|boolean
-| damageHeldItem(EnumHand hand, int amount)|void
 | damageHeldItem()|void
+| damageHeldItem(EnumHand hand, int amount)|void
 | dismountRidingEntity()|void
 | extinguish()|void
 | getEquipment(EntityEquipmentSlot slot)|ItemStack
@@ -11497,10 +11497,10 @@
 | isOnScoreboardTeam(String teamID) Checks if this entity is on scoreboard team|boolean
 | isPassenger(Entity entity)|boolean
 | kill()|void
-| playSound(Object id) Play sound at entity. Must be played from server side|void
 | playSound(Object id, float volume, float pitch) Play sound at entity. Must be played from server side|void
-| rayTrace()|Map\<String, Object>
+| playSound(Object id) Play sound at entity. Must be played from server side|void
 | rayTrace(double distance)|Map\<String, Object>
+| rayTrace()|Map\<String, Object>
 | removePassengers()|void
 | runCommand(String command) Runs command as if the sender was running it, ignoring permissions|int
 | setEquipment(EntityEquipmentSlot slot, ItemStack item)|void
@@ -13051,8 +13051,8 @@
 | openGui(Object arg0, int arg1, World arg2, int arg3, int arg4, int arg5)|void
 | refreshDisplayName()|void
 | resetEntityId()|void
-| serializeNBT()|NBTTagCompound
 | serializeNBT()|NBTBase
+| serializeNBT()|NBTTagCompound
 | setSpawnChunk(BlockPos arg0, boolean arg1, int arg2)|void
 | shouldDismountInWater(Entity e)|boolean
 | shouldRenderInPass(int i)|boolean
@@ -15298,8 +15298,8 @@
 |  id|UUID
 |  name|String
 |  overworld|World
-|  player|ClientPlayer
-|  playerEntity|EntityPlayer
+|  player|Player
+|  playerEntity|EntityPlayerSP
 |  profile|GameProfile
 |  world|ClientWorld
 
@@ -15435,8 +15435,8 @@
 |--|--
 | containsFluid(FluidStack f)|boolean
 | copy()|FluidStack
-| isFluidEqual(FluidStack f)|boolean
 | isFluidEqual(ItemStack i)|boolean
+| isFluidEqual(FluidStack f)|boolean
 | isFluidStackIdentical(FluidStack f)|boolean
 | wait(long arg0, int arg1)|void
 | wait(long l)|void
@@ -15493,8 +15493,8 @@
 |Methods|Return Type
 |--|--
 | bindTexture()|void
-| combineWith(Icon[] i)|Icon
 | combineWith(Icon i)|Icon
+| combineWith(Icon[] i)|Icon
 | copy()|Icon
 | createPixelBuffer()|PixelBuffer
 | draw(int arg0, int arg1, int arg2, int arg3)|void
@@ -15507,8 +15507,8 @@
 | withColor(Color4I c)|Icon
 | withPadding(int i)|Icon
 | withTint(Color4I c)|Icon
-| withUV(double arg0, double arg1, double arg2, double arg3, double arg4, double arg5)|Icon
 | withUV(double arg0, double arg1, double arg2, double arg3)|Icon
+| withUV(double arg0, double arg1, double arg2, double arg3, double arg4, double arg5)|Icon
 
 ---
 
@@ -15544,8 +15544,8 @@
 |Methods|Return Type
 |--|--
 | bindTexture()|void
-| combineWith(Icon[] i)|Icon
 | combineWith(Icon i)|Icon
+| combineWith(Icon[] i)|Icon
 | copy()|ImageIcon
 | copy()|Icon
 | createPixelBuffer()|PixelBuffer
@@ -15556,8 +15556,8 @@
 | wait(long arg0, int arg1)|void
 | wait(long l)|void
 | withBorder(Color4I arg0, boolean arg1)|Icon
-| withColor(Color4I c)|ImageIcon
 | withColor(Color4I c)|Icon
+| withColor(Color4I c)|ImageIcon
 | withPadding(int i)|Icon
 | withTint(Color4I c)|Icon
 | withTint(Color4I c)|ImageIcon
@@ -15593,12 +15593,12 @@
 | copy()|PixelBuffer
 | fill(int arg0, int arg1, int arg2, int arg3, int arg4)|void
 | fill(int i)|void
-| getRGB(int arg0, int arg1)|int
 | getRGB(int arg0, int arg1, int arg2, int arg3, int[] arg4)|int[]
+| getRGB(int arg0, int arg1)|int
 | getSubimage(int arg0, int arg1, int arg2, int arg3)|PixelBuffer
 | setRGB(int arg0, int arg1, PixelBuffer arg2)|void
-| setRGB(int arg0, int arg1, int arg2, int arg3, int[] arg4)|void
 | setRGB(int arg0, int arg1, int arg2)|void
+| setRGB(int arg0, int arg1, int arg2, int arg3, int[] arg4)|void
 | toByteBuffer(boolean b)|ByteBuffer
 
 ---
@@ -15634,8 +15634,8 @@
 | bindTexture()|void
 | bluef()|float
 | bluei()|int
-| combineWith(Icon[] i)|Icon
 | combineWith(Icon i)|Icon
+| combineWith(Icon[] i)|Icon
 | copy()|Color4I
 | copy()|Icon
 | createPixelBuffer()|PixelBuffer
@@ -15661,8 +15661,8 @@
 | withPadding(int i)|Icon
 | withTint(Color4I c)|Color4I
 | withTint(Color4I c)|Icon
-| withUV(double arg0, double arg1, double arg2, double arg3, double arg4, double arg5)|Icon
 | withUV(double arg0, double arg1, double arg2, double arg3)|Icon
+| withUV(double arg0, double arg1, double arg2, double arg3, double arg4, double arg5)|Icon
 
 ---
 
@@ -15736,12 +15736,12 @@
 | get(Object o)|byte
 | get(Object o)|Object
 | getOrDefault(Object arg0, Object arg1)|Object
-| growthFactor()|int
 | growthFactor(int i)|void
+| growthFactor()|int
 | int2ByteEntrySet()|Int2ByteMap$FastEntrySet
 | int2ByteEntrySet()|ObjectSet
-| keySet()|Set
 | keySet()|IntSet
+| keySet()|Set
 | merge(Object arg0, Object arg1, BiFunction\<? super V, ? super V, ? extends V> arg2)|Object
 | put(int arg0, byte arg1)|byte
 | put(int arg0, byte arg1)|byte
@@ -17193,8 +17193,8 @@
 | openGui(Object arg0, int arg1, World arg2, int arg3, int arg4, int arg5)|void
 | refreshDisplayName()|void
 | resetEntityId()|void
-| serializeNBT()|NBTTagCompound
 | serializeNBT()|NBTBase
+| serializeNBT()|NBTTagCompound
 | setSpawnChunk(BlockPos arg0, boolean arg1, int arg2)|void
 | shouldDismountInWater(Entity e)|boolean
 | shouldRenderInPass(int i)|boolean
@@ -17229,10 +17229,10 @@
 | readBlockState()|BlockState
 | readBoolean()|boolean
 | readByte()|byte
-| readBytes(byte[] b)|void
 | readBytes(byte[] arg0, int arg1, int arg2)|void
-| readCollection(Collection\<T> arg0, DataIn$Deserializer\<T> arg1)|Collection\<T>
+| readBytes(byte[] b)|void
 | readCollection(DataIn$Deserializer\<T> d)|Collection\<T>
+| readCollection(Collection\<T> arg0, DataIn$Deserializer\<T> arg1)|Collection\<T>
 | readDimPos()|BlockDimPos
 | readDouble()|double
 | readFloat()|float
@@ -17242,8 +17242,8 @@
 | readItemStack()|ItemStack
 | readJson()|JsonElement
 | readLong()|long
-| readMap(DataIn$Deserializer\<K> arg0, DataIn$Deserializer\<V> arg1)|Map\<K, V>
 | readMap(Map\<K, V> arg0, DataIn$Deserializer\<K> arg1, DataIn$Deserializer\<V> arg2)|Map\<K, V>
+| readMap(DataIn$Deserializer\<K> arg0, DataIn$Deserializer\<V> arg1)|Map\<K, V>
 | readNBT()|NBTTagCompound
 | readNBTBase()|NBTBase
 | readPos()|BlockPos
@@ -17399,14 +17399,14 @@
 |Methods|Return Type
 |--|--
 | clearCache()|void
-| getPermission(GameProfile arg0, String arg1, boolean arg2)|ConfigValue
 | getPermission(EntityPlayerMP arg0, String arg1, boolean arg2)|ConfigValue
+| getPermission(GameProfile arg0, String arg1, boolean arg2)|ConfigValue
 | getPermissionResult(EntityPlayerMP arg0, String arg1, boolean arg2)|Event$Result
 | getPermissionResult(GameProfile arg0, String arg1, boolean arg2)|Event$Result
 | getPlayerRank(EntityPlayer e)|PlayerRank
 | getPlayerRank(GameProfile g)|PlayerRank
-| getRank(String s)|Rank
 | getRank(MinecraftServer arg0, CommandSender arg1, String arg2)|Rank
+| getRank(String s)|Rank
 | getRankNames(boolean b)|Collection\<String>
 | reload()|boolean
 | save()|void
@@ -17565,11 +17565,11 @@
 |Methods|Return Type
 |--|--
 | clearCache()|void
-| deserializeNBT(NBTBase n)|void
 | deserializeNBT(NBTTagCompound n)|void
+| deserializeNBT(NBTBase n)|void
 | hasExplosions()|boolean
-| serializeNBT()|NBTTagCompound
 | serializeNBT()|NBTBase
+| serializeNBT()|NBTTagCompound
 | wait(long arg0, int arg1)|void
 | wait(long l)|void
 
@@ -18000,8 +18000,8 @@
 | onAddedToWorld()|void
 | onRemovedFromWorld()|void
 | resetEntityId()|void
-| serializeNBT()|NBTTagCompound
 | serializeNBT()|NBTBase
+| serializeNBT()|NBTTagCompound
 | shouldDismountInWater(Entity e)|boolean
 | shouldRenderInPass(int i)|boolean
 | shouldRiderSit()|boolean
@@ -18519,9 +18519,9 @@
 
 |Methods|Return Type
 |--|--
-| restore()|boolean
-| restore(boolean b)|boolean
 | restore(boolean arg0, boolean arg1)|boolean
+| restore(boolean b)|boolean
+| restore()|boolean
 | restoreToLocation(World arg0, BlockPos arg1, boolean arg2, boolean arg3)|boolean
 | wait(long arg0, int arg1)|void
 | wait(long l)|void
@@ -20859,8 +20859,8 @@
 | onAddedToWorld()|void
 | onRemovedFromWorld()|void
 | resetEntityId()|void
-| serializeNBT()|NBTTagCompound
 | serializeNBT()|NBTBase
+| serializeNBT()|NBTTagCompound
 | shouldDismountInWater(Entity e)|boolean
 | shouldRenderInPass(int i)|boolean
 | shouldRiderSit()|boolean
@@ -21389,8 +21389,8 @@
 | onAddedToWorld()|void
 | onRemovedFromWorld()|void
 | resetEntityId()|void
-| serializeNBT()|NBTTagCompound
 | serializeNBT()|NBTBase
+| serializeNBT()|NBTTagCompound
 | shouldDismountInWater(Entity e)|boolean
 | shouldRenderInPass(int i)|boolean
 | shouldRiderSit()|boolean
@@ -21425,8 +21425,8 @@
 |Methods|Return Type
 |--|--
 | canRenderBreaking()|boolean
-| deserializeNBT(NBTTagCompound n)|void
 | deserializeNBT(NBTBase n)|void
+| deserializeNBT(NBTTagCompound n)|void
 | func_145748_c_()|TextComponent
 | func_145828_a(CrashReportCategory c)|void
 | func_145829_t()|void
@@ -21465,8 +21465,8 @@
 | onDataPacket(NetworkManager arg0, SPacketUpdateTileEntity arg1)|void
 | onLoad()|void
 | restrictNBTCopy()|boolean
-| serializeNBT()|NBTTagCompound
 | serializeNBT()|NBTBase
+| serializeNBT()|NBTTagCompound
 | shouldRefresh(World arg0, BlockPos arg1, BlockState arg2, BlockState arg3)|boolean
 | shouldRenderInPass(int i)|boolean
 | wait(long arg0, int arg1)|void
@@ -21712,8 +21712,8 @@
 |Methods|Return Type
 |--|--
 | canRenderBreaking()|boolean
-| deserializeNBT(NBTTagCompound n)|void
 | deserializeNBT(NBTBase n)|void
+| deserializeNBT(NBTTagCompound n)|void
 | func_145748_c_()|TextComponent
 | func_145828_a(CrashReportCategory c)|void
 | func_145829_t()|void
@@ -21758,8 +21758,8 @@
 | onDataPacket(NetworkManager arg0, SPacketUpdateTileEntity arg1)|void
 | onLoad()|void
 | restrictNBTCopy()|boolean
-| serializeNBT()|NBTTagCompound
 | serializeNBT()|NBTBase
+| serializeNBT()|NBTTagCompound
 | shouldRefresh(World arg0, BlockPos arg1, BlockState arg2, BlockState arg3)|boolean
 | shouldRenderInPass(int i)|boolean
 | wait(long arg0, int arg1)|void
@@ -22271,8 +22271,8 @@
 | onAddedToWorld()|void
 | onRemovedFromWorld()|void
 | resetEntityId()|void
-| serializeNBT()|NBTTagCompound
 | serializeNBT()|NBTBase
+| serializeNBT()|NBTTagCompound
 | shouldDismountInWater(Entity e)|boolean
 | shouldRenderInPass(int i)|boolean
 | shouldRiderFaceForward(EntityPlayer e)|boolean
@@ -22306,8 +22306,8 @@
 |Methods|Return Type
 |--|--
 | canRenderBreaking()|boolean
-| deserializeNBT(NBTTagCompound n)|void
 | deserializeNBT(NBTBase n)|void
+| deserializeNBT(NBTTagCompound n)|void
 | func_145748_c_()|TextComponent
 | func_145828_a(CrashReportCategory c)|void
 | func_145829_t()|void
@@ -22377,8 +22377,8 @@
 | onDataPacket(NetworkManager arg0, SPacketUpdateTileEntity arg1)|void
 | onLoad()|void
 | restrictNBTCopy()|boolean
-| serializeNBT()|NBTTagCompound
 | serializeNBT()|NBTBase
+| serializeNBT()|NBTTagCompound
 | shouldRefresh(World arg0, BlockPos arg1, BlockState arg2, BlockState arg3)|boolean
 | shouldRenderInPass(int i)|boolean
 | wait(long arg0, int arg1)|void
@@ -22665,8 +22665,8 @@
 | func_179238_g(int i)|NBTBase
 | func_186858_c(int i)|int
 | func_74732_a()|byte
-| func_74737_b()|NBTTagList
 | func_74737_b()|NBTBase
+| func_74737_b()|NBTTagList
 | func_74742_a(NBTBase n)|void
 | func_74744_a(int i)|NBTBase
 | func_74745_c()|int
@@ -22976,8 +22976,8 @@
 | onAddedToWorld()|void
 | onRemovedFromWorld()|void
 | resetEntityId()|void
-| serializeNBT()|NBTTagCompound
 | serializeNBT()|NBTBase
+| serializeNBT()|NBTTagCompound
 | shouldDismountInWater(Entity e)|boolean
 | shouldRenderInPass(int i)|boolean
 | shouldRiderSit()|boolean
@@ -23725,8 +23725,8 @@
 | canRenderBreaking()|boolean
 | checkIfDirty()|void
 | createState(BlockState b)|BlockState
-| deserializeNBT(NBTTagCompound n)|void
 | deserializeNBT(NBTBase n)|void
+| deserializeNBT(NBTTagCompound n)|void
 | func_145748_c_()|TextComponent
 | func_145818_k_()|boolean
 | func_145828_a(CrashReportCategory c)|void
@@ -23771,8 +23771,8 @@
 | readFromItem(ItemStack i)|void
 | resetData()|void
 | restrictNBTCopy()|boolean
-| serializeNBT()|NBTTagCompound
 | serializeNBT()|NBTBase
+| serializeNBT()|NBTTagCompound
 | setIDFromPlacer(EntityLivingBase e)|void
 | shouldRefresh(World arg0, BlockPos arg1, BlockState arg2, BlockState arg3)|boolean
 | shouldRenderInPass(int i)|boolean
@@ -23820,8 +23820,8 @@
 | canRenderBreaking()|boolean
 | checkIfDirty()|void
 | createState(BlockState b)|BlockState
-| deserializeNBT(NBTTagCompound n)|void
 | deserializeNBT(NBTBase n)|void
+| deserializeNBT(NBTTagCompound n)|void
 | func_145748_c_()|TextComponent
 | func_145818_k_()|boolean
 | func_145828_a(CrashReportCategory c)|void
@@ -23862,8 +23862,8 @@
 | playSound(SoundEvent arg0, SoundCategory arg1, float arg2, float arg3)|void
 | readFromItem(ItemStack i)|void
 | restrictNBTCopy()|boolean
-| serializeNBT()|NBTTagCompound
 | serializeNBT()|NBTBase
+| serializeNBT()|NBTTagCompound
 | setOffset(int arg0, int arg1, int arg2)|void
 | shouldRefresh(World arg0, BlockPos arg1, BlockState arg2, BlockState arg3)|boolean
 | shouldRenderInPass(int i)|boolean
@@ -23910,8 +23910,8 @@
 | getSlotLimit(int i)|int
 | getStackInSlot(int i)|ItemStack
 | hasCapability(Capability\<?> arg0, EnumFacing arg1)|boolean
-| insertItem(ItemStack arg0, boolean arg1, boolean arg2, EntityPlayer arg3)|ItemStack
 | insertItem(int arg0, ItemStack arg1, boolean arg2)|ItemStack
+| insertItem(ItemStack arg0, boolean arg1, boolean arg2, EntityPlayer arg3)|ItemStack
 | isItemValid(int arg0, ItemStack arg1)|boolean
 | readProgress(long l)|void
 | setProgress(long l)|void
@@ -24045,8 +24045,8 @@
 | add(NBTDataStorage$Data n)|void
 | andThen(Consumer\<? super T> c)|Consumer\<T>
 | clearCache()|void
-| deserializeNBT(NBTTagCompound n)|void
 | deserializeNBT(NBTBase n)|void
+| deserializeNBT(NBTTagCompound n)|void
 | get(String s)|NBTDataStorage$Data
 | getRaw(String s)|NBTDataStorage$Data
 | serializeNBT()|NBTTagCompound
@@ -25478,9 +25478,9 @@
 |Methods|Return Type
 |--|--
 | getArrayQuadsCtm(BakedQuad b)|BakedQuad[]
-| getArrayQuadsCtm(BakedQuad arg0, BakedQuad arg1, BakedQuad arg2, BakedQuad arg3)|BakedQuad[]
 | getArrayQuadsCtm(BakedQuad arg0, BakedQuad arg1)|BakedQuad[]
 | getArrayQuadsCtm(BakedQuad arg0, BakedQuad arg1, BakedQuad arg2)|BakedQuad[]
+| getArrayQuadsCtm(BakedQuad arg0, BakedQuad arg1, BakedQuad arg2, BakedQuad arg3)|BakedQuad[]
 | getListQuadsCtmMultipass(BakedQuad[] b)|List\<BakedQuad>
 | getListQuadsOverlay(BlockRenderLayer b)|ListQuadsOverlay
 | reset(BlockAccess arg0, BlockState arg1, BlockPos arg2)|void
@@ -26128,8 +26128,8 @@
 | openGui(Object arg0, int arg1, World arg2, int arg3, int arg4, int arg5)|void
 | refreshDisplayName()|void
 | resetEntityId()|void
-| serializeNBT()|NBTTagCompound
 | serializeNBT()|NBTBase
+| serializeNBT()|NBTTagCompound
 | setSpawnChunk(BlockPos arg0, boolean arg1, int arg2)|void
 | shouldDismountInWater(Entity e)|boolean
 | shouldRenderInPass(int i)|boolean
@@ -26619,8 +26619,8 @@
 | onAddedToWorld()|void
 | onRemovedFromWorld()|void
 | resetEntityId()|void
-| serializeNBT()|NBTTagCompound
 | serializeNBT()|NBTBase
+| serializeNBT()|NBTTagCompound
 | shouldDismountInWater(Entity e)|boolean
 | shouldRenderInPass(int i)|boolean
 | shouldRiderFaceForward(EntityPlayer e)|boolean
@@ -27719,8 +27719,8 @@
 
 |Methods|Return Type
 |--|--
-| func_148833_a(NetHandlerPlayClient n)|void
 | func_148833_a(NetHandler n)|void
+| func_148833_a(NetHandlerPlayClient n)|void
 | func_148837_a(PacketBuffer p)|void
 | func_148840_b(PacketBuffer p)|void
 | func_148993_l()|int
@@ -27874,8 +27874,8 @@
 
 |Methods|Return Type
 |--|--
-| func_148833_a(NetHandlerPlayClient n)|void
 | func_148833_a(NetHandler n)|void
+| func_148833_a(NetHandlerPlayClient n)|void
 | func_148837_a(PacketBuffer p)|void
 | func_148840_b(PacketBuffer p)|void
 | func_149169_c()|String
@@ -28131,8 +28131,8 @@
 
 |Methods|Return Type
 |--|--
-| func_148833_a(NetHandlerPlayClient n)|void
 | func_148833_a(NetHandler n)|void
+| func_148833_a(NetHandlerPlayClient n)|void
 | func_148837_a(PacketBuffer p)|void
 | func_148840_b(PacketBuffer p)|void
 | func_149321_d()|String
@@ -28241,8 +28241,8 @@
 
 |Methods|Return Type
 |--|--
-| func_148833_a(NetHandlerPlayClient n)|void
 | func_148833_a(NetHandler n)|void
+| func_148833_a(NetHandlerPlayClient n)|void
 | func_148837_a(PacketBuffer p)|void
 | func_148840_b(PacketBuffer p)|void
 | func_149370_d()|String
@@ -28268,8 +28268,8 @@
 
 |Methods|Return Type
 |--|--
-| func_148833_a(NetHandlerPlayClient n)|void
 | func_148833_a(NetHandler n)|void
+| func_148833_a(NetHandlerPlayClient n)|void
 | func_148837_a(PacketBuffer p)|void
 | func_148840_b(PacketBuffer p)|void
 | func_179767_a()|List\<SPacketPlayerListItem$AddPlayerData>
@@ -28415,8 +28415,8 @@
 
 |Methods|Return Type
 |--|--
-| func_148833_a(NetHandlerPlayClient n)|void
 | func_148833_a(NetHandler n)|void
+| func_148833_a(NetHandlerPlayClient n)|void
 | func_148837_a(PacketBuffer p)|void
 | func_148840_b(PacketBuffer p)|void
 | func_186967_a(World w)|Entity
@@ -28474,8 +28474,8 @@
 
 |Methods|Return Type
 |--|--
-| func_148833_a(NetHandlerPlayClient n)|void
 | func_148833_a(NetHandler n)|void
+| func_148833_a(NetHandlerPlayClient n)|void
 | func_148837_a(PacketBuffer p)|void
 | func_148840_b(PacketBuffer p)|void
 | func_149188_c()|int
@@ -28702,8 +28702,8 @@
 
 |Methods|Return Type
 |--|--
-| func_148833_a(NetHandler n)|void
 | func_148833_a(NetHandlerPlayClient n)|void
+| func_148833_a(NetHandler n)|void
 | func_148837_a(PacketBuffer p)|void
 | func_148840_b(PacketBuffer p)|void
 | func_149630_c()|String[]
@@ -28785,8 +28785,8 @@
 
 |Methods|Return Type
 |--|--
-| func_148833_a(NetHandlerPlayClient n)|void
 | func_148833_a(NetHandler n)|void
+| func_148833_a(NetHandlerPlayClient n)|void
 | func_148837_a(PacketBuffer p)|void
 | func_148840_b(PacketBuffer p)|void
 | func_149241_e()|int
@@ -28897,8 +28897,8 @@
 
 |Methods|Return Type
 |--|--
-| func_148833_a(NetHandler n)|void
 | func_148833_a(NetHandlerPlayClient n)|void
+| func_148833_a(NetHandler n)|void
 | func_148837_a(PacketBuffer p)|void
 | func_148840_b(PacketBuffer p)|void
 | func_149024_d()|int
@@ -28935,8 +28935,8 @@
 
 |Methods|Return Type
 |--|--
-| func_148833_a(NetHandlerPlayClient n)|void
 | func_148833_a(NetHandler n)|void
+| func_148833_a(NetHandlerPlayClient n)|void
 | func_148837_a(PacketBuffer p)|void
 | func_148840_b(PacketBuffer p)|void
 | func_149192_g()|EnumDifficulty
@@ -29177,8 +29177,8 @@
 
 |Methods|Return Type
 |--|--
-| func_148833_a(NetHandlerPlayClient n)|void
 | func_148833_a(NetHandler n)|void
+| func_148833_a(NetHandlerPlayClient n)|void
 | func_148837_a(PacketBuffer p)|void
 | func_148840_b(PacketBuffer p)|void
 | func_149441_d()|List\<SPacketEntityProperties$Snapshot>
@@ -29204,8 +29204,8 @@
 
 |Methods|Return Type
 |--|--
-| func_148833_a(NetHandlerPlayClient n)|void
 | func_148833_a(NetHandler n)|void
+| func_148833_a(NetHandlerPlayClient n)|void
 | func_148837_a(PacketBuffer p)|void
 | func_148840_b(PacketBuffer p)|void
 | func_149337_d()|String
@@ -29345,8 +29345,8 @@
 
 |Methods|Return Type
 |--|--
-| func_148833_a(NetHandler n)|void
 | func_148833_a(NetHandlerPlayClient n)|void
+| func_148833_a(NetHandler n)|void
 | func_148837_a(PacketBuffer p)|void
 | func_148840_b(PacketBuffer p)|void
 | func_179788_a(WorldBorder w)|void
@@ -29377,8 +29377,8 @@
 
 |Methods|Return Type
 |--|--
-| func_148833_a(NetHandler n)|void
 | func_148833_a(NetHandlerPlayClient n)|void
+| func_148833_a(NetHandler n)|void
 | func_148837_a(PacketBuffer p)|void
 | func_148840_b(PacketBuffer p)|void
 | func_179780_a(World w)|Entity
@@ -29403,8 +29403,8 @@
 
 |Methods|Return Type
 |--|--
-| func_148833_a(NetHandlerPlayClient n)|void
 | func_148833_a(NetHandler n)|void
+| func_148833_a(NetHandlerPlayClient n)|void
 | func_148837_a(PacketBuffer p)|void
 | func_148840_b(PacketBuffer p)|void
 | func_179783_a()|String
@@ -29492,8 +29492,8 @@
 
 |Methods|Return Type
 |--|--
-| func_148833_a(NetHandlerPlayClient n)|void
 | func_148833_a(NetHandler n)|void
+| func_148833_a(NetHandlerPlayClient n)|void
 | func_148837_a(PacketBuffer p)|void
 | func_148840_b(PacketBuffer p)|void
 | func_179803_e()|int
@@ -29549,8 +29549,8 @@
 
 |Methods|Return Type
 |--|--
-| func_148833_a(NetHandlerPlayClient n)|void
 | func_148833_a(NetHandler n)|void
+| func_148833_a(NetHandlerPlayClient n)|void
 | func_148837_a(PacketBuffer p)|void
 | func_148840_b(PacketBuffer p)|void
 | func_186955_b()|double
@@ -29579,8 +29579,8 @@
 
 |Methods|Return Type
 |--|--
-| func_148833_a(NetHandlerPlayClient n)|void
 | func_148833_a(NetHandler n)|void
+| func_148833_a(NetHandlerPlayClient n)|void
 | func_148837_a(PacketBuffer p)|void
 | func_148840_b(PacketBuffer p)|void
 | func_186920_a()|Item
@@ -29667,8 +29667,8 @@
 
 |Methods|Return Type
 |--|--
-| func_148833_a(NetHandler n)|void
 | func_148833_a(NetHandlerPlayClient n)|void
+| func_148833_a(NetHandler n)|void
 | func_148837_a(PacketBuffer p)|void
 | func_148840_b(PacketBuffer p)|void
 | func_149207_d()|double
@@ -29905,8 +29905,8 @@
 
 |Methods|Return Type
 |--|--
-| func_148833_a(NetHandler n)|void
 | func_148833_a(NetHandlerPlayClient n)|void
+| func_148833_a(NetHandler n)|void
 | func_148837_a(PacketBuffer p)|void
 | func_148840_b(PacketBuffer p)|void
 | func_194311_a()|Recipe
@@ -30300,12 +30300,12 @@
 | func_110775_a(Entity e)|ResourceLocation
 | func_110775_a(AbstractClientPlayer a)|ResourceLocation
 | func_110776_a(ResourceLocation r)|void
-| func_177067_a(EntityLivingBase arg0, double arg1, double arg2, double arg3)|void
 | func_177067_a(Entity arg0, double arg1, double arg2, double arg3)|void
+| func_177067_a(EntityLivingBase arg0, double arg1, double arg2, double arg3)|void
 | func_177068_d()|RenderManager
 | func_177071_a(Entity arg0, Camera arg1, double arg2, double arg3, double arg4)|boolean
-| func_177087_b()|ModelBase
 | func_177087_b()|ModelPlayer
+| func_177087_b()|ModelBase
 | func_177094_a(LayerRenderer l)|boolean
 | func_177137_d(AbstractClientPlayer a)|void
 | func_177138_b(AbstractClientPlayer a)|void
@@ -30914,8 +30914,8 @@
 | bindTexture()|void
 | bluef()|float
 | bluei()|int
-| combineWith(Icon[] i)|Icon
 | combineWith(Icon i)|Icon
+| combineWith(Icon[] i)|Icon
 | copy()|MutableColor4I
 | copy()|Color4I
 | copy()|Icon
@@ -30949,8 +30949,8 @@
 | withPadding(int i)|Icon
 | withTint(Color4I c)|Color4I
 | withTint(Color4I c)|Icon
-| withUV(double arg0, double arg1, double arg2, double arg3, double arg4, double arg5)|Icon
 | withUV(double arg0, double arg1, double arg2, double arg3)|Icon
+| withUV(double arg0, double arg1, double arg2, double arg3, double arg4, double arg5)|Icon
 
 ---
 
@@ -32010,8 +32010,8 @@
 
 |Methods|Return Type
 |--|--
-| func_148833_a(NetHandlerPlayServer n)|void
 | func_148833_a(NetHandler n)|void
+| func_148833_a(NetHandlerPlayServer n)|void
 | func_148837_a(PacketBuffer p)|void
 | func_148840_b(PacketBuffer p)|void
 | func_149520_f()|boolean
@@ -32146,8 +32146,8 @@
 | addAll(int arg0, Collection\<? extends E> arg1)|boolean
 | addAll(IntCollection i)|boolean
 | addAll(Collection\<? extends E> c)|boolean
-| addElements(int arg0, int[] arg1)|void
 | addElements(int arg0, int[] arg1, int arg2, int arg3)|void
+| addElements(int arg0, int[] arg1)|void
 | clear()|void
 | clear()|void
 | compareTo(Object o)|int
@@ -32164,8 +32164,8 @@
 | indexOf(int i)|int
 | indexOf(Object o)|int
 | intIterator()|IntIterator
-| intListIterator(int i)|IntListIterator
 | intListIterator()|IntListIterator
+| intListIterator(int i)|IntListIterator
 | intSubList(int arg0, int arg1)|IntList
 | iterator()|IntListIterator
 | iterator()|Iterator\<E>
@@ -32358,17 +32358,17 @@
 | addTeam(ForgeTeam f)|void
 | clearCache()|void
 | generateTeamUID(short s)|short
-| getPlayer(ForgePlayer f)|ForgePlayer
-| getPlayer(GameProfile g)|ForgePlayer
-| getPlayer(CommandSender c)|ForgePlayer
 | getPlayer(CharSequence c)|ForgePlayer
+| getPlayer(CommandSender c)|ForgePlayer
 | getPlayer(UUID u)|ForgePlayer
+| getPlayer(GameProfile g)|ForgePlayer
+| getPlayer(ForgePlayer f)|ForgePlayer
 | getTeam(String s)|ForgeTeam
 | getTeam(short s)|ForgeTeam
 | markDirty()|void
 | removeTeam(ForgeTeam f)|void
-| scheduleTask(ResourceLocation arg0, TimeType arg1, long arg2, NBTTagCompound arg3)|void
 | scheduleTask(TimeType arg0, long arg1, ScheduledTask arg2)|void
+| scheduleTask(ResourceLocation arg0, TimeType arg1, long arg2, NBTTagCompound arg3)|void
 | wait(long arg0, int arg1)|void
 | wait(long l)|void
 
@@ -32692,8 +32692,8 @@
 |  id|UUID
 |  name|String
 |  overworld|World
-|  player|ServerPlayer
-|  playerEntity|EntityPlayer
+|  player|Player
+|  playerEntity|EntityPlayerMP
 |  profile|GameProfile
 |  server|Server
 
@@ -32787,8 +32787,8 @@
 | hasCapability(Capability\<?> arg0, EnumFacing arg1)|boolean
 | isPlayerReputationTooLow(UUID u)|boolean
 | modifyPlayerReputation(UUID arg0, int arg1)|int
-| serializeNBT()|NBTTagCompound
 | serializeNBT()|NBTBase
+| serializeNBT()|NBTTagCompound
 | wait(long arg0, int arg1)|void
 | wait(long l)|void
 
@@ -33152,8 +33152,8 @@
 |--|--
 | func_150302_c()|int[]
 | func_74732_a()|byte
-| func_74737_b()|NBTBase
 | func_74737_b()|NBTTagIntArray
+| func_74737_b()|NBTBase
 | func_82582_d()|boolean
 | wait(long arg0, int arg1)|void
 | wait(long l)|void
@@ -33392,11 +33392,11 @@
 | array()|byte[]
 | arrayOffset()|int
 | asReadOnly()|ByteBuf
-| bytesBefore(int arg0, byte arg1)|int
-| bytesBefore(byte b)|int
 | bytesBefore(int arg0, int arg1, byte arg2)|int
-| capacity()|int
+| bytesBefore(byte b)|int
+| bytesBefore(int arg0, byte arg1)|int
 | capacity(int i)|ByteBuf
+| capacity()|int
 | clear()|ByteBuf
 | compareTo(Object o)|int
 | compareTo(ByteBuf b)|int
@@ -33405,10 +33405,10 @@
 | discardReadBytes()|ByteBuf
 | discardSomeReadBytes()|ByteBuf
 | duplicate()|ByteBuf
-| ensureWritable(int i)|ByteBuf
 | ensureWritable(int arg0, boolean arg1)|int
-| forEachByte(ByteProcessor b)|int
+| ensureWritable(int i)|ByteBuf
 | forEachByte(int arg0, int arg1, ByteProcessor arg2)|int
+| forEachByte(ByteProcessor b)|int
 | forEachByteDesc(int arg0, int arg1, ByteProcessor arg2)|int
 | forEachByteDesc(ByteProcessor b)|int
 | func_150786_a(NBTTagCompound n)|PacketBuffer
@@ -33444,15 +33444,15 @@
 | func_192575_l()|ResourceLocation
 | getBoolean(int i)|boolean
 | getByte(int i)|byte
-| getBytes(int arg0, OutputStream arg1, int arg2)|ByteBuf
-| getBytes(int arg0, FileChannel arg1, long arg2, int arg3)|int
+| getBytes(int arg0, ByteBuf arg1)|ByteBuf
 | getBytes(int arg0, GatheringByteChannel arg1, int arg2)|int
+| getBytes(int arg0, FileChannel arg1, long arg2, int arg3)|int
+| getBytes(int arg0, OutputStream arg1, int arg2)|ByteBuf
+| getBytes(int arg0, ByteBuf arg1, int arg2)|ByteBuf
+| getBytes(int arg0, ByteBuffer arg1)|ByteBuf
 | getBytes(int arg0, ByteBuf arg1, int arg2, int arg3)|ByteBuf
 | getBytes(int arg0, byte[] arg1)|ByteBuf
 | getBytes(int arg0, byte[] arg1, int arg2, int arg3)|ByteBuf
-| getBytes(int arg0, ByteBuffer arg1)|ByteBuf
-| getBytes(int arg0, ByteBuf arg1)|ByteBuf
-| getBytes(int arg0, ByteBuf arg1, int arg2)|ByteBuf
 | getChar(int i)|char
 | getCharSequence(int arg0, int arg1, Charset arg2)|CharSequence
 | getDouble(int i)|double
@@ -33491,21 +33491,21 @@
 | readableBytes()|int
 | readBoolean()|boolean
 | readByte()|byte
-| readBytes(ByteBuf arg0, int arg1)|ByteBuf
 | readBytes(FileChannel arg0, long arg1, int arg2)|int
-| readBytes(ByteBuf arg0, int arg1, int arg2)|ByteBuf
-| readBytes(GatheringByteChannel arg0, int arg1)|int
-| readBytes(ByteBuf b)|ByteBuf
 | readBytes(int i)|ByteBuf
+| readBytes(ByteBuf b)|ByteBuf
+| readBytes(GatheringByteChannel arg0, int arg1)|int
 | readBytes(OutputStream arg0, int arg1)|ByteBuf
-| readBytes(ByteBuffer b)|ByteBuf
 | readBytes(byte[] arg0, int arg1, int arg2)|ByteBuf
 | readBytes(byte[] b)|ByteBuf
+| readBytes(ByteBuf arg0, int arg1, int arg2)|ByteBuf
+| readBytes(ByteBuf arg0, int arg1)|ByteBuf
+| readBytes(ByteBuffer b)|ByteBuf
 | readChar()|char
 | readCharSequence(int arg0, Charset arg1)|CharSequence
 | readDouble()|double
-| readerIndex(int i)|ByteBuf
 | readerIndex()|int
+| readerIndex(int i)|ByteBuf
 | readFloat()|float
 | readInt()|int
 | readIntLE()|int
@@ -33525,28 +33525,28 @@
 | readUnsignedShort()|int
 | readUnsignedShortLE()|int
 | refCnt()|int
-| release()|boolean
 | release(int i)|boolean
+| release()|boolean
 | resetReaderIndex()|ByteBuf
 | resetWriterIndex()|ByteBuf
-| retain(int i)|ReferenceCounted
 | retain(int i)|ByteBuf
 | retain()|ByteBuf
+| retain(int i)|ReferenceCounted
 | retain()|ReferenceCounted
 | retainedDuplicate()|ByteBuf
-| retainedSlice(int arg0, int arg1)|ByteBuf
 | retainedSlice()|ByteBuf
+| retainedSlice(int arg0, int arg1)|ByteBuf
 | setBoolean(int arg0, boolean arg1)|ByteBuf
 | setByte(int arg0, int arg1)|ByteBuf
-| setBytes(int arg0, byte[] arg1)|ByteBuf
-| setBytes(int arg0, ByteBuf arg1, int arg2)|ByteBuf
-| setBytes(int arg0, ByteBuf arg1, int arg2, int arg3)|ByteBuf
 | setBytes(int arg0, InputStream arg1, int arg2)|int
 | setBytes(int arg0, ScatteringByteChannel arg1, int arg2)|int
+| setBytes(int arg0, FileChannel arg1, long arg2, int arg3)|int
+| setBytes(int arg0, byte[] arg1)|ByteBuf
+| setBytes(int arg0, ByteBuf arg1)|ByteBuf
+| setBytes(int arg0, ByteBuf arg1, int arg2, int arg3)|ByteBuf
+| setBytes(int arg0, ByteBuf arg1, int arg2)|ByteBuf
 | setBytes(int arg0, ByteBuffer arg1)|ByteBuf
 | setBytes(int arg0, byte[] arg1, int arg2, int arg3)|ByteBuf
-| setBytes(int arg0, FileChannel arg1, long arg2, int arg3)|int
-| setBytes(int arg0, ByteBuf arg1)|ByteBuf
 | setChar(int arg0, int arg1)|ByteBuf
 | setCharSequence(int arg0, CharSequence arg1, Charset arg2)|int
 | setDouble(int arg0, double arg1)|ByteBuf
@@ -33567,24 +33567,24 @@
 | toString(Charset c)|String
 | toString(int arg0, int arg1, Charset arg2)|String
 | touch(Object o)|ByteBuf
-| touch(Object o)|ReferenceCounted
-| touch()|ReferenceCounted
 | touch()|ByteBuf
+| touch()|ReferenceCounted
+| touch(Object o)|ReferenceCounted
 | unwrap()|ByteBuf
 | wait(long arg0, int arg1)|void
 | wait(long l)|void
 | writableBytes()|int
 | writeBoolean(boolean b)|ByteBuf
 | writeByte(int i)|ByteBuf
-| writeBytes(ByteBuf arg0, int arg1)|ByteBuf
+| writeBytes(byte[] b)|ByteBuf
 | writeBytes(ByteBuf arg0, int arg1, int arg2)|ByteBuf
 | writeBytes(FileChannel arg0, long arg1, int arg2)|int
 | writeBytes(ScatteringByteChannel arg0, int arg1)|int
-| writeBytes(byte[] arg0, int arg1, int arg2)|ByteBuf
 | writeBytes(ByteBuffer b)|ByteBuf
+| writeBytes(byte[] arg0, int arg1, int arg2)|ByteBuf
 | writeBytes(InputStream arg0, int arg1)|int
 | writeBytes(ByteBuf b)|ByteBuf
-| writeBytes(byte[] b)|ByteBuf
+| writeBytes(ByteBuf arg0, int arg1)|ByteBuf
 | writeChar(int i)|ByteBuf
 | writeCharSequence(CharSequence arg0, Charset arg1)|int
 | writeDouble(double d)|ByteBuf
@@ -34568,8 +34568,8 @@
 | onAddedToWorld()|void
 | onRemovedFromWorld()|void
 | resetEntityId()|void
-| serializeNBT()|NBTTagCompound
 | serializeNBT()|NBTBase
+| serializeNBT()|NBTTagCompound
 | shouldDismountInWater(Entity e)|boolean
 | shouldRenderInPass(int i)|boolean
 | shouldRiderSit()|boolean
@@ -35206,8 +35206,8 @@
 | onAddedToWorld()|void
 | onRemovedFromWorld()|void
 | resetEntityId()|void
-| serializeNBT()|NBTTagCompound
 | serializeNBT()|NBTBase
+| serializeNBT()|NBTTagCompound
 | shouldDismountInWater(Entity e)|boolean
 | shouldRenderInPass(int i)|boolean
 | shouldRiderFaceForward(EntityPlayer e)|boolean
@@ -35717,8 +35717,8 @@
 | onAddedToWorld()|void
 | onRemovedFromWorld()|void
 | resetEntityId()|void
-| serializeNBT()|NBTTagCompound
 | serializeNBT()|NBTBase
+| serializeNBT()|NBTTagCompound
 | shouldDismountInWater(Entity e)|boolean
 | shouldRenderInPass(int i)|boolean
 | shouldRiderFaceForward(EntityPlayer e)|boolean
@@ -35834,8 +35834,8 @@
 |Methods|Return Type
 |--|--
 | canRenderBreaking()|boolean
-| deserializeNBT(NBTTagCompound n)|void
 | deserializeNBT(NBTBase n)|void
+| deserializeNBT(NBTTagCompound n)|void
 | func_145748_c_()|TextComponent
 | func_145828_a(CrashReportCategory c)|void
 | func_145829_t()|void
@@ -35872,8 +35872,8 @@
 | onDataPacket(NetworkManager arg0, SPacketUpdateTileEntity arg1)|void
 | onLoad()|void
 | restrictNBTCopy()|boolean
-| serializeNBT()|NBTTagCompound
 | serializeNBT()|NBTBase
+| serializeNBT()|NBTTagCompound
 | shouldRefresh(World arg0, BlockPos arg1, BlockState arg2, BlockState arg3)|boolean
 | shouldRenderInPass(int i)|boolean
 | wait(long arg0, int arg1)|void
@@ -36420,8 +36420,8 @@
 | onAddedToWorld()|void
 | onRemovedFromWorld()|void
 | resetEntityId()|void
-| serializeNBT()|NBTTagCompound
 | serializeNBT()|NBTBase
+| serializeNBT()|NBTTagCompound
 | shouldDismountInWater(Entity e)|boolean
 | shouldRenderInPass(int i)|boolean
 | shouldRiderSit()|boolean
@@ -36777,8 +36777,8 @@
 | canRenderBreaking()|boolean
 | checkIfDirty()|void
 | createState(BlockState b)|BlockState
-| deserializeNBT(NBTTagCompound n)|void
 | deserializeNBT(NBTBase n)|void
+| deserializeNBT(NBTTagCompound n)|void
 | func_145748_c_()|TextComponent
 | func_145818_k_()|boolean
 | func_145828_a(CrashReportCategory c)|void
@@ -36819,8 +36819,8 @@
 | playSound(SoundEvent arg0, SoundCategory arg1, float arg2, float arg3)|void
 | readFromItem(ItemStack i)|void
 | restrictNBTCopy()|boolean
-| serializeNBT()|NBTTagCompound
 | serializeNBT()|NBTBase
+| serializeNBT()|NBTTagCompound
 | setIDFromPlacer(EntityLivingBase e)|void
 | shouldRefresh(World arg0, BlockPos arg1, BlockState arg2, BlockState arg3)|boolean
 | shouldRenderInPass(int i)|boolean
@@ -36927,8 +36927,8 @@
 | canRenderBreaking()|boolean
 | checkIfDirty()|void
 | createState(BlockState b)|BlockState
-| deserializeNBT(NBTTagCompound n)|void
 | deserializeNBT(NBTBase n)|void
+| deserializeNBT(NBTTagCompound n)|void
 | func_145748_c_()|TextComponent
 | func_145818_k_()|boolean
 | func_145828_a(CrashReportCategory c)|void
@@ -36968,8 +36968,8 @@
 | playSound(SoundEvent arg0, SoundCategory arg1, float arg2, float arg3)|void
 | readFromItem(ItemStack i)|void
 | restrictNBTCopy()|boolean
-| serializeNBT()|NBTTagCompound
 | serializeNBT()|NBTBase
+| serializeNBT()|NBTTagCompound
 | shouldRefresh(World arg0, BlockPos arg1, BlockState arg2, BlockState arg3)|boolean
 | shouldRenderInPass(int i)|boolean
 | updateComparator()|boolean
@@ -37788,8 +37788,8 @@
 | func_177951_i(Vec3i v)|double
 | func_177952_p()|int
 | func_177954_c(double arg0, double arg1, double arg2)|double
-| func_177955_d(Vec3i v)|Vec3i
 | func_177955_d(Vec3i v)|BlockPos
+| func_177955_d(Vec3i v)|Vec3i
 | func_177956_o()|int
 | func_177957_d(double arg0, double arg1, double arg2)|double
 | func_177958_n()|int
@@ -37815,8 +37815,8 @@
 | func_185332_f(int arg0, int arg1, int arg2)|double
 | func_185334_h()|BlockPos
 | func_190942_a(Rotation r)|BlockPos
-| setXyz(int arg0, int arg1, int arg2)|void
 | setXyz(double arg0, double arg1, double arg2)|void
+| setXyz(int arg0, int arg1, int arg2)|void
 | wait(long arg0, int arg1)|void
 | wait(long l)|void
 
@@ -38426,8 +38426,8 @@
 | onAddedToWorld()|void
 | onRemovedFromWorld()|void
 | resetEntityId()|void
-| serializeNBT()|NBTTagCompound
 | serializeNBT()|NBTBase
+| serializeNBT()|NBTTagCompound
 | shouldDismountInWater(Entity e)|boolean
 | shouldRenderInPass(int i)|boolean
 | shouldRiderFaceForward(EntityPlayer e)|boolean
@@ -39170,8 +39170,8 @@
 |Methods|Return Type
 |--|--
 | activate(String s)|void
-| backgroundMusic(String arg0, String arg1, boolean arg2)|void
 | backgroundMusic(String arg0, URL arg1, String arg2, boolean arg3)|void
+| backgroundMusic(String arg0, String arg1, boolean arg2)|void
 | changeDopplerFactor(float f)|void
 | changeDopplerVelocity(float f)|void
 | checkFadeVolumes()|void
@@ -39181,33 +39181,33 @@
 | dequeueSound(String arg0, String arg1)|void
 | fadeOut(String arg0, String arg1, long arg2)|void
 | fadeOut(String arg0, URL arg1, String arg2, long arg3)|void
-| fadeOutIn(String arg0, URL arg1, String arg2, long arg3, long arg4)|void
 | fadeOutIn(String arg0, String arg1, long arg2, long arg3)|void
+| fadeOutIn(String arg0, URL arg1, String arg2, long arg3, long arg4)|void
 | feedRawAudioData(String arg0, byte[] arg1)|void
 | flush(String s)|void
 | getPitch(String s)|float
 | getVolume(String s)|float
 | interruptCommandThread()|void
 | loadSound(byte[] arg0, AudioFormat arg1, String arg2)|void
-| loadSound(URL arg0, String arg1)|void
 | loadSound(String s)|void
+| loadSound(URL arg0, String arg1)|void
 | millisecondsPlayed(String s)|float
 | moveListener(float arg0, float arg1, float arg2)|void
 | newLibrary(Class c)|boolean
 | newSource(boolean arg0, String arg1, String arg2, boolean arg3, float arg4, float arg5, float arg6, int arg7, float arg8)|void
 | newSource(boolean arg0, String arg1, URL arg2, String arg3, boolean arg4, float arg5, float arg6, float arg7, int arg8, float arg9)|void
-| newStreamingSource(boolean arg0, String arg1, URL arg2, String arg3, boolean arg4, float arg5, float arg6, float arg7, int arg8, float arg9)|void
 | newStreamingSource(boolean arg0, String arg1, String arg2, boolean arg3, float arg4, float arg5, float arg6, int arg7, float arg8)|void
+| newStreamingSource(boolean arg0, String arg1, URL arg2, String arg3, boolean arg4, float arg5, float arg6, float arg7, int arg8, float arg9)|void
 | pause(String s)|void
 | play(String s)|void
 | playing(String s)|boolean
 | playing()|boolean
-| queueSound(String arg0, URL arg1, String arg2)|void
 | queueSound(String arg0, String arg1)|void
+| queueSound(String arg0, URL arg1, String arg2)|void
 | quickPlay(boolean arg0, String arg1, boolean arg2, float arg3, float arg4, float arg5, int arg6, float arg7)|String
 | quickPlay(boolean arg0, URL arg1, String arg2, boolean arg3, float arg4, float arg5, float arg6, int arg7, float arg8)|String
-| quickStream(boolean arg0, URL arg1, String arg2, boolean arg3, float arg4, float arg5, float arg6, int arg7, float arg8)|String
 | quickStream(boolean arg0, String arg1, boolean arg2, float arg3, float arg4, float arg5, int arg6, float arg7)|String
+| quickStream(boolean arg0, URL arg1, String arg2, boolean arg3, float arg4, float arg5, float arg6, int arg7, float arg8)|String
 | rawDataStream(AudioFormat arg0, boolean arg1, String arg2, float arg3, float arg4, float arg5, int arg6, float arg7)|void
 | removeSource(String s)|void
 | removeTemporarySources()|void
@@ -39362,8 +39362,8 @@
 |Methods|Return Type
 |--|--
 | func_110776_a(ResourceLocation r)|void
-| func_177067_a(EntityLivingBase arg0, double arg1, double arg2, double arg3)|void
 | func_177067_a(Entity arg0, double arg1, double arg2, double arg3)|void
+| func_177067_a(EntityLivingBase arg0, double arg1, double arg2, double arg3)|void
 | func_177068_d()|RenderManager
 | func_177071_a(Entity arg0, Camera arg1, double arg2, double arg3, double arg4)|boolean
 | func_177087_b()|ModelBase
@@ -40446,8 +40446,8 @@
 | compareTo(Object o)|int
 | deserializeNBT(NBTBase n)|void
 | deserializeNBT(NBTTagCompound n)|void
-| serializeNBT()|NBTBase
 | serializeNBT()|NBTTagCompound
+| serializeNBT()|NBTBase
 | teleporter()|TeleporterDimPos
 | wait(long arg0, int arg1)|void
 | wait(long l)|void
@@ -40862,8 +40862,8 @@
 
 |Methods|Return Type
 |--|--
-| func_148833_a(NetHandler n)|void
 | func_148833_a(NetHandlerPlayServer n)|void
+| func_148833_a(NetHandler n)|void
 | func_148837_a(PacketBuffer p)|void
 | func_148840_b(PacketBuffer p)|void
 | func_149483_b(boolean b)|void
@@ -41334,8 +41334,8 @@
 
 |Methods|Return Type
 |--|--
-| func_148833_a(NetHandlerPlayServer n)|void
 | func_148833_a(NetHandler n)|void
+| func_148833_a(NetHandlerPlayServer n)|void
 | func_148837_a(PacketBuffer p)|void
 | func_148840_b(PacketBuffer p)|void
 | func_194162_b()|CPacketSeenAdvancements$Action
@@ -41511,13 +41511,13 @@
 | compareTo(Object o)|int
 | deserializeNBT(NBTTagCompound n)|void
 | deserializeNBT(NBTBase n)|void
-| equalsPlayer(ForgePlayer f)|boolean
 | equalsPlayer(CommandSender c)|boolean
+| equalsPlayer(ForgePlayer f)|boolean
 | getCommandPlayer(CommandSender c)|EntityPlayerMP
 | getDataFile(String s)|File
 | getRankConfig(String s)|ConfigValue
-| hasPermission(String arg0, Context arg1)|boolean
 | hasPermission(String s)|boolean
+| hasPermission(String arg0, Context arg1)|boolean
 | hasTeam()|boolean
 | hideTeamNotification()|boolean
 | markDirty()|void
@@ -41677,175 +41677,6 @@
 | shouldDraw()|boolean
 | tick()|void
 | updateMouseOver(int arg0, int arg1)|void
-| wait(long arg0, int arg1)|void
-| wait(long l)|void
-
----
-
-## ServerPlayer
-
-|Class
-|--
-|dev.latvian.kubejs.player.ServerPlayerJS
-
----
-
-|Extends
-|--
-|Player
-
----
-
-|Fields|Type
-|--|--
-|  absorptionAmount|float
-|  alive|boolean
-|  ambientCreature|boolean
-|  animal|boolean
-|  attackingEntity|LivingEntity
-|  block Block position of the entity|Block
-|  boss|boolean
-|  child|boolean
-|  creativeMode|boolean
-|  customName Custom display name|String
-|  customNameAlwaysVisible Custom display name will always be visible above head|boolean
-|  data Temporary data, mods can attach objects to this|AttachedData
-|  displayName|Text
-|  elytraFlying|boolean
-|  eyeHeight|float
-|  facing|EnumFacing
-|  fake|boolean
-|  fallDistance|float
-|  foodLevel|int
-|  frame|boolean
-|  fullNBT Entity NBT|NBTCompound
-|  glowing|boolean
-|  hasCustomName Checks if custom display name is set|boolean
-|  health|float
-|  horizontalFacing|EnumFacing
-|  id|UUID
-|  idleTime|int
-|  inventory|Inventory
-|  invisible|boolean
-|  item|ItemStack
-|  lastAttackedEntity|LivingEntity
-|  lastAttackedEntityTime|int
-|  lastDamageSource|DamageSource
-|  living|boolean
-|  mainHandItem|ItemStack
-|  maxHealth|float
-|  minecraftEntity|Entity
-|  minecraftLivingEntity|EntityLivingBase
-|  minecraftPlayer|EntityPlayer
-|  miningBlock|boolean
-|  monster|boolean
-|  motionX|double
-|  motionY|double
-|  motionZ|double
-|  mouseItem|ItemStack
-|  movementSpeed|float
-|  name|String
-|  nbt|NBTCompound
-|  noClip|boolean
-|  noGravity|boolean
-|  offHandItem|ItemStack
-|  onGround|boolean
-|  onLadder|boolean
-|  oP|boolean
-|  openInventory|Container
-|  passengers|EntityArrayList
-|  pitch|float
-|  player|boolean
-|  potionEffects|EntityPotionEffects
-|  profile|GameProfile
-|  reachDistance|double
-|  recursivePassengers|EntityArrayList
-|  revengeTarget|LivingEntity
-|  revengeTimer|int
-|  ridingEntity|Entity
-|  selectedSlot|int
-|  server|Server
-|  silent|boolean
-|  sleeping|boolean
-|  sneaking|boolean
-|  spectator|boolean
-|  sprinting|boolean
-|  stats|PlayerStats
-|  stepHeight|float
-|  tags|Set\<String>
-|  teamID Scoreboard team ID|String
-|  ticksExisted|int
-|  type|ID
-|  undead|boolean
-|  waterCreature|boolean
-|  world|World
-|  x|double
-|  xp|int
-|  xpLevel|int
-|  y|double
-|  yaw|float
-|  z|double
-
----
-
-|Methods|Return Type
-|--|--
-| addExhaustion(float f)|void
-| addFood(int food, float modifier)|void
-| addMotion(double x, double y, double z)|void
-| addXP(int xp)|void
-| addXPLevels(int levels)|void
-| attack(String source, float hp)|void
-| attack(float hp)|void
-| ban(String arg0, String arg1, long arg2)|void
-| boostElytraFlight()|void
-| canEntityBeSeen(Entity entity)|boolean
-| closeInventory()|void
-| closeOverlay(String s)|void
-| closeOverlay(Overlay o)|void
-| damageHeldItem(EnumHand hand, int amount)|void
-| damageHeldItem()|void
-| dismountRidingEntity()|void
-| extinguish()|void
-| getEquipment(EntityEquipmentSlot slot)|ItemStack
-| getHeldItem(EnumHand hand)|ItemStack
-| getNBTData(String key) Get specific value from custom NBT|NBTBase
-| give(ItemStack item)|void
-| giveInHand(ItemStack item)|void
-| hasClientMod()|boolean
-| heal(float hp)|void
-| isHoldingInAnyHand(Ingredient ingredient)|boolean
-| isOnSameTeam(Entity entity) Checks if this entity is on the same scoreboard team as another entity|boolean
-| isOnScoreboardTeam(String teamID) Checks if this entity is on scoreboard team|boolean
-| isPassenger(Entity entity)|boolean
-| kick()|void
-| kick(Text t)|void
-| kill()|void
-| openOverlay(Overlay o)|void
-| playSound(Object id) Play sound at entity. Must be played from server side|void
-| playSound(Object id, float volume, float pitch) Play sound at entity. Must be played from server side|void
-| rayTrace()|Map\<String, Object>
-| rayTrace(double distance)|Map\<String, Object>
-| removePassengers()|void
-| revokeAdvancement(Object o)|void
-| runCommand(String command) Runs command as if the sender was running it, ignoring permissions|int
-| sendData(String channel, Object data)|void
-| sendInventoryUpdate()|void
-| setEquipment(EntityEquipmentSlot slot, ItemStack item)|void
-| setHeldItem(EnumHand hand, ItemStack item)|void
-| setMotion(double x, double y, double z)|void
-| setNBTData(String key, Object nbt) Set specific value in custom NBT|void
-| setOnFire(int seconds) Sets entity on fire for x seconds|void
-| setPosition(double x, double y, double z)|void
-| setPosition(Block block)|void
-| setPositionAndRotation(double x, double y, double z, float yaw, float pitch)|void
-| setRotation(float yaw, float pitch)|void
-| setStatusMessage(Object message)|void
-| spawn()|void
-| startRiding(Entity entity, boolean force)|boolean
-| swingArm(EnumHand hand)|void
-| tell(Text message) Tell message in chat|void
-| unlockAdvancement(Object o)|void
 | wait(long arg0, int arg1)|void
 | wait(long l)|void
 
@@ -42674,8 +42505,8 @@
 | onAddedToWorld()|void
 | onRemovedFromWorld()|void
 | resetEntityId()|void
-| serializeNBT()|NBTTagCompound
 | serializeNBT()|NBTBase
+| serializeNBT()|NBTTagCompound
 | shouldDismountInWater(Entity e)|boolean
 | shouldRenderInPass(int i)|boolean
 | shouldRiderFaceForward(EntityPlayer e)|boolean
@@ -43640,8 +43471,8 @@
 |Methods|Return Type
 |--|--
 | activate(String s)|void
-| backgroundMusic(String arg0, String arg1, boolean arg2)|void
 | backgroundMusic(String arg0, URL arg1, String arg2, boolean arg3)|void
+| backgroundMusic(String arg0, String arg1, boolean arg2)|void
 | changeDopplerFactor(float f)|void
 | changeDopplerVelocity(float f)|void
 | checkFadeVolumes()|void
@@ -43651,33 +43482,33 @@
 | dequeueSound(String arg0, String arg1)|void
 | fadeOut(String arg0, String arg1, long arg2)|void
 | fadeOut(String arg0, URL arg1, String arg2, long arg3)|void
-| fadeOutIn(String arg0, URL arg1, String arg2, long arg3, long arg4)|void
 | fadeOutIn(String arg0, String arg1, long arg2, long arg3)|void
+| fadeOutIn(String arg0, URL arg1, String arg2, long arg3, long arg4)|void
 | feedRawAudioData(String arg0, byte[] arg1)|void
 | flush(String s)|void
 | getPitch(String s)|float
 | getVolume(String s)|float
 | interruptCommandThread()|void
 | loadSound(byte[] arg0, AudioFormat arg1, String arg2)|void
-| loadSound(URL arg0, String arg1)|void
 | loadSound(String s)|void
+| loadSound(URL arg0, String arg1)|void
 | millisecondsPlayed(String s)|float
 | moveListener(float arg0, float arg1, float arg2)|void
 | newLibrary(Class c)|boolean
 | newSource(boolean arg0, String arg1, String arg2, boolean arg3, float arg4, float arg5, float arg6, int arg7, float arg8)|void
 | newSource(boolean arg0, String arg1, URL arg2, String arg3, boolean arg4, float arg5, float arg6, float arg7, int arg8, float arg9)|void
-| newStreamingSource(boolean arg0, String arg1, URL arg2, String arg3, boolean arg4, float arg5, float arg6, float arg7, int arg8, float arg9)|void
 | newStreamingSource(boolean arg0, String arg1, String arg2, boolean arg3, float arg4, float arg5, float arg6, int arg7, float arg8)|void
+| newStreamingSource(boolean arg0, String arg1, URL arg2, String arg3, boolean arg4, float arg5, float arg6, float arg7, int arg8, float arg9)|void
 | pause(String s)|void
 | play(String s)|void
 | playing()|boolean
 | playing(String s)|boolean
-| queueSound(String arg0, URL arg1, String arg2)|void
 | queueSound(String arg0, String arg1)|void
+| queueSound(String arg0, URL arg1, String arg2)|void
 | quickPlay(boolean arg0, String arg1, boolean arg2, float arg3, float arg4, float arg5, int arg6, float arg7)|String
 | quickPlay(boolean arg0, URL arg1, String arg2, boolean arg3, float arg4, float arg5, float arg6, int arg7, float arg8)|String
-| quickStream(boolean arg0, URL arg1, String arg2, boolean arg3, float arg4, float arg5, float arg6, int arg7, float arg8)|String
 | quickStream(boolean arg0, String arg1, boolean arg2, float arg3, float arg4, float arg5, int arg6, float arg7)|String
+| quickStream(boolean arg0, URL arg1, String arg2, boolean arg3, float arg4, float arg5, float arg6, int arg7, float arg8)|String
 | rawDataStream(AudioFormat arg0, boolean arg1, String arg2, float arg3, float arg4, float arg5, int arg6, float arg7)|void
 | removeSource(String s)|void
 | removeTemporarySources()|void
@@ -43731,12 +43562,12 @@
 |--|--
 | setAngle(float f)|void
 | setData(float arg0, float arg1, float arg2, float arg3, float arg4, float arg5, float arg6, float arg7, float arg8, float arg9)|void
-| setData(ListenerData l)|void
 | setData(Vector3D arg0, Vector3D arg1, Vector3D arg2, float arg3)|void
-| setOrientation(float arg0, float arg1, float arg2, float arg3, float arg4, float arg5)|void
+| setData(ListenerData l)|void
 | setOrientation(Vector3D arg0, Vector3D arg1)|void
-| setPosition(float arg0, float arg1, float arg2)|void
+| setOrientation(float arg0, float arg1, float arg2, float arg3, float arg4, float arg5)|void
 | setPosition(Vector3D v)|void
+| setPosition(float arg0, float arg1, float arg2)|void
 | setVelocity(float arg0, float arg1, float arg2)|void
 | setVelocity(Vector3D v)|void
 | wait(long arg0, int arg1)|void
@@ -44696,8 +44527,8 @@
 | drawScrollBar(int arg0, int arg1, int arg2, int arg3, WidgetType arg4, boolean arg5)|void
 | drawScrollBarBackground(int arg0, int arg1, int arg2, int arg3, WidgetType arg4)|void
 | drawSlot(int arg0, int arg1, int arg2, int arg3, WidgetType arg4)|void
-| drawString(String arg0, int arg1, int arg2, int arg3)|int
 | drawString(String arg0, int arg1, int arg2, Color4I arg3, int arg4)|int
+| drawString(String arg0, int arg1, int arg2, int arg3)|int
 | drawString(String arg0, int arg1, int arg2)|int
 | drawTextBox(int arg0, int arg1, int arg2, int arg3)|void
 | drawWidget(int arg0, int arg1, int arg2, int arg3, WidgetType arg4)|void
@@ -44885,8 +44716,8 @@
 | func_190948_a(ItemStack arg0, World arg1, List\<String> arg2, TooltipFlag arg3)|void
 | func_190949_e(BlockState arg0, BlockAccess arg1, BlockPos arg2)|Vec3d
 | func_193383_a(BlockAccess arg0, BlockState arg1, BlockPos arg2, EnumFacing arg3)|BlockFaceShape
-| getAiPathNodeType(BlockState arg0, BlockAccess arg1, BlockPos arg2)|PathNodeType
 | getAiPathNodeType(BlockState arg0, BlockAccess arg1, BlockPos arg2, EntityLiving arg3)|PathNodeType
+| getAiPathNodeType(BlockState arg0, BlockAccess arg1, BlockPos arg2)|PathNodeType
 | getBeaconColorMultiplier(BlockState arg0, World arg1, BlockPos arg2, BlockPos arg3)|float[]
 | getBedDirection(BlockState arg0, BlockAccess arg1, BlockPos arg2)|EnumFacing
 | getBedSpawnPosition(BlockState arg0, BlockAccess arg1, BlockPos arg2, EntityPlayer arg3)|BlockPos
@@ -44944,8 +44775,8 @@
 | rotateBlock(World arg0, BlockPos arg1, EnumFacing arg2)|boolean
 | setBedOccupied(BlockAccess arg0, BlockPos arg1, EntityPlayer arg2, boolean arg3)|void
 | setDefaultSlipperiness(float f)|void
-| setHarvestLevel(String arg0, int arg1)|void
 | setHarvestLevel(String arg0, int arg1, BlockState arg2)|void
+| setHarvestLevel(String arg0, int arg1)|void
 | shouldCheckWeakPower(BlockState arg0, BlockAccess arg1, BlockPos arg2, EnumFacing arg3)|boolean
 | wait(long arg0, int arg1)|void
 | wait(long l)|void
@@ -45480,8 +45311,8 @@
 | dot(Vector3D v)|float
 | length()|float
 | normalize()|void
-| subtract(Vector3D v)|Vector3D
 | subtract(Vector3D arg0, Vector3D arg1)|Vector3D
+| subtract(Vector3D v)|Vector3D
 | wait(long arg0, int arg1)|void
 | wait(long l)|void
 
@@ -46185,8 +46016,8 @@
 | func_190948_a(ItemStack arg0, World arg1, List\<String> arg2, TooltipFlag arg3)|void
 | func_190949_e(BlockState arg0, BlockAccess arg1, BlockPos arg2)|Vec3d
 | func_193383_a(BlockAccess arg0, BlockState arg1, BlockPos arg2, EnumFacing arg3)|BlockFaceShape
-| getAiPathNodeType(BlockState arg0, BlockAccess arg1, BlockPos arg2)|PathNodeType
 | getAiPathNodeType(BlockState arg0, BlockAccess arg1, BlockPos arg2, EntityLiving arg3)|PathNodeType
+| getAiPathNodeType(BlockState arg0, BlockAccess arg1, BlockPos arg2)|PathNodeType
 | getBeaconColorMultiplier(BlockState arg0, World arg1, BlockPos arg2, BlockPos arg3)|float[]
 | getBedDirection(BlockState arg0, BlockAccess arg1, BlockPos arg2)|EnumFacing
 | getBedSpawnPosition(BlockState arg0, BlockAccess arg1, BlockPos arg2, EntityPlayer arg3)|BlockPos
@@ -46244,8 +46075,8 @@
 | rotateBlock(World arg0, BlockPos arg1, EnumFacing arg2)|boolean
 | setBedOccupied(BlockAccess arg0, BlockPos arg1, EntityPlayer arg2, boolean arg3)|void
 | setDefaultSlipperiness(float f)|void
-| setHarvestLevel(String arg0, int arg1)|void
 | setHarvestLevel(String arg0, int arg1, BlockState arg2)|void
+| setHarvestLevel(String arg0, int arg1)|void
 | shouldCheckWeakPower(BlockState arg0, BlockAccess arg1, BlockPos arg2, EnumFacing arg3)|boolean
 | wait(long arg0, int arg1)|void
 | wait(long l)|void
