@@ -5,12 +5,13 @@ import pysnooper
 import numpy as np
 
 print("Reading shop list")
-workbook = xlrd.open_workbook("./.workspace/shop/" + "shoplist.xlsx")
+# "./.workspace/shop/"
+workbook = xlrd.open_workbook("shoplist.xlsx")
 header = workbook.sheet_by_name("shop head")
 buy_list_sheet = workbook.sheet_by_name("shop buy")
 sell_list_sheet = workbook.sheet_by_name("shop sell")
 
-file = open("./config/adminshop/shop.csv", "w")
+file = open("../../config/adminshop/shop.csv", "w")
 
 output = csv.writer(file, dialect=csv.unix_dialect)
 

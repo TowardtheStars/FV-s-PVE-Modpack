@@ -6,7 +6,8 @@ root_url = "http://localhost:48574"
 
 result = []
 to_visit = ["/kubejs"]
-target_path = ".workspace/Aurora_web/result.md"
+# .workspace/Aurora_web/
+target_path = "result.md"
 
 
 while len(to_visit) != 0:
@@ -33,14 +34,14 @@ def dump0(w):
         rows = table.xpath('tr')
         for head_col in rows[0].xpath('th/text()'):
             s += "|" + head_col
-        s += "\n"
+        s += "|\n"
         for i in range(len(rows[0].xpath('th/text()'))):
             s += "|--"
-        s += "\n"
+        s += "|\n"
         for row in rows[1:]:
             for col in row.xpath('td/text()|td/span/a/text()|td/span/text()'):
                 s += "|" + col
-            s += '\n'
+            s += '|\n'
         s += '\n---\n\n'
     s = s.replace("<", "\\<")
     return s
@@ -58,16 +59,16 @@ def dump1(w):
         rows = table.xpath('tr')
         for head_col in rows[0].xpath('th/text()|th/*/text()'):
             s += "|" + head_col
-        s += "\n"
+        s += "|\n"
         for i in range(len(rows[0].xpath('th'))):
             s += "|--"
-        s += "\n"
+        s += "|\n"
         for row in rows[1:]:
             for col in row.xpath('td'):
                 s += "|"
                 for t in col.xpath('.//text()'):
                     s += t
-            s += '\n'
+            s += '|\n'
         s += '\n---\n\n'
     s = s.replace("<", "\\<")
     return s
@@ -109,3 +110,4 @@ lines = [re.sub(link_pattern, convert_to_link, line) if line not in toc_list els
 dst = open(target_path, "w")
 dst.writelines(lines)
 dst.close()
+

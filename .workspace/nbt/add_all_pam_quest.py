@@ -1,7 +1,8 @@
-import pynbt as nbt
+import python_nbt.nbt as nbt
 import os, random
 
 root = "./config/ftbquests/normal/chapters"
+result = ".workspace/nbt/chapters"
 
 id_list = []
 
@@ -18,8 +19,11 @@ add_dir(root)
 
 def gen_id(n=0):
     while n in id_list or n == 0 or n == 1:
-        n = random.randint(2, 0xffffffff)
-    id_list.append(hex(n)[2:])
+        n = random.randint(2, 0x80000000)
+    value = hex(n)
+    value = value[2:]
+    value = "0" * (8 - len(value)) + value
+    id_list.append(value)
     return hex(n)[2:]
     
 aridGarden = [
@@ -133,15 +137,39 @@ base_chapter = gen_id(0x61404d4e)
 chapters = [gen_id(int(i, base=16)) for i in ["a2d67590", "b2a6a21a", "9a4d850c", "f764b037", "92df22db", "2ccc878e"]]
 for i in range(len(chapters)):
     chapter = chapters[i]
-    chapter_dir = os.path.join(root, chapter)
+    chapter_dir = os.path.join(result, chapter)
     if not os.path.exists(chapter_dir):
         os.mkdir(chapter_dir)
-    chapter_tag = nbt.NBTFile()
+    chapter_tag = nbt.NBTTagCompound()
     chapter_tag['group'] = nbt.TAG_Int(int(base_chapter, base=16))
     chapter_tag['always_invisible'] = nbt.TAG_Byte(0)
     chapter_tag['title'] = nbt.TAG_String(garden_names[i] + "特产")
     chapter_tag['description'] = nbt.TAG_List(tag_type=nbt.TAG_String)
-    chapter_tag['description'].insert(0, nbt.TAG_String("集齐%s菜园掉落的所有农作物." % garden_names[i]))
+    chapter_tag['description'].append(nbt.TAG_String("集齐%s菜园掉落的所有农作物." % garden_names[i]))
+    import json
+    print(json.dumps(chapter_tag.json_obj(False), indent=2))
+    print(chapter_dir)
+    nbt.write_to_nbt_file(os.path.join(chapter_dir, "chapter.nbt"), chapter_tag)
     
-    print(chapter_tag.pretty())
-    chapter_tag.write_file(filename=os.path.join(chapter_dir, "chapter.nbt"))
+    j = 0
+    for crops in gardens[i]:
+        quest_tag = nbt.NBTTagCompound()
+        quest_tag['tasks'] = nbt.TAG_List(tag_type=nbt.NBTTagCompound)
+        task = nbt.TAG_Compound()
+        task['type'] = nbt.TAG_String('item')
+        task['uid'] = nbt.TAG_Int(int(gen_id(), base=16))
+        task['item'] = nbt.TAG_String(crops)
+        task['count'] = nbt.TAG_Long(64)
+        task['consume'] = nbt.TAG_Byte(1)
+        quest_tag['tasks'].insert(0, task)
+        quest_tag['x'] = nbt.TAG_Double(j // 6)
+        quest_tag['y'] = nbt.TAG_Double(j % 6)
+        quest_tag['rewards'] = nbt.TAG_List(tag_type=nbt.TAG_Compound)
+        reward = nbt.TAG_Compound()
+        reward['ftb_money'] = nbt.TAG_Long(5)
+        reward['type'] = nbt.TAG_String('ftbmoney:money')
+        reward['uid'] = nbt.TAG_Int(int(gen_id(), base=16))
+        quest_tag['rewards'].append(reward)
+        j = j + 1
+        nbt.write_to_nbt_file(os.path.join(chapter_dir, gen_id() + ".nbt"), quest_tag)
+
