@@ -38,5 +38,5 @@ quests.forEach(
             }
         });
     }
-)
+);
 

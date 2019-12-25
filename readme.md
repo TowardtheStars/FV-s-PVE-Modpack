@@ -17,7 +17,7 @@ Forge Version: 14.23.5.2847
 
 建议用火狐浏览器/谷歌浏览器打开本文档的.md版本
 
-- [FV的打怪向模组包 `FV's PVE modpack`](#fv%e7%9a%84%e6%89%93%e6%80%aa%e5%90%91%e6%a8%a1%e7%bb%84%e5%8c%85-fvs-pve-modpack)
+- [FV的打怪向模组包 FV's PVE modpack](#fv%e7%9a%84%e6%89%93%e6%80%aa%e5%90%91%e6%a8%a1%e7%bb%84%e5%8c%85-fvs-pve-modpack)
   - [安装方法](#%e5%ae%89%e8%a3%85%e6%96%b9%e6%b3%95)
   - [一些小程序](#%e4%b8%80%e4%ba%9b%e5%b0%8f%e7%a8%8b%e5%ba%8f)
   - [加入服务器](#%e5%8a%a0%e5%85%a5%e6%9c%8d%e5%8a%a1%e5%99%a8)
@@ -36,7 +36,7 @@ Forge Version: 14.23.5.2847
 进入游戏目录, 将本Modpack中的文件夹复制到游戏目录中. Modpack中的其他文件是一些相关数据文档~~或者是作者不小心放进去的无关紧要的文件~~, 仅供玩家参考, 不需要复制到游戏目录中.
 
 ~~对于服务器, 请删除Mod列表中Client下的所有mod.~~
-请选择 server 模式
+请在 ModpackModeSelector 中选择"服务器"模式
 
 一些小程序
 ----------
@@ -49,7 +49,12 @@ ModpackModeSelector.sh / ModpackModeSelector.bat
 
 对于 Windows 系统, 请双击 ModpackModeSelector.bat 使用
 
-对于 Linux 内核系统, 请直接运行 ModpackModeSelector.sh 脚本, 或使用 sh ./ModpackModeSelector.sh <模式代码>
+对于 Linux 内核系统, 请直接运行 ModpackModeSelector.sh 脚本, 或使用 
+
+```shell
+sh ./ModpackModeSelector.sh <模式代码>
+```
+
 
 有以下几个模式选项:(模式代码为冒号后面的字母序列)
 
@@ -97,7 +102,7 @@ get_whitelist.sh
 
 64-bit CPU, Java 8
 
-RAM 6G(4G+) for 单机, 4G(3G+) for 玩服务器, 8G(6G+) for 开服务器
+RAM 3G(2G+) for 单机, 3G(2G+) for 玩服务器, 8G(6G+) for 开服务器
 
 模组列表
 -------
@@ -108,6 +113,8 @@ RAM 6G(4G+) for 单机, 4G(3G+) for 玩服务器, 8G(6G+) for 开服务器
     - Construct Armory
       - Armory Expansion
     - Tinkers' Tool Levelling
+    - Tinkers' Complement
+    - Tinkers' Aether
   - Abyssal Craft
     - Abyssal Integration
   - Cyberware
@@ -118,8 +125,10 @@ RAM 6G(4G+) for 单机, 4G(3G+) for 玩服务器, 8G(6G+) for 开服务器
   - Ice and Fire
   - Abyssal Craft
   - Extra Utilities 2
-  - Twilight Forest
   - Bountiful
+  - ~~Twilight Forest~~
+  - Aether
+    - Aether Continuation
 - 饮食向
   - Spice of Life
   - Pam's Harvestcraft
@@ -134,7 +143,7 @@ RAM 6G(4G+) for 单机, 4G(3G+) for 玩服务器, 8G(6G+) for 开服务器
   - Nutrition
   - Craft Tweaker2
   - Scaling Health
-  - Tinkered Hegemony
+  - ~~Tinkered Hegemony~~
 - 科技向
   - Immersive Engineering
   - Project Red
@@ -156,14 +165,18 @@ RAM 6G(4G+) for 单机, 4G(3G+) for 玩服务器, 8G(6G+) for 开服务器
   - Sign Post
   - Chisels & Bits
   - Baubles
+  - CoralReef
+  - Future MC
 - 存储
   - Ender Storage
   - Colossal Chest
 - 实用
   - Akashic Tome
   - Better Builder Wands
-  - FTB Quests
-  - FTB Utilities
+  - FTB
+    - FTB Quests
+    - FTB Utilities
+    - FTB Money
   - Waystones
   - Sign Post
   - Equal Dragons
@@ -171,11 +184,16 @@ RAM 6G(4G+) for 单机, 4G(3G+) for 玩服务器, 8G(6G+) for 开服务器
   - Simple Login
   - Pet Bat
   - Hunting Dim
+  - ido
+  - Clear Water
+  - Water Mechanics Backport
+  - Unmending
+  - ItemPhysic Full
 - 辅助
   - JEI
     - JECH
     - JEHC
-    - Just Enough Calculation
+    - ~~Just Enough Calculation~~
   - Classic Bars
   - Better HUD
   - Journey Map
@@ -197,13 +215,13 @@ RAM 6G(4G+) for 单机, 4G(3G+) for 玩服务器, 8G(6G+) for 开服务器
   - JECH
   - Smooth Font
   - Foamfix
-  - I18n Update Mod
+  - I18n Update Mod (联网时会自动更新)
   - Optifine (**高危**)
   - Classic Bars
   - Neat
 - LIBs 懒得写了
 
-**高危**: 如果游戏崩溃, 请删除mod或更换mod版本, 如果删除后问题没有解决, 请联系作者
+**高危**: 如果游戏崩溃, 请删除该mod或更换mod版本, 如果删除后问题没有解决, 请联系作者
 
 重要说明
 -------
@@ -253,7 +271,7 @@ RAM 6G(4G+) for 单机, 4G(3G+) for 玩服务器, 8G(6G+) for 开服务器
   - 龙炎钢和龙霜钢的材料属性有所调整
     - 基础耐久为默认的 25%
     - 基础伤害为默认的 80%
-  - 将使用珊瑚珍珠而不是钻石来开启暮色森林传送门
+  - ~~将使用珊瑚珍珠而不是钻石来开启暮色森林传送门~~
   - Apotheosis
     - 关闭了Apotheosis对原版刷怪笼的修改
     - 关闭了Apotheosis对原版怪物的增强
@@ -267,26 +285,32 @@ RAM 6G(4G+) for 单机, 4G(3G+) for 玩服务器, 8G(6G+) for 开服务器
   - 难度上限为500
   - 玩家难度改变量
     - 击杀敌对生物: -0.6
+    
     - 击杀 Blight(身上冒紫火的): -7.5
+    
     - 击杀特殊实体将导致不一样的难度变化
-      |实体|ID|击杀后难度变化|击杀 Blight 后难度变化
-      |----|--|-----------|------------------
-      |恐惧傀儡|abyssalcraft:dreadgolem|-0.5|-3.0
-      |恐惧守卫|abyssalcraft:dreadguard|+0.5|-3.0
-      |小型修格斯|abyssalcraft:lessershoggoth|-0.5|-2.0
-      |阴影生物|abyssalcraft:shadowcreature|+0.5|-1.0
-      |阴影野兽|abyssalcraft:shadowbeast|+0.5|-1.0
-      |阴影怪兽|abyssalcraft:shadowmonster|+0.5|-1.0
-      |阿索拉|abyssalcraft:dragonboss|-7.0|-7.0
-      |查加罗斯|abyssalcraft:chagaroth|-10.0|-10.0
-      |守门人扎哈尔|abyssalcraft:jzahar|-12.0|-12.0
-      |火龙|iceandfire:firedragon|-10.0|-10.0
-      |冰龙|iceandfire:icedragon|-10.0|-10.0
-      |僵尸猪人|minecraft:zombie_pigman|+1.0|-2.0
-      |末影人|minecraft:enderman|+1.5|-3.0
-      |村民|minecraft:villager|+3.0|+3.0
+      
+      |实体|ID|击杀后难度变化|击杀 Blight 后难度变化|
+      |----|--|-----------|------------------|
+      |恐惧傀儡|abyssalcraft:dreadgolem|-0.5|-3.0|
+      |恐惧守卫|abyssalcraft:dreadguard|+0.5|-3.0|
+      |小型修格斯|abyssalcraft:lessershoggoth|-0.5|-2.0|
+      |阴影生物|abyssalcraft:shadowcreature|+0.5|-1.0|
+      |阴影野兽|abyssalcraft:shadowbeast|+0.5|-1.0|
+      |阴影怪兽|abyssalcraft:shadowmonster|+0.5|-1.0|
+      |阿索拉|abyssalcraft:dragonboss|-7.0|-7.0|
+      |查加罗斯|abyssalcraft:chagaroth|-10.0|-10.0|
+      |守门人扎哈尔|abyssalcraft:jzahar|-12.0|-12.0|
+      |火龙|iceandfire:firedragon|-10.0|-10.0|
+      |冰龙|iceandfire:icedragon|-10.0|-10.0|
+      |僵尸猪人|minecraft:zombie_pigman|+1.0|-2.0|
+      |末影人|minecraft:enderman|+1.5|-3.0|
+      |村民|minecraft:villager|+3.0|+3.0|
+      
     - 在线: +0.0015/s(5.4/h)
+      
       - 如果玩家处于静止: +0.0010/s(3.6/h)
+      
     - 死亡: +0.0/次
   - 不同维度在计算难度时会有不同的基础难度
     |维度|ID|基础难度|
@@ -295,7 +319,6 @@ RAM 6G(4G+) for 单机, 4G(3G+) for 玩服务器, 8G(6G+) for 开服务器
     |下界|-1| +50|
     |主世界|0|0|
     |末地|1| +75|
-    |暮色森林|7| +100|
     |深渊|50| +25|
     |恐惧之地|51| +35|
     |奥穆索|52| +95|
@@ -322,88 +345,94 @@ RAM 6G(4G+) for 单机, 4G(3G+) for 玩服务器, 8G(6G+) for 开服务器
   - 冰龙和火龙任何时候都互相敌对, 请养龙玩家注意不要把它们放在一起养, 以避免不必要的损失
   - 有些敌对生物(主要是 Ice and Fire 的生物)在 Journey Map 小地图上的图标与中立生物一样
 - Admin shop 中可以出售能量换取金钱, 兑换率为 32768 RF/$
-- 匠魂浮空岛只能出现在主世界和暮色森林世界
+- 匠魂浮空岛只能出现在主世界~~和暮色森林世界~~
 - 附魔等级上限和铁砧等级上限已被 Apotheosis 模组修改
 
 未来版本计划
 ------------
 
-- 加入针对暮色森林的魔改
-- 完善任务树
-  - 大概计划
-    - [ ] 装备线
-      - [x] 匠魂
-        - [x] 发展线
-        - [x] ~~TAIGA~~
-        - [x] Ice and Fire 龙钢
-      - [ ] 神话附魔
-        - [ ] 发展线
-    - [ ] 工业线
+- ~~加入针对暮色森林的魔改~~
+- [ ] 完善任务树
+  - [ ] 装备线
+    - [x] 匠魂
+      - [x] 发展线
+      - [x] ~~TAIGA~~
+      - [x] Ice and Fire 龙钢
+    - [ ] 神话附魔
+      - [ ] 发展线
+  - [ ] 工业线
+    - [ ] IE
+    - [ ] OpenComputers
+  - [x] 魔法线
+    - [x] Electroblob's Wizardry
+  - [ ] 冒险线
+    - [ ] 原版
+    - [ ] Ice and Fire
+    - [x] 深渊
+  - [ ] 挑战
+    - [x] 统计
+      - [x] 击杀敌对生物数 (所有生物都要有, 包括Boss)
+      - [x] 存活时间
+      - [x] 死亡次数
+      - [x] 放置方块 ("这世界我来过") by ShuiFeng_Keith
+      - [x] 受到伤害总和 by quraks
+      - [x] ~~抵抗伤害总和 by quraks~~
+      - [x] 各种移动方式的距离 (100km量级) by mcer
+      - [x] 与村民交易次数 by Stark
+    - [ ] 成就
+      - [x] Minecraft
+        - [x] 探索的时光
+      - [x] BOP
+        - [x] 走遍BOP的每一个群系 by akarin
+      - [x] Pam's Harvestcraft
+        - [x] 吃过所有食物 ("舌尖上的MC") by ShuiFeng_Keith
       - [ ] IE
-      - [ ] OpenComputers
-    - [x] 魔法线
+        - [ ] 用工程师天钩在电线上移动超过2000m ("观光缆车") by akarin
+      - [x] ExU
+        - [x] 合成一定数量的不稳定金属锭 by quarks, akarin
+        - [x] 合成彩虹发电机 by Stark
+        - [x] 完美的 Optium 核心 by Stark
+      - [x] ~~暮色森林~~
+        - [x] ~~集齐暮色 boss 战利品 by Stark~~
       - [x] Electroblob's Wizardry
-    - [ ] 冒险线
-      - [ ] 原版
-      - [ ] Ice and Fire
-      - [x] 深渊
-      - [ ] 暮色森林
-    - [ ] 挑战
-      - [x] 统计
-        - [x] 击杀敌对生物数 (所有生物都要有, 包括Boss)
-        - [x] 存活时间
-        - [x] 死亡次数
-        - [x] 放置方块 ("这世界我来过") by ShuiFeng_Keith
-        - [x] 受到伤害总和 by quraks
-        - [x] ~~抵抗伤害总和 by quraks~~
-        - [x] 各种移动方式的距离 (100km量级) by mcer
-        - [x] 与村民交易次数 by Stark
-      - [ ] 成就
-        - [x] Minecraft
-          - [x] 探索的时光
-        - [x] BOP
-          - [x] 走遍BOP的每一个群系 by akarin
-        - [ ] Pam's Harvestcraft
-          - [ ] 吃过所有食物 ("舌尖上的MC") by ShuiFeng_Keith
-        - [ ] IE
-          - [ ] 用工程师天钩在电线上移动超过2000m ("观光缆车") by akarin
-        - [x] ExU
-          - [x] 合成一定数量的不稳定金属锭 by quarks, akarin
-          - [x] 合成彩虹发电机 by Stark
-          - [x] 完美的 Optium 核心 by Stark
-        - [x] 暮色森林
-          - [x] 集齐暮色 boss 战利品 by Stark
-        - [x] Electroblob's Wizardry
-          - [x] 认识所有法术 ("魔法，为我而存在") by ShuiFeng_Keith
-          - [x] 集齐所有饰品
-        - [ ] Apotheosis
-          - [ ] 提交160级单项附魔书各一本 by ShuiFeng_Keith
-      - [ ] 其他
-        - [ ] 只剩 1% 的生命 by quarks, ShuiFeng_Keith
-        - [ ] 只剩 0.25 以下的生命, 且未死亡 by quarks ("截个图吧")
-        - [ ] 单次伤害 665.5 ~ 666.5 点 ("恶魔转世") by ShuiFeng_Keith
-        - [ ] 保持珊瑚浸染状态超过100s by akarin ("凝视深渊" by ShuiFeng_Keith)
-        - [x] 发现温泉
-        - [ ] 合成一个恶魔生物, 再杀死一个恶魔生物 ("对不起, 我想做个好人") by akarin
-      - [ ] 恶搞
-        - [ ] 被一只鸡杀死 by akarin
-        - [ ] 被电死 by quarks ("双刃剑(Text:"大人, 时代变了" by akarin)" by ShuiFeng_Keith)
-        - [x] 在主世界掉出世界 by quarks ("虚假的基岩" by ShuiFeng_Keith)
-        - [x] 扔 1024 个 EFLN by quarks
-    - [x] 特殊合成
-      - [x] 骏鹰蛋换色
-      - [x] 龙蛋换色
+        - [x] 认识所有法术 ("魔法，为我而存在") by ShuiFeng_Keith
+        - [x] 集齐所有饰品
+      - [ ] Apotheosis
+        - [ ] 提交160级单项附魔书各一本 by ShuiFeng_Keith
+    - [ ] 其他
+      - [ ] 只剩 1% 的生命 by quarks, ShuiFeng_Keith
+      - [ ] 只剩 0.25 以下的生命, 且未死亡 by quarks ("截个图吧")
+      - [ ] 单次伤害 665.5 ~ 666.5 点 ("恶魔转世") by ShuiFeng_Keith
+      - [ ] 保持珊瑚浸染状态超过100s by akarin ("凝视深渊" by ShuiFeng_Keith)
+      - [x] 发现温泉
+      - [ ] ~~合成一个恶魔生物, 再杀死一个恶魔生物 ("对不起, 我想做个好人") by akarin~~
+    - [ ] 恶搞
+      - [ ] 被一只鸡杀死 by akarin
+      - [ ] 被电死 by quarks ("双刃剑(Text:"大人, 时代变了" by akarin)" by ShuiFeng_Keith)
+      - [x] 在主世界掉出世界 by quarks ("虚假的基岩" by ShuiFeng_Keith)
+      - [x] 扔 1024 个 EFLN by quarks
+  - [x] 特殊合成
+    - [x] 骏鹰蛋换色
+    - [x] 龙蛋换色
+- [ ] 双货币系统各自的商店
+- [ ] 抽奖机
+  - [ ] 幸运方块
+  - [ ] USTC 11th 活跃玩家头颅
+    - [ ] 非正版玩家用 Steve/Alice 代替
+  - [ ] 奔腾套
+  - [ ] 红专, 理石
 
 鸣谢
 ------
 
 - USTC-Minecraft 群里的各位
-  - Pentyum for providing the USTC server.
-  - akarin, ShuiFeng_Keith, quarks, Stark for providing ideas about challenges
+  - Pentyum 提供的 USTC server.
+  - akarin, ShuiFeng_Keith, quarks, Stark 提供的挑战任务
+  - Xiao_YaoYou, quarks, yap 提供的抽奖机奖池
 - 来自朋友的支持
   - MZH for helping me on cmd and bash coding.
 - 来自Discord的支持
   - LatMod Industries Server for teaching me using KubeJS
-- Modders for creating such entertaining mods
+- Modders for creating these entertaining mods
 - Forge team for creating Forge API
-- Mojang for creating the game
+- Mojang for creating Minecraft

@@ -3,31 +3,42 @@ import os, csv, re
 from numpy import random
 from python_nbt import JavaInteger
 
-id_list = []
+id_list = set()
 root = "../../config/ftbquests/normal/chapters"
 
-def add_dir(path):
-    for directory in os.listdir(path):
-        if directory not in ['chapter.nbt', 'index.nbt']:
-            if os.path.isdir(os.path.join(path, directory)):
-                add_dir(os.path.join(path, directory))
-            else:
-                directory = os.path.splitext(directory)[0]
-            id_list.append(directory)
-
-add_dir(root)
-
 def gen_id(n=0):
-    while n in id_list or n == 0 or n == 1:
-        n = random.randint(2, 0x80000000)
+    n = n & 0xffffffff
     value = hex(n)
     value = value[2:]
     value = "0" * (8 - len(value)) + value
-    id_list.append(value)
+    while value in id_list or n == 0 or n == 1:
+        n = random.randint(-0x80000000, 0x80000000)
+        n = n & 0xffffffff
+        value = hex(n)
+        value = value[2:]
+        value = "0" * (8 - len(value)) + value
+    id_list.add(value)
     return value
-dump_path = "./crafttweaker.log"
-nbt_path = "./chapters/fb3b8b92"
 
+def add_dir(path):
+    for directory in os.listdir(path):
+        if directory not in {'chapter.nbt', 'index.nbt'}:
+            if os.path.isdir(os.path.join(path, directory)):
+                add_dir(os.path.join(path, directory))
+            else:
+                file = nbt.read_from_nbt_file(os.path.join(path,directory))
+                if 'tasks' in file.keys():
+                    for task in file.get('tasks'):
+                        id_list.add(gen_id(task['uid'].value))
+                if 'rewards' in file.keys():
+                    for reward in file.get('rewards'):
+                        id_list.add(gen_id(reward['uid'].value))
+                directory = os.path.splitext(directory)[0]
+            id_list.add(directory)
+
+add_dir(root)
+
+dump_path = "crafttweaker.log"
 
 ores = []
 flag = False

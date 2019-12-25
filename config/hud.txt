@@ -1,6 +1,6 @@
 # Better HUD configuration file
 # Any removed or corrupted properties will be reverted to default.
-# 2019-11-29 20:42:08.705
+# 2019-12-18 14:08:57.781
 
 global:
 	enabled:true
@@ -9,7 +9,7 @@ armorBars:
 	posMode:0
 	position:middleLeft
 	alignment:middleLeft
-	position2:5,5,640,334,110,70
+	position2:5,5,640,334,16,0
 	anchor:1
 	showDurability:true
 	durabilityMode:0
@@ -46,7 +46,7 @@ blockViewer:
 	distance:256.0
 	showIds:false
 bloodSplatters:
-	enabled:true
+	enabled:false
 	density:1
 breedIndicator:
 	enabled:true
@@ -103,7 +103,7 @@ distance:
 enchantIndicator:
 	enabled:true
 	posMode:0
-	position:5,5,427,240
+	position:5,5,640,334,16,16
 	anchor:1
 experienceInfo:
 	enabled:true
@@ -144,7 +144,7 @@ fullInvIndicator:
 handBar:
 	enabled:true
 	posMode:0
-	position:50,9,640,334,180,18
+	position:48,7,640,334,180,18
 	anchor:0
 	showItem:true
 	showBars:true
@@ -159,7 +159,7 @@ handBar:
 healIndicator:
 	enabled:true
 	posMode:0
-	position:9,11,640,400,9,9
+	position:9,8,640,334,9,9
 	anchor:0
 	mode:1
 hidePlayers:
@@ -223,5 +223,5 @@ systemClock:
 	dateType:1
 	fullYear:true
 waterDrops:
-	enabled:true
+	enabled:false
 	density:1

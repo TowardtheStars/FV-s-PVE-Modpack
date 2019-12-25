@@ -8,24 +8,26 @@
 
 "#Category names for buy and sell. Put the category name in each column after the first"
 "Buy Category Names:","Exchangeable","Building Materials","Dyed Block","Dye","Ammo","Misc"
-"Sell Category Names:","Exchangeable","Top Tier Food","Mob Loot","Misc"
+"Sell Category Names:","Exchangeable","Crops","Misc"
 
-"#Modpack Version","v1.99.6","43793"
+"#Modpack Version","v1.99.6","43817"
 
 
 "#buy  (from player's perspective)","Item/Fluid","Price","Category Index (starting from 0)"
 
 "#Exchangeable"
 "buy","iceandfire:sapphire_gem","250","0"
-"buy","ordinarycoins:coinbronze","1","0"
-"buy","ordinarycoins:coinsilver","100","0"
-"buy","ordinarycoins:coingold","10000","0"
-"buy","ordinarycoins:coinplatinum","1000000","0"
+"buy","minecraft:emerald","250","0"
+"buy","harvestcraft:creepercookieitem","50","0"
+
+
 
 "#Building Materials"
 "buy","minecraft:stone:1","2","1"
 "buy","minecraft:stone:3","2","1"
 "buy","minecraft:stone:5","2","1"
+"buy","minecraft:sand","1","1"
+"buy","minecraft:sand:1","1.25","1"
 "buy","minecraft:sandstone:0","4","1"
 "buy","minecraft:red_sandstone:0","5","1"
 "buy","minecraft:snow","2","1"
@@ -60,14 +62,14 @@
 "buy","biomesoplenty:log_3:7","7.5","1"
 "buy","biomesoplenty:log_4:4","7.5","1"
 "buy","biomesoplenty:log_4:5","7.5","1"
-"buy","twilightforest:twilight_log:0","7.5","1"
-"buy","twilightforest:twilight_log:1","7.5","1"
-"buy","twilightforest:twilight_log:2","7.5","1"
-"buy","twilightforest:twilight_log:3","7.5","1"
-"buy","twilightforest:magic_log:0","15","1"
-"buy","twilightforest:magic_log:1","15","1"
-"buy","twilightforest:magic_log:2","15","1"
-"buy","twilightforest:magic_log:3","15","1"
+"buy","aether_legacy:aether_log:0","7.5","1"
+"buy","aether_legacy:aether_log:1","7.5","1"
+
+
+
+
+
+
 
 
 "buy","iceandfire:pixie_house:0","200","1"
@@ -76,25 +78,25 @@
 "buy","iceandfire:pixie_house:3","200","1"
 "buy","iceandfire:pixie_house:4","200","1"
 "buy","iceandfire:pixie_house:5","200","1"
-"buy","twilightforest:cicada","100","1"
-"buy","twilightforest:firefly","100","1"
-"buy","twilightforest:spiral_bricks","30","1"
-"buy","twilightforest:etched_nagastone","30","1"
-"buy","twilightforest:nagastone_pillar","30","1"
-"buy","twilightforest:etched_nagastone_mossy","30","1"
-"buy","twilightforest:nagastone_pillar_mossy","30","1"
-"buy","twilightforest:etched_nagastone_weathered","30","1"
-"buy","twilightforest:nagastone_pillar_weathered","30","1"
-"buy","twilightforest:naga_stone","30","1"
-"buy","twilightforest:naga_stone:1","30","1"
-"buy","twilightforest:maze_stone:0","50","1"
-"buy","twilightforest:maze_stone:1","50","1"
-"buy","twilightforest:maze_stone:2","50","1"
-"buy","twilightforest:maze_stone:3","50","1"
-"buy","twilightforest:maze_stone:4","50","1"
-"buy","twilightforest:maze_stone:5","50","1"
-"buy","twilightforest:maze_stone:6","50","1"
-"buy","twilightforest:maze_stone:7","50","1"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -211,17 +213,17 @@
 "buy","immersiveengineering:bullet:2 {bullet:""potion""}","25","4"
 
 "#Crafting Materials"
-"buy","iceandfire:fire_lily","30000","5"
-"buy","iceandfire:frost_lily","30000","5"
-"buy","minecraft:glowstone_dust","60","5"
-"buy","minecraft:elytra","80000","5"
-"buy","scalinghealth:heartcontainer","20000","5"
-"buy","scalinghealth:difficultychanger:0","50000","5"
-"buy","scalinghealth:healingitem:0","250","5"
-"buy","scalinghealth:healingitem:1","750","5"
+"#buy","iceandfire:fire_lily","30000","5"
+"#buy","iceandfire:frost_lily","30000","5"
+"#buy","minecraft:glowstone_dust","60","5"
+"#buy","minecraft:elytra","80000","5"
+"#buy","scalinghealth:heartcontainer","20000","5"
+"#buy","scalinghealth:difficultychanger:0","50000","5"
+"#buy","scalinghealth:healingitem:0","250","5"
+"#buy","scalinghealth:healingitem:1","750","5"
 "buy","akashictome:tome {""akashictome:data"":{tconstruct:{id:""tconstruct:book"",Count:1b,tag:{""akashictome:definedMod"":""tconstruct"",mantle:{book:{page:""materials.palladium""}}},Damage:0s},conarm:{id:""conarm:book"",Count:1b,tag:{""akashictome:definedMod"":""conarm""},Damage:0s},ftbquests:{id:""ftbquests:book"",Count:1b,tag:{""akashictome:definedMod"":""ftbquests""},Damage:0s},extrautils2:{id:""extrautils2:book"",Count:1b,tag:{""akashictome:definedMod"":""extrautils2""},Damage:0s},immersiveengineering:{id:""immersiveengineering:tool"",Count:1b,tag:{""akashictome:definedMod"":""immersiveengineering""},Damage:3s},opencomputers:{id:""opencomputers:tool"",Count:1b,tag:{""akashictome:definedMod"":""opencomputers""},Damage:4s},iceandfire:{id:""iceandfire:bestiary"",Count:1b,tag:{Pages:[I;0],""akashictome:definedMod"":""iceandfire""},Damage:0s},ebwizardry:{id:""ebwizardry:wizard_handbook"",Count:1b,tag:{""akashictome:definedMod"":""ebwizardry""},Damage:0s}}}","100","5"
-"buy","iceandfire:manuscript","300","5"
-"buy","tconstruct:materials:50","1000000","5"
+"#buy","iceandfire:manuscript","300","5"
+"#buy","tconstruct:materials:50","1000000","5"
 
 "#Tools"
 "buy","betterbuilderswands:wandunbreakable:12","32768","5"
@@ -230,42 +232,35 @@
 "#sell (from player's perspective)","Item/Fluid","Price","Category Index (starting from 0)"
 "#Exchangeable"
 "sell","iceandfire:sapphire_gem","250","0"
-"sell","ordinarycoins:coinbronze","1","0"
-"sell","ordinarycoins:coinsilver","100","0"
-"sell","ordinarycoins:coingold","10000","0"
-"sell","ordinarycoins:coinplatinum","1000000","0"
+"sell","minecraft:emerald","250","0"
+"sell","harvestcraft:creepercookieitem","50","0"
 
-"#Top Tier Food"
-"sell","harvestcraft:southernstylebreakfastitem","15","1"
-"sell","harvestcraft:meatfeastpizzaitem","20","1"
-"sell","harvestcraft:thankfuldinneritem","25","1"
-"sell","harvestcraft:koreandinneritem","15","1"
-"sell","harvestcraft:gourmetvenisonburgeritem","25","1"
-"sell","harvestcraft:minerstewitem","50","1"
-"sell","harvestcraft:cornedbeefbreakfastitem","15","1"
 
-"#Mob Loot"
-"sell","minecraft:bone","5","2"
-"sell","minecraft:dye:15","1.5","2"
-"sell","minecraft:gunpowder","10","2"
-"sell","minecraft:rotten_flesh","1.5","2"
-"sell","abyssalcraft:shoggothflesh:0","3.5","2"
-"sell","abyssalcraft:shoggothflesh:1","4.5","2"
-"sell","abyssalcraft:shoggothflesh:2","5.5","2"
-"sell","abyssalcraft:shoggothflesh:3","7.5","2"
-"sell","abyssalcraft:shoggothflesh:4","9","2"
-"sell","tconstruct:edible:10","2.5","2"
-"sell","abyssalcraft:shadowgem","15","2"
-"sell","abyssalcraft:essence:0","10","2"
-"sell","abyssalcraft:essence:1","12.5","2"
-"sell","abyssalcraft:essence:2","15","2"
-"sell","abyssalcraft:gatekeeperessence","3750","2"
-"sell","abyssalcraft:eoa","375","2"
-"sell","abyssalcraft:eldritchscale","75","2"
-"sell ","iceandfire:myrmex_jungle_resin:0","15","2"
-"sell ","iceandfire:myrmex_desert_resin:0","15","2"
-"sell","minecraft:dragon_egg","1000","2"
 
-"#Misc"
-"sell","minecraft:diamond","25","3"
-"sell","minecraft:emerald","25","3"
+"# Crops"
+"sell","minecraft:wheat","3","1"
+"sell","minecraft:carrot","1","1"
+"sell","minecraft:potato","1","1"
+"sell","minecraft:poisonous_potato","50","1"
+"sell","harvestcraft:soybeanitem","1","1"
+"sell","ore:listAllseed","1","1"
+"sell","minecraft:pumpkin","6","1"
+"sell","minecraft:melon_block","13.5","1"
+"sell","ore:listAllfruit","2","1"
+"sell","ore:listAllveggie","2","1"
+"sell","ore:cropRice","2","1"
+"sell","ore:listAllgrain","2","1"
+"sell","ore:cropCoffee","5","1"
+"sell","ore:listAllspice","5","1"
+"sell","ore:listAllherb","5","1"
+
+"# Misc"
+"sell","minecraft:leather","6","2"
+"sell","minecraft:coal:1","5","2"
+"sell","minecraft:stone:1","2","2"
+"sell","minecraft:stone:3","2","2"
+"sell","minecraft:stone:5","2","2"
+"sell","abyssalcraft:charcoal","7","2"
+"sell","minecraft:diamond","25","2"
+"sell","minecraft:rotten_flesh","10","2"
+"sell","minecraft:netherrack","0.2","2"

@@ -44,33 +44,45 @@ def dump0(w):
             s += '|\n'
         s += '\n---\n\n'
     s = s.replace("<", "\\<")
+    s = s.replace("$", "\\$")
     return s
 
 # s = dump0(webs[0])
 
 def dump1(w):
     s = ""
+    title = ""
     html = etree.HTML(urlopen(root_url + w).read(), etree.HTMLParser())
     tables = html.xpath ('/html/body/table')
     header = html.xpath ('/html/body/h2/text()')
     if len(header) > 0:
-        s += "## " + header[0] + "\n\n"
+        title = header[0]
     for table in tables:
+        class_table = False
         rows = table.xpath('tr')
         for head_col in rows[0].xpath('th/text()|th/*/text()'):
             s += "|" + head_col
+            if head_col == 'Class':
+                class_table = True
         s += "|\n"
         for i in range(len(rows[0].xpath('th'))):
             s += "|--"
         s += "|\n"
-        for row in rows[1:]:
-            for col in row.xpath('td'):
-                s += "|"
-                for t in col.xpath('.//text()'):
-                    s += t
-            s += '|\n'
-        s += '\n---\n\n'
+        if class_table:
+            row = rows[1]
+            col = row.xpath('td')[0]
+            title = col.xpath('.//text()')[0]
+        else:
+            for row in rows[1:]:
+                for col in row.xpath('td'):
+                    s += "|"
+                    for t in col.xpath('.//text()'):
+                        s += t
+                s += '|\n'
+            s += '\n---\n\n'
+    s = "## " + title + "\n\n" + s
     s = s.replace("<", "\\<")
+    s = s.replace("$", "\\$")
     return s
 
 
