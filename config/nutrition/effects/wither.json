@@ -1,0 +1,9 @@
+{
+	"name": "wither",
+	"potion": "minecraft:wither",
+	"amplifier": 0,
+	"minimum": 0,
+	"maximum": 5,
+	"detect": "any",
+	"enabled": true
+}
