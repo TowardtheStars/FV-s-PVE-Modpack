@@ -1,5 +1,4 @@
-
-
+#modeloaded extrautils2
 recipes.remove(<extrautils2:rainbowgenerator:1>);
 recipes.remove(<extrautils2:rainbowgenerator:2>);
 
@@ -58,3 +57,4 @@ recipes.addShaped(
         [replace_inksac_item, <ore:gemDiamond>, replace_inksac_item]
     ]
 );
+
