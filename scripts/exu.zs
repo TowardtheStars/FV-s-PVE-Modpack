@@ -1,4 +1,4 @@
-#modeloaded extrautils2
+#modloaded extrautils2 abyssalcraft
 recipes.remove(<extrautils2:rainbowgenerator:1>);
 recipes.remove(<extrautils2:rainbowgenerator:2>);
 
