@@ -17,4 +17,21 @@ events.listen("player.tick", function(event){
             }
         }
     }
-})
+});
+
+events.listen("command.registry", function(event){
+    event.create("beginner")
+        .execute(function(sender, args){
+            var target = [sender.player];
+            if (args.size() == 1){
+                target = sender.server.getEntities(args[0]);
+            }
+            if (target.length > 0)
+            {
+                target.forEach(function(t){
+                    sender.server.runCommand("/csg_kit give beginner " + t.name);
+                });
+            }
+        })
+        .add();
+});
