@@ -9,6 +9,10 @@ for entry in all_entries{
             furnace.remove(oreDict.get("ingot" ~ metalName), oreDict.get("ore" ~ metalName));
             furnace.addRecipe(oreDict.get("nugget" ~ metalName).firstItem * 3, oreDict.get("ore" ~ metalName), 0.4);
             print("Successfully altered furnace recipe for metal: " ~ metalName);
+            if (oreDict has "orePoor" ~ metalName) {
+                furnace.remove(oreDict.get("nugget" ~ metalName) * 3, oreDict.get("orePoor" ~ metalName));
+                furnace.addRecipe(oreDict.get("nugget" ~ metalName).firstItem, oreDict.get("orePoor" ~ metalName), 0.4);
+            }
         }
     }
 }

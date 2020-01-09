@@ -1,5 +1,5 @@
 # Modpack config
-version:=2.1.2-alpha
+version:=2.2.1-beta
 pack_name:=FVs-PVE
 
 # Build config
@@ -20,9 +20,9 @@ init:
 	fi					
 
 update_readme: init
-	cp ./readme.md ${build_dir}/readme.md
-	sed -i 's/%{version}/$(version)/g' ${build_dir}/readme.md
-	cp ${build_dir}/readme.md ${build_dir}/readme.txt
+	cp ./readme.md ${build_dir}/README.md
+	sed -i 's/%{version}/$(version)/g' ${build_dir}/README.md
+	cp ${build_dir}/README.md ${build_dir}/使用前必读.txt
 
 packup: init core_mode
 	if [ -f "${zipfile_name}" ]; then rm "${zipfile_name}" ; fi

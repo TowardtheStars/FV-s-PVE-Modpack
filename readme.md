@@ -121,6 +121,7 @@ RAM 3G(2G+) for 单机, 3G(2G+) for 玩服务器, 8G(6G+) for 开服务器
   - Immersive Engineering
   - Ice and Fire
   - Apotheosis
+  - Grapple Mod
 - 冒险向
   - Ice and Fire
   - Abyssal Craft
@@ -144,18 +145,22 @@ RAM 3G(2G+) for 单机, 3G(2G+) for 玩服务器, 8G(6G+) for 开服务器
   - Craft Tweaker2
   - Scaling Health
   - ~~Tinkered Hegemony~~
+  - Blood Moon
 - 科技向
   - Immersive Engineering
   - Project Red
-  - Open Computers
-    - Open Screens
+  - ~~Open Computers~~
+    - ~~Open Screens~~
   - Open Modular Turrets
   - Extra Utilities 2
   - OpenBlocks
+  - RailCraft
 - 魔法
   - Electroblob's Wizardry
-- 装饰
+  - Roots 3
+- 装饰 / 美观
   - Immersive Engineering
+    - Engineer's Decor
   - Chinese Workshop
   - Biomes'O Plenty
   - Cosmetic Armor Reworked
@@ -167,9 +172,20 @@ RAM 3G(2G+) for 单机, 3G(2G+) for 玩服务器, 8G(6G+) for 开服务器
   - Baubles
   - CoralReef
   - Future MC
+  - Rustic
+    - Rustic BOP Woods
+  - MCW Roofs
+  - MCW Bridges
+  - Serene Seasons
+  - Fairy Lights
+  - Mystical World
+  - Malisis Doors
+  - Malisis Blocks
+  - Torch Lever
 - 存储
   - Ender Storage
   - Colossal Chest
+  - Rustic
 - 实用
   - Akashic Tome
   - Better Builder Wands
@@ -187,8 +203,12 @@ RAM 3G(2G+) for 单机, 3G(2G+) for 玩服务器, 8G(6G+) for 开服务器
   - ido
   - Clear Water
   - Water Mechanics Backport
-  - Unmending
+  - ~~Unmending~~
   - ItemPhysic Full
+  - Sit
+  - Klee Slabs
+  - Refined Relocation
+  - Carry on
 - 辅助
   - JEI
     - JECH
@@ -208,14 +228,14 @@ RAM 3G(2G+) for 单机, 3G(2G+) for 玩服务器, 8G(6G+) for 开服务器
   - Custom Starting Gear
   - Inventory Tweaks
   - No More Recipe Conflict
-  - Dynmap
+  - ~~Dynmap~~
 - Client Only
   - Better HUD
   - JourneyMap
   - JECH
   - Smooth Font
   - Foamfix
-  - I18n Update Mod (联网时会自动更新)
+  - I18n Update Mod 
   - Optifine (**高危**)
   - Classic Bars
   - Neat
@@ -273,8 +293,10 @@ RAM 3G(2G+) for 单机, 3G(2G+) for 玩服务器, 8G(6G+) for 开服务器
     - 基础伤害为默认的 80%
   - ~~将使用珊瑚珍珠而不是钻石来开启暮色森林传送门~~
   - Apotheosis
-    - 关闭了Apotheosis对原版刷怪笼的修改
-    - 关闭了Apotheosis对原版怪物的增强
+    - 关闭了 Apotheosis 对原版刷怪笼的修改
+    - 关闭了 Apotheosis 对原版怪物的增强
+    - 关闭了 Apotheosis 对原版甘蔗的修改
+  - 满月时, 主世界的怪物将在离玩家更近的地方生成, 且生成速度更快
 
 前排提示
 -------

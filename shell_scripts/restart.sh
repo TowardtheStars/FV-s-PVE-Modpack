@@ -28,8 +28,14 @@ do
     start_time=`date +%s`
     sh ./run.sh
     end_time=`date +%s`  
-    sleep 10s
+    let timer=10
+    while [ $timer -ge 0 ]
+    do
+        echo $timer
+        let timer=$timer-1
+        sleep 1s
+    done
 done
-echo "! Program terminated within ${min_time}s"
+echo "! Program terminated within ${min_time} s"
 echo "! Auto-restart stopped"
 echo "! Please check log and/or crash report"

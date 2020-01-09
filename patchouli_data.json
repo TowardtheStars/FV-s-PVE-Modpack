@@ -1,0 +1,36 @@
+{
+  "bookGuiScale": 0,
+  "clickedVisualize": false,
+  "bookData": {
+    "mysticalworld:world_guide": {
+      "viewedEntries": [
+        "mysticalworld:ores/amethyst",
+        "mysticalworld:items/unripe_pearl",
+        "mysticalworld:items/silk_cocoon",
+        "mysticalworld:creatures/silkworm"
+      ],
+      "bookmarks": [],
+      "history": [
+        "mysticalworld:creatures/silkworm",
+        "mysticalworld:items/silk_cocoon",
+        "mysticalworld:items/unripe_pearl",
+        "mysticalworld:ores/amethyst"
+      ],
+      "completedManualQuests": []
+    },
+    "roots:roots_guide": {
+      "viewedEntries": [
+        "roots:basics/pyre",
+        "roots:rituals/ritual_transmutation",
+        "roots:apparatus/runestone"
+      ],
+      "bookmarks": [],
+      "history": [
+        "roots:apparatus/runestone",
+        "roots:rituals/ritual_transmutation",
+        "roots:basics/pyre"
+      ],
+      "completedManualQuests": []
+    }
+  }
+}
