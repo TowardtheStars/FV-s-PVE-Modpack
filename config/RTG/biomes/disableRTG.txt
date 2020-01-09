@@ -1,5 +1,0 @@
-terrain {
-    # If TRUE, RTG terrain will be disabled in this biome and only vanilla terrain will be generated.
-    #  [default: false]
-    B:"Disable RTG Terrain"=false
-}

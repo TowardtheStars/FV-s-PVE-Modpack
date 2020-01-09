@@ -1,6 +1,6 @@
 # Better HUD configuration file
 # Any removed or corrupted properties will be reverted to default.
-# 2019-12-18 14:08:57.781
+# 2020-01-01 00:46:00.532
 
 global:
 	enabled:true
@@ -144,7 +144,7 @@ fullInvIndicator:
 handBar:
 	enabled:true
 	posMode:0
-	position:48,7,640,334,180,18
+	position:47,6,640,334,180,18
 	anchor:0
 	showItem:true
 	showBars:true
