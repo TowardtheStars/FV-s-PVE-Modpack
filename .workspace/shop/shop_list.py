@@ -5,13 +5,14 @@ import pysnooper
 import numpy as np
 
 print("Reading shop list")
-# "./.workspace/shop/"
-workbook = xlrd.open_workbook("shoplist.xlsx")
+root = "./.workspace/shop/"
+config_path = "config/adminshop/shop.csv"
+workbook = xlrd.open_workbook(os.path.join(root, "shoplist.xlsx"))
 header = workbook.sheet_by_name("shop head")
 buy_list_sheet = workbook.sheet_by_name("shop buy")
 sell_list_sheet = workbook.sheet_by_name("shop sell")
 
-file = open("../../config/adminshop/shop.csv", "w")
+file = open(config_path, "w")
 
 output = csv.writer(file, dialect=csv.unix_dialect)
 
@@ -26,3 +27,6 @@ output.writerows([[],[]])
 output.writerows(gen_rows(sell_list_sheet))
 print("Finished")
 file.close()
+
+# print("Press any key to quit")
+# sys.stdin.readline()
