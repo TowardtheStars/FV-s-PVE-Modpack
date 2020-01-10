@@ -32,3 +32,5 @@ usernamecache.json
 *.lnk
 zs_export.json
 .workspace/icons
+.workspace/ModpackModeSelector/__pycache__
+.workspace/ModpackModeSelector/dist

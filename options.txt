@@ -11,7 +11,7 @@ bobView:true
 anaglyph3d:false
 maxFps:260
 fboEnable:true
-difficulty:3
+difficulty:2
 fancyGraphics:true
 ao:2
 renderClouds:false
@@ -104,13 +104,13 @@ key_key.xu2.searchforitems:0
 key_key.ftbmoney.shop:0
 key_roots.keybinds.pouch:0
 key_roots.keybinds.quiver:0
+key_roots.keybinds.spell_slot_2:0
 key_roots.keybinds.spell_slot_3:0
 key_roots.keybinds.spell_slot_4:0
-key_roots.keybinds.spell_slot_next:0
-key_roots.keybinds.spell_slot_2:0
-key_roots.keybinds.spell_slot_previous:0
 key_roots.keybinds.spell_slot_5:0
+key_roots.keybinds.spell_slot_previous:0
 key_roots.keybinds.spell_slot_1:0
+key_roots.keybinds.spell_slot_next:0
 key_openblocks.keybind.vario_switch:47
 key_openblocks.keybind.vario_vol_up:0
 key_openblocks.keybind.vario_vol_down:0
@@ -222,7 +222,7 @@ key_keybind.railcraft.loco.slower:51:ALT
 key_keybind.railcraft.loco.mode:50:ALT
 key_keybind.railcraft.loco.whistle:49:ALT
 soundCategory_master:0.5662252
-soundCategory_music:0.52112675
+soundCategory_music:0.0
 soundCategory_record:1.0
 soundCategory_weather:1.0
 soundCategory_block:1.0

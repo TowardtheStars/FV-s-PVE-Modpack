@@ -24,7 +24,7 @@ update_readme: init
 	sed -i 's/%{version}/$(version)/g' ${build_dir}/README.md
 	cp ${build_dir}/README.md ${build_dir}/使用前必读.txt
 
-packup: init core_mode
+packup: init lan_mode
 	if [ -f "${zipfile_name}" ]; then rm "${zipfile_name}" ; fi
 	xargs --arg-file=${build_config}/zip.files find 		\
 		| grep -v --file=${build_config}/zip.blacklist 		\
@@ -57,17 +57,13 @@ dump_doc:
 bounty_list:
 	@python3 ".workspace/bounty/bounty.py"
 
-dev_mode:
-	@echo "Into dev mode"
-	@sh ${sh_script_dir}/ModpackModeSelector.sh d
-
-sp_mode:
+lan_mode:
 	@echo "Into single player mode"
-	@sh ${sh_script_dir}/ModpackModeSelector.sh sp
+	@sh ${sh_script_dir}/ModpackModeSelector.sh l
 
-core_mode:
-	@echo "Into core mode"
-	@sh ${sh_script_dir}/ModpackModeSelector.sh o
+client_mode:
+	@echo "Into client mode"
+	@sh ${sh_script_dir}/ModpackModeSelector.sh c
 
 server_mode:
 	@echo "Into server mode"

@@ -10,14 +10,14 @@ function setTitle(player, title){
     if (title == null)
     {
         utils.server.runCommand(
-            "ranks set_permission " + player.name + "ftbutilities.chat.name_format {name}"
+            "ranks set_permission " + player.name + "ftbutilities.chat.name_format <{name}>"
         );
         utils.server.runCommand(
             "ranks set_permission " + player.name + " " + CURRENT + " \"\""
         )
     }else{
         utils.server.runCommand(
-            "ranks set_permission " + player.name + " ftbutilities.chat.name_format \"[" + title + "]{name}\""
+            "ranks set_permission " + player.name + " ftbutilities.chat.name_format \"<[" + title + "]{name}>\""
         );
         utils.server.runCommand(
             "ranks set_permission " + player.name + " " + CURRENT + " " + title
@@ -34,7 +34,7 @@ function getAvailableTitles(player){
 }
 
 
-if (ftbutilities & ftbutilities.ranksActive)
+if (mod.isLoaded("ftbutilities"))
 {
     // Give each player a unique rank
     events.listen("player.logged_in", function(event){
@@ -63,6 +63,16 @@ if (ftbutilities & ftbutilities.ranksActive)
                     sender.tell(getAvailableTitles(player))
                 }else{
                     sender.tell("Please select a player")
+                }
+            },
+            "give": function(player_name, args){
+                var player = sender.server.getPlayer(player_name);
+                if (player)
+                {
+                    var list = getPlayerRank(player).getPermission(TITLE_LIST);
+                    list = list + "|" + args[0];
+                    getPlayerRank(player).setPermission(TITLE_LIST, list);
+                    ftbutilities.saveRanks();
                 }
             }
         }
