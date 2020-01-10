@@ -1,23 +1,26 @@
 # /bin/bash
 if [ $# -eq 0 ]
 then
-echo ==========================
-echo 请选择modpack模式
-echo ==========================
-echo 服务器: s
-echo 客户端: c
-echo "单机端(默认): sp"
-echo 开发端: d
-echo 核心:   o
-echo 显示详细信息: h
-echo ==========================
+echo "=========================="
+echo "请选择modpack模式"
+echo "=========================="
+echo "客户端: c"
+echo "开发端: d"
+echo "单机端: l (默认)"
+echo "服务器: s"
+echo "显示详细信息: -help"
+echo "=========================="
 fi
 # ==============================================================================
-find './mods' -maxdepth 1 | grep './mods/\[[C|D|S|L]\].*\.jar' | xargs -r --no-run-if-empty rm
+
+find './mods' -maxdepth 1 | 
+    grep "\./mods/\[.*\.jar$" | 
+    xargs -I {file} -n 1 -r mv {file} {file}.disabled
+
 # ==============================================================================
 
 loop=1
-
+mode=sp
 while [ $loop -ne 0 ]
 do
     loop=0
@@ -34,45 +37,43 @@ do
         if [ $# -eq 0 ]
         then echo "您已选择: 客户端"
         fi
-        cp ./mods/client/* ./mods/ 
-        ;;
-    'd')    
-        if [ $# -eq 0 ]
-        then echo "您已选择: 开发端"
-        fi
-        cp ./mods/dev/* ./mods/
-        cp ./mods/sp_lan/* ./mods/ 
-        cp ./mods/client/* ./mods/ 
-        cp ./mods/server/* ./mods/
         ;;
     's')
         if [ $# -eq 0 ]
         then echo "您已选择: 服务端"
         fi
-        cp ./mods/server/* ./mods/ 
         ;;
-    'h')  
-        echo "[s]  服务端:       服务端的mod配置"
-        echo "[c]  客户端:       与服务端相对, 只可以链接服务端的mod配置"
-        echo "[sp] 单机端(默认): 可以进行单机游戏, 并可以与好友联机的mod配置(离线模式)"
-        echo "[d]  开发端:       用于本mod包开发的mod配置"
-        echo "[o]  核心:         只保留以上所有端都包含的mod"
-        loop=1
-        ;;
-    'o')
-        if [ $# -eq 0 ]
-        then echo "您已选择: 核心"
-        fi
-        ;;
-    *)
+    'l')
         if [ $# -eq 0 ]
         then echo "您已选择: 单机端"
         fi
-        cp ./mods/sp_lan/* ./mods/ 
-        cp ./mods/client/* ./mods/ 
-        cp ./mods/server/* ./mods/
+        ;;
+    'd')
+        if [ $# -eq 0 ]
+        then echo "您已选择: 开发端"
+        fi
+        ;;
+    *)  
+        echo "[c]   客户端: 与服务端相对, 只可以链接服务端的mod配置"
+        echo "[d]   开发端: 用于本mod包开发的mod配置"
+        echo "[l]   单机端: 可以进行单机游戏, 并可以与好友联机的mod配置(离线模式) (默认)"
+        echo "[s]   服务端: 服务端的mod配置"
+        if [ $# -eq 0 ]
+        then
+            loop=1
+        fi
         ;;
     esac
+
+    if [ $loop -eq 0 ]
+    then
+        regex="\[[^$mode]*$mode[^$mode]*\].*\.jar\.disabled$"
+        find './mods' -maxdepth 1 | 
+            grep $regex | 
+            xargs -n 1 -I {} -r echo {} | 
+            sed 's/\.jar\.disabled/\.jar/g' | 
+            xargs -n 1 -I {} -r mv {}.disabled {}
+    fi
 done
 
 if [ $# -eq 0 ]
@@ -94,3 +95,4 @@ if [ $# -eq 0 ]; then
 	echo '请按任意键继续...'
     get_char
 fi
+
