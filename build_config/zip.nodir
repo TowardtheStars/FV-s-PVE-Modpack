@@ -1,3 +1,4 @@
 ./shell_scripts
 ./build/README.md
 ./build/README.txt
+./.workspace/ModpackModeSelector/dist/mode_selector.exe
