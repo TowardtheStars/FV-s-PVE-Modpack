@@ -171,6 +171,7 @@ def intoRoman(num):
 
 ench_count = 0
 def gen_quest(_id, name, lvl):
+    global ench_count
     quest = nbt.NBTTagCompound()
     quest['x']=nbt.NBTTagDouble(5.5 + ench_count // 7)
     quest['y']=nbt.NBTTagDouble(-1 + ench_count % 7)
@@ -178,7 +179,7 @@ def gen_quest(_id, name, lvl):
     quest['tasks'] = nbt.NBTTagList(tag_type=nbt.NBTTagCompound)
 
     task = nbt.NBTTagCompound()
-    task['uid'] = nbt.NBTTagString(gen_id())
+    task['uid'] = nbt.NBTTagInt(JavaInteger.to_signed(gen_id(), base=16))
     task['type'] = nbt.NBTTagString('item')
     task['title']= nbt.NBTTagString('附魔书 - %s' % (name + (intoRoman(lvl) if lvl > 1 else '')))
     task['ignore_nbt'] = nbt.NBTTagByte(2)
@@ -198,7 +199,7 @@ def gen_quest(_id, name, lvl):
 
     quest['rewards'] = nbt.NBTTagList(tag_type = nbt.NBTTagCompound)
     reward = nbt.NBTTagCompound()
-    reward['uid'] = nbt.NBTTagString(gen_id())
+    reward['uid'] = nbt.NBTTagInt(JavaInteger.to_signed(gen_id(), base=16))
     reward['type'] = nbt.NBTTagString('ftbmoney:money')
     reward['ftb_money'] = nbt.NBTTagLong(1000)
     quest['rewards'].append(reward)
@@ -207,8 +208,12 @@ def gen_quest(_id, name, lvl):
 
 
 log_file = open('./ench_max_lvl.csv', 'w', encoding='gbk')
+chapter = os.path.join('chapters', 'ebeae9f8')
 for k in ench_id.keys():
-    log_file.write(ench_name[k] + ','+ str(ench_lvl[k]) + '\n')
+    quest = gen_quest(ench_id[k], ench_name[k], ench_lvl[k])
+    quest_id = gen_id()
+    nbt.write_to_nbt_file(os.path.join(chapter, quest_id+'.nbt'), quest)
+    log_file.write(ench_name[k] + ','+ str(ench_lvl[k]) + ',' + quest_id + '\n')
 log_file.close()
 
 
