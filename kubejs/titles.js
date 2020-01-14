@@ -6,21 +6,25 @@ function getPlayerRank(player){
     return player.data.ftbutilities.rank;
 }
 
+function getPlayerRankId(player){
+	return "titlekjs_" + player.name;
+}
+
 function setTitle(player, title){
     if (title == null)
     {
         utils.server.runCommand(
-            "ranks set_permission " + player.name + "ftbutilities.chat.name_format <{name}>"
+            "ranks set_permission " + getPlayerRankId(player) + "ftbutilities.chat.name_format <{name}>"
         );
         utils.server.runCommand(
-            "ranks set_permission " + player.name + " " + CURRENT + " \"\""
+            "ranks set_permission " + getPlayerRankId(player) + " " + CURRENT + " \"\""
         )
     }else{
         utils.server.runCommand(
-            "ranks set_permission " + player.name + " ftbutilities.chat.name_format \"<[" + title + "]{name}>\""
+            "ranks set_permission " + getPlayerRankId(player) + " ftbutilities.chat.name_format \"<[" + title + "]{name}>\""
         );
         utils.server.runCommand(
-            "ranks set_permission " + player.name + " " + CURRENT + " " + title
+            "ranks set_permission " + getPlayerRankId(player) + " " + CURRENT + " " + title
         );
     }
     ftbutilities.saveRanks();
@@ -33,20 +37,23 @@ function getAvailableTitles(player){
     return list_str.split("\\|");
 }
 
+function getOrCreateRank(rank_id, parent){
+	if (parent == null){
+		parent = "";
+	}
+	if (!ftbutilities.ranks.contains(rank_id){
+		utils.server.runCommand("ranks create " + rank_id + " " + parent;
+	}
+	return ftbutilities.getRank(rank_id);
+}
 
 if (mod.isLoaded("ftbutilities"))
 {
     // Give each player a unique rank
     events.listen("player.logged_in", function(event){
         var player = event.player;
-        var rank_id = "personal_rank_" + player.name;
-        if (!ftbutilities.ranks.contains(rank_id))
-        {
-            event.server.runCommand(
-                "ranks create " + rank_id + " " + "player"
-            );
-        }
-        var newRank = ftbutilities.getRank(rank_id);
+        var rank_id = getPlayerRankId(player);
+        var newRank = getOrCreateRank(rank_id);
         if (getPlayerRank(player).id != rank_id){
             events.postCancellable('ftbutilities.rank.promoted.' + rank_id, {'player':event.player, 'rank': newRank});
         }
@@ -56,7 +63,8 @@ if (mod.isLoaded("ftbutilities"))
     // For admin
     function command_titles_admin(sender, args){
         var subcommand = {
-            "list": function(player_name){
+            "list": function(sub_args){
+		var player_name = sub_args[0];
                 var player = sender.server.getPlayer(player_name);
                 if (player)
                 {
@@ -65,12 +73,12 @@ if (mod.isLoaded("ftbutilities"))
                     sender.tell("Please select a player")
                 }
             },
-            "give": function(player_name, args){
-                var player = sender.server.getPlayer(player_name);
+            "give": function(sub_args){
+                var player = sender.server.getPlayer(sub_args[0]);
                 if (player)
                 {
                     var list = getPlayerRank(player).getPermission(TITLE_LIST);
-                    list = list + "|" + args[0];
+                    list = list + "|" + sub_args[1];
                     getPlayerRank(player).setPermission(TITLE_LIST, list);
                     ftbutilities.saveRanks();
                 }

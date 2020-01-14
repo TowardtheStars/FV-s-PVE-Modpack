@@ -5,24 +5,28 @@ power: 1
 default_player_rank: true
 example.permission: true
 example.other_permission: false
-example.permission_with_value: 0
-ftbutilities.spawn.cooldown: 0s
+ftbutilities.homes.max: 0
+ftbutilities.back.tpa: false
+ftbutilities.back.back: true
+ftbutilities.back.spawn: true
+ftbutilities.back.rtp: true
+ftbutilities.claims.max_chunks: 50
+ftbutilities.chunkloader.maxchunks: 0
+command.forge.tps: true
+command.forge.dimensions: true
+command.ordinarycoins.coins: true
+command.ftbmoney.pay: true
 
-[vip]
-power: 20
+[player_lv1]
+power: 2
 parent: player
-ftbutilities.chat.name_format: <&bVIP {name}&r>
-example.other_permission: true
-example.permission_with_value: 15
-
-[title_]
-power: 20
-parent: player
-ftbutilities.chat.name_format: <&b[title] {name}&r>
+ftbutilities.chat.name_format: &1[Lv 1]&r{name}
 
 [admin]
-power: 100
-parent: vip
+power: 2
 default_op_rank: true
-ftbutilities.chat.name_format: <&2{name}&r>
-example.permission_with_value: 100
+example.other_permission: true
+
+[personal_rank_popo]
+power: 4
+parent: player
