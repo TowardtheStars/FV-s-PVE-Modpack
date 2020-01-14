@@ -1,5 +1,5 @@
 # Modpack config
-version:=2.2.2-beta
+version:=2.4.0
 pack_name:=FVs-PVE
 
 # Build config
@@ -33,7 +33,7 @@ packup: init lan_mode
 	@echo "Pack up finished"
 	@echo "Result: ${zipfile_name}"
 
-mod_list: init sp_mode
+mod_list: init lan_mode
 	@echo "Recording mod list..."
 	if [ -f ${mod_list_file} ]; then rm ${mod_list_file}; fi
 	find ./mods -maxdepth 1 -type f >> ${mod_list_file}
@@ -68,6 +68,10 @@ client_mode:
 server_mode:
 	@echo "Into server mode"
 	@sh ${sh_script_dir}/ModpackModeSelector.sh s
+
+dev_mode:
+	@echo "Into dev mode"
+	@sh ${sh_script_dir}/ModpackModeSelector.sh d
 
 clean:
 	if [ -d $(build_dir) ]; then rm -r $(build_dir); fi

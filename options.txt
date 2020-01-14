@@ -2,7 +2,7 @@ version:1343
 invertYMouse:false
 mouseSensitivity:0.5
 fov:0.0
-gamma:0.0
+gamma:1.0
 saturation:0.0
 renderDistance:8
 guiScale:3
@@ -92,6 +92,7 @@ key_key.ftbutilities.trash:211
 key_key.ftbquests.quests:0
 key_key.staff_mode.desc:50
 key_key.use_cage.desc:49
+key_keybind.railcraft.cart.bed:208
 key_key.conarm.toggle_helm.desc:34
 key_key.conarm.toggle_chest.desc:35
 key_key.conarm.toggle_leg.desc:36
@@ -104,17 +105,16 @@ key_key.xu2.searchforitems:0
 key_key.ftbmoney.shop:0
 key_roots.keybinds.pouch:0
 key_roots.keybinds.quiver:0
-key_roots.keybinds.spell_slot_2:0
-key_roots.keybinds.spell_slot_3:0
-key_roots.keybinds.spell_slot_4:0
-key_roots.keybinds.spell_slot_5:0
-key_roots.keybinds.spell_slot_previous:0
-key_roots.keybinds.spell_slot_1:0
 key_roots.keybinds.spell_slot_next:0
+key_roots.keybinds.spell_slot_4:0
+key_roots.keybinds.spell_slot_3:0
+key_roots.keybinds.spell_slot_5:0
+key_roots.keybinds.spell_slot_1:0
+key_roots.keybinds.spell_slot_2:0
+key_roots.keybinds.spell_slot_previous:0
 key_openblocks.keybind.vario_switch:47
 key_openblocks.keybind.vario_vol_up:0
 key_openblocks.keybind.vario_vol_down:0
-key_keybind.railcraft.cart.bed:208
 key_Difficulty Meter - Show:0
 key_Difficulty Meter - Show Always:0
 key_key.pickup.item:0
@@ -128,7 +128,7 @@ key_key.betterHud.disable:61
 key_key.i18nmod.main_key.desc:29
 key_key.i18nmod.report_key.desc:37
 key_key.i18nmod.weblate_key.desc:38
-key_key.i18nmod.mcmod_key.desc:50
+key_key.i18nmod.mcmod_key.desc:0
 key_key.i18nmod.reload_key.desc:19
 key_key.jei.toggleOverlay:24:CONTROL
 key_key.jei.focusSearch:33:CONTROL
@@ -140,13 +140,17 @@ key_key.jei.previousPage:201
 key_key.jei.nextPage:209
 key_key.jei.bookmark:30
 key_key.jei.toggleBookmarkOverlay:0
+key_key.toggleLiquids:38
+key_key.toggleVisible:0
+key_key.immersiveengineering.magnetEquip:31
+key_key.immersiveengineering.chemthrowerSwitch:0
 key_key.dragon_fireAttack:19
 key_key.dragon_strike:34
 key_key.dragon_down:45
 key_key.dragon_change_view:65
 key_keys.armourers_workshop.undo:44:CONTROL
 key_keys.armourers_workshop.open-wardrobe:25
-key_bbw.key.mode:50
+key_bbw.key.mode:50:CONTROL
 key_bbw.key.fluidmode:33:ALT
 key_key.settings_menu:34
 key_key.range:19
@@ -155,7 +159,7 @@ key_key.anchor:35
 key_key.fuzzy:0
 key_key.connected_area:0
 key_key.rotate_mirror:0
-key_key.material_list:50
+key_key.material_list:51
 key_key.carry.desc:42
 key_mod.chiselsandbits.chiselmode.single:0
 key_mod.chiselsandbits.chiselmode.snap2:0
@@ -196,10 +200,6 @@ key_key.plustic_toggle_tool.desc:51:ALT
 key_key.plustic_fruit_salad.desc:12:ALT
 key_key.plustic_mots.desc:13:ALT
 key_key.taiga.alt_action:29
-key_key.toggleLiquids:38
-key_key.toggleVisible:0
-key_key.immersiveengineering.magnetEquip:31
-key_key.immersiveengineering.chemthrowerSwitch:0
 key_key.journeymap.zoom_in:13
 key_key.journeymap.zoom_out:12
 key_key.journeymap.minimap_type:26
@@ -215,12 +215,12 @@ key_key.journeymap.fullscreen.north:200
 key_key.journeymap.fullscreen.south:208
 key_key.journeymap.fullscreen.east:205
 key_key.journeymap.fullscreen.west:203
-key_key.control:29
 key_keybind.railcraft.loco.reverse:53:ALT
 key_keybind.railcraft.loco.faster:52:ALT
 key_keybind.railcraft.loco.slower:51:ALT
 key_keybind.railcraft.loco.mode:50:ALT
 key_keybind.railcraft.loco.whistle:49:ALT
+key_key.control:29
 soundCategory_master:0.5662252
 soundCategory_music:0.0
 soundCategory_record:1.0

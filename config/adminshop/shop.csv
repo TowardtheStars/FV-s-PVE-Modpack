@@ -10,7 +10,7 @@
 "Buy Category Names:","Exchangeable","Building Materials","Dyed Block","Dye & Ammo","Logs","Misc"
 "Sell Category Names:","Exchangeable","Crops","Misc"
 
-"#Modpack Version","v2.0.6","43836"
+"#Modpack Version","v2.0.6","43844"
 
 
 "#buy  (from player's perspective)","Item/Fluid","Price","Category Index (starting from 0)"
@@ -20,7 +20,7 @@
 "buy","minecraft:emerald","250","0"
 "buy","harvestcraft:creepercookieitem","50","0"
 "buy","minecraft:dirt","1","0"
-"buy","minecraft:cobble_stone","1","0"
+"buy","minecraft:cobblestone","1","0"
 
 "#Building Materials"
 "buy","minecraft:stone:1","2","1"
@@ -214,7 +214,7 @@
 "#Crafting Materials"
 "#buy","iceandfire:fire_lily","30000","5"
 "#buy","iceandfire:frost_lily","30000","5"
-"#buy","minecraft:glowstone_dust","60","5"
+"buy","minecraft:glowstone_dust","60","5"
 "#buy","minecraft:elytra","80000","5"
 "#buy","scalinghealth:heartcontainer","20000","5"
 "#buy","scalinghealth:difficultychanger:0","50000","5"
@@ -226,6 +226,8 @@
 
 "#Tools"
 "buy","betterbuilderswands:wandunbreakable:12","32768","5"
+"buy","minecraft:redstone","5","5"
+"buy","projectred-core:resource_item:103","10","5"
 
 
 "#sell (from player's perspective)","Item/Fluid","Price","Category Index (starting from 0)"
@@ -234,7 +236,7 @@
 "sell","minecraft:emerald","250","0"
 "sell","harvestcraft:creepercookieitem","50","0"
 "sell","minecraft:dirt","1","0"
-"sell","minecraft:cobble_stone","1","0"
+"sell","minecraft:cobblestone","1","0"
 
 "# Crops"
 "sell","minecraft:wheat","3","1"
@@ -264,3 +266,4 @@
 "sell","minecraft:rotten_flesh","10","2"
 "sell","minecraft:netherrack","0.2","2"
 "sell","rustic:slate","2","2"
+"sell","minecraft:wool","5","2"

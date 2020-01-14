@@ -41,13 +41,13 @@ Forge Version: 14.23.5.2847
 一些小程序
 ----------
 
-ModpackModeSelector.sh / ModpackModeSelector.bat
+ModpackModeSelector.sh / mode_selector.exe
 - - - -
-用于选择 Modpack 模式的脚本, bat版本和sh版本功能一致
+用于选择 Modpack 模式的脚本, exe版本和sh版本功能一致
 
 第一次下载后请务必运行此脚本
 
-对于 Windows 系统, 请双击 ModpackModeSelector.bat 使用
+对于 Windows 系统, 请双击 mode_selector.exe 使用
 
 对于 Linux 内核系统, 请直接运行 ModpackModeSelector.sh 脚本, 或使用 
 
@@ -69,10 +69,6 @@ sh ./ModpackModeSelector.sh <模式代码>
   - 可以离线模式联机
 - 开发端: d
   - 如果想查看 KubeJS 文档, 请选择这个模式
-- 核心(初始状态): o
-  - 你下载到这个包时候的模式, 仅仅用于打包
-  - 可用于加入这个包对应的服务器
-  - 当然, 和客户端模式比, 少了许多辅助的 mod, 比如小地图
 
 restart.sh
 - - - -
@@ -146,6 +142,7 @@ RAM 3G(2G+) for 单机, 3G(2G+) for 玩服务器, 8G(6G+) for 开服务器
   - Scaling Health
   - ~~Tinkered Hegemony~~
   - Blood Moon
+  - Hostile Worlds - Invasions
 - 科技向
   - Immersive Engineering
   - Project Red
@@ -228,7 +225,7 @@ RAM 3G(2G+) for 单机, 3G(2G+) for 玩服务器, 8G(6G+) for 开服务器
   - Custom Starting Gear
   - Inventory Tweaks
   - No More Recipe Conflict
-  - ~~Dynmap~~
+  - Dynmap (仅服务端)
 - Client Only
   - Better HUD
   - JourneyMap
@@ -263,23 +260,27 @@ RAM 3G(2G+) for 单机, 3G(2G+) for 玩服务器, 8G(6G+) for 开服务器
     - 将更多使用设备2的彩虹发电机的上下部分配方中的共振红石水晶替换为深渊的守门人的精华
     - ~~删除了量子采石场相关方块的合成表~~
       - 直接移除了量子采石场
-      - 甚至连量子采石场维度也移除了
+      - ~~甚至连量子采石场维度也移除了~~ 
+      - 保留量子采石场维度, 作为服务器小游戏场地使用
   - 消除了一部分合成表冲突
     - ~~深渊国度的铁盘 vs 沉浸工程的铁棒~~
     - ~~开放式电脑的磁盘 vs 冰与火的铁链~~
     - 使用了 NoMoreRecipeConflict 模组消除合成冲突
-  - 盆栽mod中的盆栽现在需要用砖块而不是砖头来合成了
-
+- 盆栽mod中的盆栽现在需要用砖块而不是砖头来合成了
+  
 - 游戏性修改
   - 关闭 Epic Siege Mod 中 Creeper Jockey 的特性
   - Epic Siege Mod 中怪物索敌半径从64下降到32
   - 去除 Inferno Mobs 精英怪战利品表中的原版钻石/皮革装备
   - Cyberware 免疫抗性上限从100上调至125
-  - 关闭 Inferno Mobs 的Sticky特性
+  - 关闭 Inferno Mobs 的 Sticky 特性
   - 关闭 Ice and Fire 中小精灵偷东西的特性
   - 床现在不能用来跳过夜晚了, 只能用来设置重生点 (Epic Siege Mod)
   - 所有的末影龙生而平等 (Equal Dragons)
-  - 匠魂工具和装备的最高等级为2 (Tinker's Tool Levelling)
+    - 所有末影龙的经验掉落数量都一样
+    - 所有末影龙都会死亡时生成龙蛋, 而不是只有第一条末影龙可以生成
+  - 匠魂工具和装备的最高等级为 3 (Tinker's Tool Levelling)
+    - 初始工具强化槽数量为 2
   - 初始装备 (Custom Starting Gears)
     - 匠魂石剑
     - 匠魂石斧
@@ -287,6 +288,7 @@ RAM 3G(2G+) for 单机, 3G(2G+) for 玩服务器, 8G(6G+) for 开服务器
     - 匠魂石铲
     - 皮质盔甲一套
     - 阿卡什宝典 - 包含除死灵之书以外的所有模组指导书
+    - 10 个橡木
   - 火龙和冰龙的生成率提高至默认设置的1.5倍
   - 龙炎钢和龙霜钢的材料属性有所调整
     - 基础耐久为默认的 25%
@@ -296,7 +298,7 @@ RAM 3G(2G+) for 单机, 3G(2G+) for 玩服务器, 8G(6G+) for 开服务器
     - 关闭了 Apotheosis 对原版刷怪笼的修改
     - 关闭了 Apotheosis 对原版怪物的增强
     - 关闭了 Apotheosis 对原版甘蔗的修改
-  - 满月时, 主世界的怪物将在离玩家更近的地方生成, 且生成速度更快
+  - 满月时, 主世界的怪物将在离玩家更近的地方生成, 且生成速度更快 (Blood Moon 模组特性)
 
 前排提示
 -------
@@ -368,28 +370,28 @@ RAM 3G(2G+) for 单机, 3G(2G+) for 玩服务器, 8G(6G+) for 开服务器
   - 有些敌对生物(主要是 Ice and Fire 的生物)在 Journey Map 小地图上的图标与中立生物一样
 - Admin shop 中可以出售能量换取金钱, 兑换率为 32768 RF/$
 - 匠魂浮空岛只能出现在主世界~~和暮色森林世界~~
-- 附魔等级上限和铁砧等级上限已被 Apotheosis 模组修改
+- 附魔等级上限和铁砧消耗等级上限已被 Apotheosis 模组修改
 
 未来版本计划
 ------------
 
 - ~~加入针对暮色森林的魔改~~
 - [ ] 完善任务树
-  - [ ] 装备线
+  - [x] 装备线
     - [x] 匠魂
       - [x] 发展线
       - [x] ~~TAIGA~~
       - [x] Ice and Fire 龙钢
-    - [ ] 神话附魔
-      - [ ] 发展线
-  - [ ] 工业线
-    - [ ] IE
-    - [ ] OpenComputers
+    - [x] 神话附魔
+      - [x] 发展线
+  - [x] 工业线
+    - [x] IE
+    - [x] ~~OpenComputers~~
   - [x] 魔法线
     - [x] Electroblob's Wizardry
-  - [ ] 冒险线
-    - [ ] 原版
-    - [ ] Ice and Fire
+  - [x] 冒险线
+    - [x] 原版
+    - [x] Ice and Fire
     - [x] 深渊
   - [ ] 挑战
     - [x] 统计
@@ -419,12 +421,12 @@ RAM 3G(2G+) for 单机, 3G(2G+) for 玩服务器, 8G(6G+) for 开服务器
       - [x] Electroblob's Wizardry
         - [x] 认识所有法术 ("魔法，为我而存在") by ShuiFeng_Keith
         - [x] 集齐所有饰品
-      - [ ] Apotheosis
-        - [ ] 提交160级单项附魔书各一本 by ShuiFeng_Keith
+      - [x] Apotheosis
+        - [x] 提交~~160级~~顶级单项附魔书各一本 by ShuiFeng_Keith
     - [ ] 其他
-      - [ ] 只剩 1% 的生命 by quarks, ShuiFeng_Keith
-      - [ ] 只剩 0.25 以下的生命, 且未死亡 by quarks ("截个图吧")
-      - [ ] 单次伤害 665.5 ~ 666.5 点 ("恶魔转世") by ShuiFeng_Keith
+      - [ ] ~~只剩 1% 的生命 by quarks, ShuiFeng_Keith~~
+      - [ ] ~~只剩 0.25 以下的生命, 且未死亡 by quarks ("截个图吧")~~
+      - [x] 单次伤害 665.5 ~ 666.5 点 ("恶魔转世") by ShuiFeng_Keith
       - [ ] 保持珊瑚浸染状态超过100s by akarin ("凝视深渊" by ShuiFeng_Keith)
       - [x] 发现温泉
       - [ ] ~~合成一个恶魔生物, 再杀死一个恶魔生物 ("对不起, 我想做个好人") by akarin~~
@@ -436,7 +438,7 @@ RAM 3G(2G+) for 单机, 3G(2G+) for 玩服务器, 8G(6G+) for 开服务器
   - [x] 特殊合成
     - [x] 骏鹰蛋换色
     - [x] 龙蛋换色
-- [ ] 双货币系统各自的商店
+- [x] 双货币系统各自的商店
 - [ ] 抽奖机
   - [ ] 幸运方块
   - [ ] USTC 11th 活跃玩家头颅
@@ -448,11 +450,11 @@ RAM 3G(2G+) for 单机, 3G(2G+) for 玩服务器, 8G(6G+) for 开服务器
 ------
 
 - USTC-Minecraft 群里的各位
-  - Pentyum 提供的 USTC server.
+  - Pentyum 提供的 USTC 服务器.
   - akarin, ShuiFeng_Keith, quarks, Stark 提供的挑战任务
   - Xiao_YaoYou, quarks, yap 提供的抽奖机奖池
 - 来自朋友的支持
-  - MZH for helping me on cmd and bash coding.
+  - MZH 在 cmd 和 bash 编程上对我的帮助
 - 来自Discord的支持
   - LatMod Industries Server for teaching me using KubeJS
 - Modders for creating these entertaining mods
