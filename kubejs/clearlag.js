@@ -32,7 +32,8 @@ function clearLag (server) {
       // Add to total item count
       lastTotalClearLagResult.add(key, entity.item.count)
       // Kill the item entity
-      entity.kill()
+      if (!entity.block.entity)
+	    entity.kill();
     }
   })
 
