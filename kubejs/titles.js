@@ -41,8 +41,8 @@ function getOrCreateRank(rank_id, parent){
 	if (parent == null){
 		parent = "";
 	}
-	if (!ftbutilities.ranks.contains(rank_id){
-		utils.server.runCommand("ranks create " + rank_id + " " + parent;
+	if (!ftbutilities.ranks.contains(rank_id)){
+		utils.server.runCommand("ranks create " + rank_id + " " + parent);
 	}
 	return ftbutilities.getRank(rank_id);
 }
@@ -55,8 +55,11 @@ if (mod.isLoaded("ftbutilities"))
         var rank_id = getPlayerRankId(player);
         var newRank = getOrCreateRank(rank_id);
         if (getPlayerRank(player).id != rank_id){
-            events.postCancellable('ftbutilities.rank.promoted.' + rank_id, {'player':event.player, 'rank': newRank});
-        }
+            //events.postCancellable('ftbutilities.rank.promoted.' + rank_id, {'player':event.player, 'rank': newRank});
+            event.server.runCommand(
+			"ranks add " + event.player.name + " " + rank_id
+	    );
+	}
         ftbutilities.saveRanks();
     });
 
