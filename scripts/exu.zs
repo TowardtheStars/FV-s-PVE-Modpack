@@ -46,14 +46,3 @@ recipes.addShaped(
     ]
 );
 
-recipes.remove(<extrautils2:chickenring:1>);
-val replace_inksac_item = <abyssalcraft:cpearl>;
-recipes.addShaped(
-    <extrautils2:chickenring:1>,
-    [
-        [replace_inksac_item, <ore:gemDiamond>, replace_inksac_item], 
-        [<extrautils2:goldenlasso>.withTag({Animal: {id: "minecraft:squid"}, No_Place: 0 as byte}), <extrautils2:chickenring:0>, <minecraft:ender_pearl:*>], 
-        [replace_inksac_item, <ore:gemDiamond>, replace_inksac_item]
-    ]
-);
-

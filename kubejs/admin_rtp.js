@@ -7,7 +7,7 @@ events.listen("command.registry", function(event){
 	event.create("admin_rtp")
 		.op()
 		.execute(function(sender, args){
-			if (args.size == 1){
+			if (args.size() == 1){
 				var d = utils.random.nextDouble();
 				d *= range;
 				d += min_distance;
