@@ -1,5 +1,5 @@
 # Modpack config
-version:=2.4.1
+version:=2.5.0
 pack_name:=FVs-PVE
 
 # Build config
